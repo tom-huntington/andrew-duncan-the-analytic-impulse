@@ -1,14 +1,13 @@
 from __future__ import annotations
 
 import argparse
-import json
 import re
 from pathlib import Path
 
 from docling.datamodel.base_models import InputFormat
 from docling.datamodel.pipeline_options import PdfPipelineOptions
 from docling.document_converter import DocumentConverter, ImageFormatOption
-from docling_core.types.doc import ImageRefMode
+from docling_core.types.doc import DoclingDocument, ImageRefMode
 
 
 IMG_SRC_RE = re.compile(r'<img\b[^>]*\bsrc="([^"]+\.(?:jpe?g|png|tiff?|bmp|webp))"', re.IGNORECASE)
@@ -16,7 +15,7 @@ IMG_SRC_RE = re.compile(r'<img\b[^>]*\bsrc="([^"]+\.(?:jpe?g|png|tiff?|bmp|webp)
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(
-        description="Convert an HTML file containing page images into cached Docling JSON."
+        description="Convert an HTML file containing page images into one cached Docling JSON."
     )
     parser.add_argument(
         "--html",
@@ -26,7 +25,12 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--cache-dir",
         default="cache/docling",
-        help="Directory to write cached Docling JSON and manifest files.",
+        help="Directory to write the cached Docling JSON.",
+    )
+    parser.add_argument(
+        "--document-name",
+        default="document.json",
+        help="Filename for the merged cached Docling JSON.",
     )
     parser.add_argument(
         "--force",
@@ -70,54 +74,30 @@ def make_converter() -> DocumentConverter:
     )
 
 
-def build_manifest(html_path: Path, cache_dir: Path, image_paths: list[Path]) -> dict:
-    pages = []
-    for index, image_path in enumerate(image_paths, start=1):
-        json_name = f"page_{index:02d}.json"
-        pages.append(
-            {
-                "index": index,
-                "image_path": str(image_path),
-                "json_path": str((cache_dir / json_name).resolve()),
-            }
-        )
-
-    return {
-        "title": html_path.stem,
-        "source_html": str(html_path),
-        "cache_dir": str(cache_dir),
-        "pages": pages,
-    }
-
-
 def main() -> None:
     args = parse_args()
     html_path = Path(args.html).resolve()
     cache_dir = Path(args.cache_dir).resolve()
     cache_dir.mkdir(parents=True, exist_ok=True)
+    document_path = cache_dir / args.document_name
+
+    if document_path.exists() and not args.force:
+        print(f"Skipping conversion: cache exists at {document_path}")
+        return
 
     image_paths = image_paths_from_html(html_path)
     converter = make_converter()
-    manifest = build_manifest(html_path, cache_dir, image_paths)
-
-    for page in manifest["pages"]:
-        image_path = Path(page["image_path"])
-        json_path = Path(page["json_path"])
-
-        if json_path.exists() and not args.force:
-            print(f"Skipping page {page['index']}: cache exists at {json_path.name}")
-            continue
-
+    docs = []
+    for index, image_path in enumerate(image_paths, start=1):
         result = converter.convert(image_path)
-        result.document.save_as_json(
-            json_path,
-            image_mode=ImageRefMode.PLACEHOLDER,
-        )
-        print(f"Cached page {page['index']}: {image_path.name} -> {json_path.name}")
+        docs.append(result.document)
+        print(f"Converted page image {index}: {image_path.name}")
 
-    manifest_path = cache_dir / "manifest.json"
-    manifest_path.write_text(json.dumps(manifest, indent=2), encoding="utf-8")
-    print(f"Wrote manifest: {manifest_path}")
+    document = DoclingDocument.concatenate(docs)
+    document.name = html_path.stem
+    document.validate_document()
+    document.save_as_json(document_path, image_mode=ImageRefMode.PLACEHOLDER)
+    print(f"Wrote merged document: {document_path}")
 
 
 if __name__ == "__main__":

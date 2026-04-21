@@ -1,9 +1,3 @@
-# The Analytic Impulse
-
----
-
-## Page 1
-
 ## The Analytic Impulse
 
 ## ANDREWDUNCAN**
@@ -33,10 +27,6 @@ Here we describe the mechanism of finding theETC and discuss theutility of△(t)
 Fig.l.Superpositionof two damped sinusoids with different attack times.
 
 <!-- image -->
-
----
-
-## Page 2
 
 the time domain.
 
@@ -68,10 +58,6 @@ Fig.3.Dirac delta function and its spectrum.
 
 <!-- image -->
 
----
-
-## Page 3
-
 ## 3ANALYTICFUNCTIONS
 
 An analytic function is to itsreal part as a solid object is toits shadow.For example,consider the function cos(wt).Thecomplexextension ofcos(wt)is
@@ -95,10 +81,6 @@ Fig.5.Discrete-timefinite-sample delta function8[T]for 64-pointDFTinBracewellrin
 Fig.6.Heyser corkscrew of ej.
 
 <!-- image -->
-
----
-
-## Page 4
 
 tion el.Ina Heysercorkscrew this magnitude appears astheradial distance of thecentral figure to the time axis.FromFig.6itis clear thatthe envelopeofcos(@r) is always1.Aplot of thisradius as a function of time istheETCof thefunction.
 
@@ -144,10 +126,6 @@ t=O
 
 10s
 
----
-
-## Page 5
-
 function is given by
 
 <!-- formula-not-decoded -->
@@ -176,10 +154,6 @@ Fig.9.Analytic sinc function asinc(t),its ETC,and its spectrum.
 
 <!-- image -->
 
----
-
-## Page 6
-
 Fig.10.Heysercorkscrew ofasinc(t).
 
 <!-- image -->
@@ -189,10 +163,6 @@ Fig.11.Continuous-time analytic impulse time infinite-sample analytic impulse],i
 <!-- image -->
 
 J.AudioEng.Soc.,Vol.36,No.5,1988May
-
----
-
-## Page 7
 
 [].Inalgebraic form[5,p.360],[6,p.71],
 
@@ -215,10 +185,6 @@ Fig.13.Overiay of Figs.9and 12.
 Fig.12.Discrete-time infinite-sample analytic impulse △x[],its ETC,and its z transform evaluated on unit circle.
 
 <!-- image -->
-
----
-
-## Page 8
 
 erage value of 1/π (see also Appendix I).
 
@@ -247,10 +213,6 @@ Thus the analytic impulse,discrete or continuous, has a magnitude that does not 
 Fig.15.Discrete-time finite-sample analytic impulse4[],its ETC,and its spectrum for 64-point DFT.
 
 <!-- image -->
-
----
-
-## Page 9
 
 nothing of the practical one, is not causal.This means that the interpretation of that envelope asa graph of energy versus time is only approximate. The best we can do is ask:what can we do to make such a graph look better?For example,we may make the skirts of a peak steeper,to help us visually sort closely spaced peaks,at the expense of making the peaks themselves somewhat broader. This is obviously a tradeoff,and ifdesired it can be accomplished with techniques of windowing.
 
@@ -282,10 +244,6 @@ Tofind thesmoothedenvelopeofameasuredimpulse response,wemay usean argument simil
 
 The simplestdescription ofresolvingpower in an ETCis thewidthofaspike caused bya delta function in the impulse response.Forexample,without smooth-
 
----
-
-## Page 10
-
 <!-- image -->
 
 Fig.17. Smoothed discrete-time infinite-sample analytic impulse [],its ETC,and its z transform evaluated on unit circle.
@@ -303,10 +261,6 @@ ing,the-30-dbwidthis 42 samples in time;with the smoothing discussed,itis 10 sam
 ## 9EXAMPLES
 
 Fig.21 shows the ETC of a high-quality tweeter, measured with a 1024-point FFT sampling at 256kHz, with no weighting and 256 averages(necessary due to a noisy "anechoic"chamber). In Fig. 22 the abovementioned windowing has been used on the spectrum before finding the ETC. The smoothed ETC has a sharper attack, and some secondary peaks that were "riding" on the skirts of the first peak are now lower down. However, the smoothed ETC also has a wider peak, which seems to absorb a neighboring peak.
-
----
-
-## Page 11
 
 Of particular interest is the peak at 160 μs,which shows up clearly in the smoothed function,but not in the unsmoothed one.This corresponds to a path differenceforasoundwaveofroughly5mm,whichis the distanceto the edgeof the(unmounted) tweeter fange,where the acoustic load changes from a halfspace to a full space.An experimenter with access to this ETCmight suspect that the outgoing acoustic impulse is partially refracted at the edge of the flange, reaching themicrophone having traveled50 mmfarther than the direct signal.In an attempt to verify this guess, themeasurementwasrepeatedwith thetweeter mounted at theend of a long tube of sound-absorbent material. Fig.23 shows the smoothed ETC for this measurement, withtherefractiongone.
 
@@ -333,10 +287,6 @@ Fig.22.ETC for same twccter as in Fig.21.but with raisedcosine smoothingin frequ
 Fig.20. Smoothed discrete-time finite-sample analytic impulse ] and its spectrum for 64-point DFT.
 
 <!-- image -->
-
----
-
-## Page 12
 
 couragement. Thanks are also due Dr. John Vanderkooy and Dr. StanleyLipshitz for their helpful discussions aboutwindowing.Finally,IamgratefultoDaniel Hirsch and theStevensonProgram onNuclearPolicyatthe University of California at Santa Cruzfor theuse of their facilities.
 
@@ -372,10 +322,6 @@ In the context of the theory of generalizedfunctions, this is a rigorous definit
 Fig.24.Essentially duplicate of [2,fig.A.3].
 
 <!-- image -->
-
----
-
-## Page 13
 
 ## APPENDIXII
 

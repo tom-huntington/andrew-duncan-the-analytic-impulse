@@ -1,119 +1,129 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html>
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>The Analytic Impulse</title>
-  <style>
-    :root {
-      color-scheme: light;
-      --bg: #f5f6f8;
-      --surface: #ffffff;
-      --border: #d6dbe3;
-      --text: #1c2430;
-      --muted: #5d6776;
-      --accent: #0b6bcb;
+<meta charset="UTF-8"/>
+<title>The Analytic Impulse</title>
+<meta name="generator" content="Docling HTML Serializer"/>
+<style>
+    html {
+        background-color: #f5f5f5;
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
     }
-    * { box-sizing: border-box; }
     body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      color: var(--text);
-      background: var(--bg);
-      line-height: 1.55;
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 2rem;
+        background-color: white;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
     }
-    main {
-      max-width: 1280px;
-      margin: 0 auto;
-      padding: 24px;
+    h1, h2, h3, h4, h5, h6 {
+        color: #333;
+        margin-top: 1.5em;
+        margin-bottom: 0.5em;
     }
-    .hero {
-      padding: 24px 0 12px;
+    h1 {
+        font-size: 2em;
+        border-bottom: 1px solid #eee;
+        padding-bottom: 0.3em;
     }
-    h1, h2, h3 {
-      margin: 0 0 12px;
-      line-height: 1.2;
+    table {
+        border-collapse: collapse;
+        margin: 1em 0;
+        width: 100%;
     }
-    p {
-      margin: 0 0 12px;
+    th, td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: left;
     }
-    .hero p {
-      color: var(--muted);
-      max-width: 72ch;
+    th {
+        background-color: #f2f2f2;
+        font-weight: bold;
     }
-    .page {
-      border-top: 1px solid var(--border);
-      padding: 24px 0;
+    figure {
+        margin: 1.5em 0;
+        text-align: center;
     }
-    .page-header {
-      margin-bottom: 16px;
+    figcaption {
+        color: #666;
+        font-style: italic;
+        margin-top: 0.5em;
     }
-    .page-header p {
-      color: var(--muted);
-      font-size: 14px;
+    img {
+        max-width: 100%;
+        height: auto;
     }
-    .page-grid {
-      display: grid;
-      grid-template-columns: minmax(280px, 420px) minmax(0, 1fr);
-      gap: 20px;
-      align-items: start;
+    pre {
+        background-color: #f6f8fa;
+        border-radius: 3px;
+        padding: 1em;
+        overflow: auto;
     }
-    .scan,
-    .ocr {
-      margin: 0;
-      background: var(--surface);
-      border: 1px solid var(--border);
-      border-radius: 8px;
-      overflow: hidden;
+    code {
+        font-family: monospace;
+        background-color: #f6f8fa;
+        padding: 0.2em 0.4em;
+        border-radius: 3px;
     }
-    .scan img {
-      display: block;
-      width: 100%;
-      height: auto;
+    pre code {
+        background-color: transparent;
+        padding: 0;
     }
-    .ocr {
-      padding: 20px;
+    .formula {
+        text-align: center;
+        padding: 0.5em;
+        margin: 1em 0;
+        background-color: #f9f9f9;
     }
-    .ocr table {
-      border-collapse: collapse;
-      width: 100%;
+    .formula-not-decoded {
+        text-align: center;
+        padding: 0.5em;
+        margin: 1em 0;
+        background: repeating-linear-gradient(
+            45deg,
+            #f0f0f0,
+            #f0f0f0 10px,
+            #f9f9f9 10px,
+            #f9f9f9 20px
+        );
     }
-    .ocr th,
-    .ocr td {
-      border: 1px solid var(--border);
-      padding: 6px 8px;
-      vertical-align: top;
+    .page-break {
+        page-break-after: always;
+        border-top: 1px dashed #ccc;
+        margin: 2em 0;
     }
-    .ocr a {
-      color: var(--accent);
+    .key-value-region {
+        background-color: #f9f9f9;
+        padding: 1em;
+        border-radius: 4px;
+        margin: 1em 0;
     }
-    @media (max-width: 900px) {
-      main {
-        padding: 16px;
-      }
-      .page-grid {
-        grid-template-columns: 1fr;
-      }
+    .key-value-region dt {
+        font-weight: bold;
     }
-  </style>
+    .key-value-region dd {
+        margin-left: 1em;
+        margin-bottom: 0.5em;
+    }
+    .form-container {
+        border: 1px solid #ddd;
+        padding: 1em;
+        border-radius: 4px;
+        margin: 1em 0;
+    }
+    .form-item {
+        margin-bottom: 0.5em;
+    }
+    .image-classification {
+        font-size: 0.9em;
+        color: #666;
+        margin-top: 0.5em;
+    }
+</style>
 </head>
 <body>
-  <main>
-    <section class="hero">
-      <h1>The Analytic Impulse</h1>
-      <p>Combined OCR extraction from The Analytic Impulse.html using cached Docling JSON. Each section keeps the source page scan alongside the extracted content.</p>
-    </section>
-    <section class="page">
-              <header class="page-header">
-                <h2>Page 1</h2>
-                <p>tai_0.jpeg</p>
-              </header>
-              <div class="page-grid">
-                <figure class="scan">
-                  <img src="../The Analytic Impulse_files/tai_0.jpeg" alt="Source scan for page 1">
-                </figure>
-                <article class="ocr">
-                  <div class='page'>
+<div class='page'>
 <h2>The Analytic Impulse</h2>
 <h2>ANDREWDUNCAN**</h2>
 <p>Cerwin-Vega!Inc.,Simi Valley,CA 93065,USA</p>
@@ -128,20 +138,6 @@
 <p>Here we describe the mechanism of finding theETC and discuss theutility of△(t)in carryingout theprocedure.In the following sections we justify the procedure and investigate thenature of△(t) inthedifferent domains. To find the AIR of a system, given its impulse response, we use (r) in one of two equivalent ways:</p>
 <p>1) We multiply the system's frequency response by the spectrum of △(t) and then perform an inverse transform (Fourier,2,or DFT),which gives us the AIR in</p>
 <figure><figcaption><div class="caption">Fig.l.Superpositionof two damped sinusoids with different attack times.</div></figcaption></figure>
-</div>
-                </article>
-              </div>
-            </section><section class="page">
-              <header class="page-header">
-                <h2>Page 2</h2>
-                <p>tai_1.jpeg</p>
-              </header>
-              <div class="page-grid">
-                <figure class="scan">
-                  <img src="../The Analytic Impulse_files/tai_1.jpeg" alt="Source scan for page 2">
-                </figure>
-                <article class="ocr">
-                  <div class='page'>
 <p>the time domain.</p>
 <ul>
 <li>2)Weconvolvethe system'simpulse responsewith △(t),which yields the AIR.</li>
@@ -157,20 +153,6 @@
 <h2>2THEDELTAFUNCTIONS</h2>
 <p>Itisgenerallyconsidereddesirabletohave symmetry in one's equations.Forinstance,we introduce negative numbersso wemightsay thereis exactlyone solution ofalinear equation.Further,we admit complexnumbers so thatevery nth-orderpolynomial hasexactly nzeros. In this spirtwe create8(t) so that theFourier transform will have a kernel:a function whose image under the mapping is a unit constant.Fig.3 shows this relation, with the double arrowindicatingthedirectionof the forward transform.Intuitively,S(t)isanarrow pulse As it has positive but no negative values,it has a dc component.Since it rises and falls very rapidly,it has a great deal of high-frequency energy.Following the precedent of referring to negative or imaginary"numbers,Iwill call 8(t)and itsrelatives functions,although strictly speaking this is not correct.This function can be thought of as the limit of a sequence of (true) functions,as the derivative of the unit step function,or in distinctive ways.In the discrete-time domains,the difficulty of a rigorous delta function is gone.In the time domain of the z transform(Fig.4)we havea wellbehaved infinite sequence,zero everywhere except at one sample.In the discrete Fourier transform (DFT) domain(Fig.5),time is implicitlyperiodic,and sowe have a finite,cyclic sequence.Werefer to a circular plotofacyclicfunction,suchasinFig.5,asaBracewell ring[4,p.363].To stress the quantized nature of the independent variable,weuse square brackets,and call the variable . takes on only integer values.In the discrete frequency domain,we shall use the letter v,</p>
 <figure><figcaption><div class="caption">Fig.3.Dirac delta function and its spectrum.</div></figcaption></figure>
-</div>
-                </article>
-              </div>
-            </section><section class="page">
-              <header class="page-header">
-                <h2>Page 3</h2>
-                <p>tai_2.jpeg</p>
-              </header>
-              <div class="page-grid">
-                <figure class="scan">
-                  <img src="../The Analytic Impulse_files/tai_2.jpeg" alt="Source scan for page 3">
-                </figure>
-                <article class="ocr">
-                  <div class='page'>
 <h2>3ANALYTICFUNCTIONS</h2>
 <p>An analytic function is to itsreal part as a solid object is toits shadow.For example,consider the function cos(wt).Thecomplexextension ofcos(wt)is</p>
 <div class="formula-not-decoded">Formula not decoded</div>
@@ -180,20 +162,6 @@
 <p>Themagnitudeofcos(wt)variesfrom-1to+1 and at times it is zero.However,we feel that its envelope is constant.Our intuition is satisfied by defining the envelopetobethemagnitudeofthefullcomplexfunc-</p>
 <figure><figcaption><div class="caption">Fig.5.Discrete-timefinite-sample delta function8[T]for 64-pointDFTinBracewellringformat.</div></figcaption></figure>
 <figure><figcaption><div class="caption">Fig.6.Heyser corkscrew of ej.</div></figcaption></figure>
-</div>
-                </article>
-              </div>
-            </section><section class="page">
-              <header class="page-header">
-                <h2>Page 4</h2>
-                <p>tai_3.jpeg</p>
-              </header>
-              <div class="page-grid">
-                <figure class="scan">
-                  <img src="../The Analytic Impulse_files/tai_3.jpeg" alt="Source scan for page 4">
-                </figure>
-                <article class="ocr">
-                  <div class='page'>
 <p>tion el.Ina Heysercorkscrew this magnitude appears astheradial distance of thecentral figure to the time axis.FromFig.6itis clear thatthe envelopeofcos(@r) is always1.Aplot of thisradius as a function of time istheETCof thefunction.</p>
 <p>Theconnection between thereal and imaginaryparts is called the Hilbert transform.The connection between thereal part and the wholeis best illustrated by examining the relation.</p>
 <div class="formula-not-decoded">Formula not decoded</div>
@@ -214,20 +182,6 @@
 <p>Fig.8.Sinc(t) and its spectrum.</p>
 <p>t=O</p>
 <p>10s</p>
-</div>
-                </article>
-              </div>
-            </section><section class="page">
-              <header class="page-header">
-                <h2>Page 5</h2>
-                <p>tai_4.jpeg</p>
-              </header>
-              <div class="page-grid">
-                <figure class="scan">
-                  <img src="../The Analytic Impulse_files/tai_4.jpeg" alt="Source scan for page 5">
-                </figure>
-                <article class="ocr">
-                  <div class='page'>
 <p>function is given by</p>
 <div class="formula-not-decoded">Formula not decoded</div>
 <div class="formula-not-decoded">Formula not decoded</div>
@@ -241,37 +195,9 @@
 <h2>5THEZ-TRANSFORMDOMAINS</h2>
 <p>Ournext step is to make time discrete,that is,we nowknow thevalue of the signal atinteger multiples ofa samplinginterval.Without loss ofgenerality we canreplacetwith ,an integervariable.There are still an infinite number of samples,but now a countable infinity.Theeffectofsamplingin timeis tomake the spectrum periodic.In fact,the spectrum is now the z transform evaluated on theunit circle.Fig.12shows CAUS(f)for this situation and its inverse transform</p>
 <figure><figcaption><div class="caption">Fig.9.Analytic sinc function asinc(t),its ETC,and its spectrum.</div></figcaption></figure>
-</div>
-                </article>
-              </div>
-            </section><section class="page">
-              <header class="page-header">
-                <h2>Page 6</h2>
-                <p>tai_5.jpeg</p>
-              </header>
-              <div class="page-grid">
-                <figure class="scan">
-                  <img src="../The Analytic Impulse_files/tai_5.jpeg" alt="Source scan for page 6">
-                </figure>
-                <article class="ocr">
-                  <div class='page'>
 <figure><figcaption><div class="caption">Fig.10.Heysercorkscrew ofasinc(t).</div></figcaption></figure>
 <figure><figcaption><div class="caption">Fig.11.Continuous-time analytic impulse time infinite-sample analytic impulse],its ETC,and its spectrum.</div></figcaption></figure>
 <p>J.AudioEng.Soc.,Vol.36,No.5,1988May</p>
-</div>
-                </article>
-              </div>
-            </section><section class="page">
-              <header class="page-header">
-                <h2>Page 7</h2>
-                <p>tai_6.jpeg</p>
-              </header>
-              <div class="page-grid">
-                <figure class="scan">
-                  <img src="../The Analytic Impulse_files/tai_6.jpeg" alt="Source scan for page 7">
-                </figure>
-                <article class="ocr">
-                  <div class='page'>
 <p>[].Inalgebraic form[5,p.360],[6,p.71],</p>
 <div class="formula-not-decoded">Formula not decoded</div>
 <p>or,equivalently,</p>
@@ -280,20 +206,6 @@
 <p>OUERLAYOFMAGPHASE</p>
 <figure><figcaption><div class="caption">Fig.13.Overiay of Figs.9and 12.</div></figcaption></figure>
 <figure><figcaption><div class="caption">Fig.12.Discrete-time infinite-sample analytic impulse △x[],its ETC,and its z transform evaluated on unit circle.</div></figcaption></figure>
-</div>
-                </article>
-              </div>
-            </section><section class="page">
-              <header class="page-header">
-                <h2>Page 8</h2>
-                <p>tai_7.jpeg</p>
-              </header>
-              <div class="page-grid">
-                <figure class="scan">
-                  <img src="../The Analytic Impulse_files/tai_7.jpeg" alt="Source scan for page 8">
-                </figure>
-                <article class="ocr">
-                  <div class='page'>
 <p>erage value of 1/π (see also Appendix I).</p>
 <p>Ifwe step back fromFig.12 and enlarge our field of view, we get a picture like Fig. 14. This figure shows thatit takesroughly 60 samples for the envelope of eventhebriefesttransienttodecayto40dBbelowthe peakvalue.This suggests that there isapractical limit to theresolution ofan energy-timemeasurement made with sampled signals.</p>
 <h2>6THEDFTDOMAINS</h2>
@@ -306,20 +218,6 @@
 <h2>7WINDOWING</h2>
 <p>Thus the analytic impulse,discrete or continuous, has a magnitude that does not vanishfor negative time. Equivalently the ETC for the ideal transducer,to say</p>
 <figure><figcaption><div class="caption">Fig.15.Discrete-time finite-sample analytic impulse4[],its ETC,and its spectrum for 64-point DFT.</div></figcaption></figure>
-</div>
-                </article>
-              </div>
-            </section><section class="page">
-              <header class="page-header">
-                <h2>Page 9</h2>
-                <p>tai_8.jpeg</p>
-              </header>
-              <div class="page-grid">
-                <figure class="scan">
-                  <img src="../The Analytic Impulse_files/tai_8.jpeg" alt="Source scan for page 9">
-                </figure>
-                <article class="ocr">
-                  <div class='page'>
 <p>nothing of the practical one, is not causal.This means that the interpretation of that envelope asa graph of energy versus time is only approximate. The best we can do is ask:what can we do to make such a graph look better?For example,we may make the skirts of a peak steeper,to help us visually sort closely spaced peaks,at the expense of making the peaks themselves somewhat broader. This is obviously a tradeoff,and ifdesired it can be accomplished with techniques of windowing.</p>
 <p>By windowing wemean themultiplication in the time or frequency domain of a measured functionby another function,called the window.Generally the windowgoestoOwherethedata aretobedeemphasized, and to 1 where the data are to be emphasized.For example,a cosine-squared(orraised-cosine) bell,called a Hann window after Julius von Hann,is one of the most common windows used in FFT processing. Fig. 16 shows a Hann window in a 64-point DFT domain. The particularly simple form of this function in a periodicdomain isrevealedbytheBracewellringformat.</p>
 <p>Wefirst investigate theeffect ofwindowingonthe analyticimpulse itself.Wewill later see that thewindowed impulse or its spectrum may beused to find a windowed ETC for physical data.To windowx[], we multiply its spectrum by a cosine-squared shape. Thevalue of thewindow isO at the two edges of[]'s spectrum and I at the center. The results of this windowing are shown in Fig. 17. The algebraic expression for this smoothed analytic impulse is</p>
@@ -334,40 +232,12 @@
 <p>Tofind thesmoothedenvelopeofameasuredimpulse response,wemay usean argument similar to the one thatbestembodies the desiredtradeoffsbetween smoothness andresolution.TheHannwindow shown isoneofthemostelementaryof these.Otherwindows of interest include the Hann squared,the Blackmun, and the Kaiser.For futher discussion,see,for example, [6].</p>
 <h2>8RESOLUTION</h2>
 <p>The simplestdescription ofresolvingpower in an ETCis thewidthofaspike caused bya delta function in the impulse response.Forexample,without smooth-</p>
-</div>
-                </article>
-              </div>
-            </section><section class="page">
-              <header class="page-header">
-                <h2>Page 10</h2>
-                <p>tai_9.jpeg</p>
-              </header>
-              <div class="page-grid">
-                <figure class="scan">
-                  <img src="../The Analytic Impulse_files/tai_9.jpeg" alt="Source scan for page 10">
-                </figure>
-                <article class="ocr">
-                  <div class='page'>
 <p>Fig.17. Smoothed discrete-time infinite-sample analytic impulse [],its ETC,and its z transform evaluated on unit circle.</p>
 <figure><figcaption><div class="caption">Fig.18. Magnitude of [T] on 60-dB scale.</div></figcaption></figure>
 <figure><figcaption><div class="caption">Fig.19.Magnitudeof△[T] on 180-dB scale.</div></figcaption></figure>
 <p>ing,the-30-dbwidthis 42 samples in time;with the smoothing discussed,itis 10 samples.With the typical experimenter's lab equipment,the total number of samples Nis fixed,and the equipment's display window orprintoutwill showthedata samplesspaced atequal intervalssoastofill thespaceallotted.Inparticular, changing theequipment'sfrequencyrange or sampling windowwillnotchangethespacingofsamplesinthe display.In thiscase a peakinETCwill have awidth thatisaconstantfractionofthedisplaywidth,regardiess offrequencysetting.Inotherwords,if theexperimenter turnsupthesamplingrateonthelabFFTinhopesof narrowing theapparentwidthofapeakin theenergy-time function, it will have no effect. However, in terms of absolute time,thepeakwill benarrower since theentiredisplaywillnowcover asmallerintervalof time.</p>
 <h2>9EXAMPLES</h2>
 <p>Fig.21 shows the ETC of a high-quality tweeter, measured with a 1024-point FFT sampling at 256kHz, with no weighting and 256 averages(necessary due to a noisy "anechoic"chamber). In Fig. 22 the abovementioned windowing has been used on the spectrum before finding the ETC. The smoothed ETC has a sharper attack, and some secondary peaks that were "riding" on the skirts of the first peak are now lower down. However, the smoothed ETC also has a wider peak, which seems to absorb a neighboring peak.</p>
-</div>
-                </article>
-              </div>
-            </section><section class="page">
-              <header class="page-header">
-                <h2>Page 11</h2>
-                <p>tai_10.jpeg</p>
-              </header>
-              <div class="page-grid">
-                <figure class="scan">
-                  <img src="../The Analytic Impulse_files/tai_10.jpeg" alt="Source scan for page 11">
-                </figure>
-                <article class="ocr">
-                  <div class='page'>
 <p>Of particular interest is the peak at 160 μs,which shows up clearly in the smoothed function,but not in the unsmoothed one.This corresponds to a path differenceforasoundwaveofroughly5mm,whichis the distanceto the edgeof the(unmounted) tweeter fange,where the acoustic load changes from a halfspace to a full space.An experimenter with access to this ETCmight suspect that the outgoing acoustic impulse is partially refracted at the edge of the flange, reaching themicrophone having traveled50 mmfarther than the direct signal.In an attempt to verify this guess, themeasurementwasrepeatedwith thetweeter mounted at theend of a long tube of sound-absorbent material. Fig.23 shows the smoothed ETC for this measurement, withtherefractiongone.</p>
 <h2>10CONCLUSIONS</h2>
 <p>In any domain we might care to use, the ETC of a system, calculated as the envelope of the impulse response,is noncausal.This is not a problem of physics or engineering,buta necessary consequence of the mathematicsinvolved.Theproblem arises whenwe insist on using themath to describe aphysical process weknow tobe causal in time.To interpret ourfindings, we must know where it is that the numbers stop talking about the real world,and (like historians) start talking about each other.</p>
@@ -378,20 +248,6 @@
 <p>Fig.21.ETCof high-quality tweeter,measured with 1024 sampleFFT sampling at 256kHz;no weighting.</p>
 <figure><figcaption><div class="caption">Fig.22.ETC for same twccter as in Fig.21.but with raisedcosine smoothingin frequency domain.</div></figcaption></figure>
 <figure><figcaption><div class="caption">Fig.20. Smoothed discrete-time finite-sample analytic impulse ] and its spectrum for 64-point DFT.</div></figcaption></figure>
-</div>
-                </article>
-              </div>
-            </section><section class="page">
-              <header class="page-header">
-                <h2>Page 12</h2>
-                <p>tai_11.jpeg</p>
-              </header>
-              <div class="page-grid">
-                <figure class="scan">
-                  <img src="../The Analytic Impulse_files/tai_11.jpeg" alt="Source scan for page 12">
-                </figure>
-                <article class="ocr">
-                  <div class='page'>
 <p>couragement. Thanks are also due Dr. John Vanderkooy and Dr. StanleyLipshitz for their helpful discussions aboutwindowing.Finally,IamgratefultoDaniel Hirsch and theStevensonProgram onNuclearPolicyatthe University of California at Santa Cruzfor theuse of their facilities.</p>
 <h2>12REFERENCES</h2>
 <ul>
@@ -412,20 +268,6 @@
 <div class="formula-not-decoded">Formula not decoded</div>
 <p>In the context of the theory of generalizedfunctions, this is a rigorous definition of the analytic impulse, and its real part does converge to the familiar delta function.If we substitute a = 1/α,we get [2,eq.35]. This function does not have unit energy.To see this, itismerelynecessary toobserve that theareaunder its spectrum (Fig.1l,right side)is infinite.One may alsocarry out the energy integral in the time domain to convince oneself.How then do we explain [2,eq. 32],which arrives at the opposite conclusion？A look at [2,eq.30] will reveal that this equation has an additional 1/√a term init.Buta is the term thatgoesto infinity.Thus we have slipped in an additional convergence term.In this case it is correct to say that the function so defined has unit area,but at the expense of introducing a rival impulse function.Heyser [2] seems to suggest that these distinct functions are one and the same.But it iscontradictory for a signal to have equal nonzero energy density at all frequencies and still have bounded total energy.To further the confusion,the comment in[2,fig.A-3] concedes that the envelope of the'doublet goes as l/t,but this is juxtaposedwithapicture of therivalimpulsefunction (the same as myFig.24).</p>
 <figure><figcaption><div class="caption">Fig.24.Essentially duplicate of [2,fig.A.3].</div></figcaption></figure>
-</div>
-                </article>
-              </div>
-            </section><section class="page">
-              <header class="page-header">
-                <h2>Page 13</h2>
-                <p>tai_12.jpeg</p>
-              </header>
-              <div class="page-grid">
-                <figure class="scan">
-                  <img src="../The Analytic Impulse_files/tai_12.jpeg" alt="Source scan for page 13">
-                </figure>
-                <article class="ocr">
-                  <div class='page'>
 <h2>APPENDIXII</h2>
 <p>Following are the equations used in this paper to carry out the required transforms. The continuous Fourier transforms;</p>
 <div class="formula-not-decoded">Formula not decoded</div>
@@ -440,9 +282,5 @@
 <p>Andrew Duncan was bom in London,U.K.,in 1960. He received a B.S.degree in engineering and-applied sciences from the California Institute of Technology in1983.Hetaught high school physics for 2years in Pasadena, California,while studying at Caltech,and for anotheryear after graduation.He then worked for 2years,with Marshall Buck,as a programmer at Cerwin-Vega Inc.Mr.Duncan is currentlya doctoral student inmathematicsat the Universityof California at Santa Cruz,where he is studying the application of group theory to the thcory of tonal harmony. He has also worked as a consultant at E-mu Systems,Inc.in the area of digital pitch shifting.</p>
 <p>A member of the AES and the AMS,Mr. Duncan has interests in the combination ofmusic and mathematics.He plays the acoustic guitar,the electric bass, and the Chapman Stick,while studying the music of, respectively.John Fahey,Phil Lesh,and J.S.Bach on these instruments.His current interests include group representations of tonal and modal movement in the equally tempered scale and applications of tiling theory tofingeringpatterns on string instruments.</p>
 </div>
-                </article>
-              </div>
-            </section>
-  </main>
 </body>
 </html>
