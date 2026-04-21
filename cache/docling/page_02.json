@@ -1,0 +1,1120 @@
+{
+  "schema_name": "DoclingDocument",
+  "version": "1.10.0",
+  "name": "tai_1",
+  "origin": {
+    "mimetype": "application/pdf",
+    "binary_hash": 5691517844281039519,
+    "filename": "tai_1.jpeg"
+  },
+  "furniture": {
+    "self_ref": "#/furniture",
+    "children": [],
+    "content_layer": "furniture",
+    "name": "_root_",
+    "label": "unspecified"
+  },
+  "body": {
+    "self_ref": "#/body",
+    "children": [
+      {
+        "$ref": "#/texts/0"
+      },
+      {
+        "$ref": "#/texts/1"
+      },
+      {
+        "$ref": "#/texts/2"
+      },
+      {
+        "$ref": "#/groups/0"
+      },
+      {
+        "$ref": "#/texts/4"
+      },
+      {
+        "$ref": "#/texts/5"
+      },
+      {
+        "$ref": "#/texts/6"
+      },
+      {
+        "$ref": "#/texts/7"
+      },
+      {
+        "$ref": "#/texts/8"
+      },
+      {
+        "$ref": "#/pictures/0"
+      },
+      {
+        "$ref": "#/texts/15"
+      },
+      {
+        "$ref": "#/texts/16"
+      },
+      {
+        "$ref": "#/texts/17"
+      },
+      {
+        "$ref": "#/texts/18"
+      },
+      {
+        "$ref": "#/texts/19"
+      },
+      {
+        "$ref": "#/pictures/1"
+      },
+      {
+        "$ref": "#/texts/31"
+      },
+      {
+        "$ref": "#/texts/32"
+      }
+    ],
+    "content_layer": "body",
+    "name": "_root_",
+    "label": "unspecified"
+  },
+  "groups": [
+    {
+      "self_ref": "#/groups/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/3"
+        }
+      ],
+      "content_layer": "body",
+      "name": "list",
+      "label": "list"
+    }
+  ],
+  "texts": [
+    {
+      "self_ref": "#/texts/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_header",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 43.7376454671224,
+            "t": 1081.9082661469777,
+            "r": 90.17514038085938,
+            "b": 1068.8074595133464,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            6
+          ]
+        }
+      ],
+      "orig": "DUNCAN",
+      "text": "DUNCAN"
+    },
+    {
+      "self_ref": "#/texts/1",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_header",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 685.2230631510416,
+            "t": 1078.0871976216633,
+            "r": 728.9607747395834,
+            "b": 1064.9863917032878,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            6
+          ]
+        }
+      ],
+      "orig": "PAPERS",
+      "text": "PAPERS"
+    },
+    {
+      "self_ref": "#/texts/2",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 41.57776133219401,
+            "t": 1050.2479832967122,
+            "r": 149.57194010416666,
+            "b": 1034.4178415934246,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            16
+          ]
+        }
+      ],
+      "orig": "the time domain.",
+      "text": "the time domain."
+    },
+    {
+      "self_ref": "#/texts/3",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 41.57776133219401,
+            "t": 1033.8719787597656,
+            "r": 373.6598714192708,
+            "b": 998.9364929199219,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            71
+          ]
+        }
+      ],
+      "orig": "2)Weconvolvethe system'simpulse responsewith \u25b3(t),which yields the AIR.",
+      "text": "2)Weconvolvethe system'simpulse responsewith \u25b3(t),which yields the AIR.",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/4",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 41.03778839111328,
+            "t": 1000.5740915934244,
+            "r": 374.7398274739583,
+            "b": 962.3634134928385,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            87
+          ]
+        }
+      ],
+      "orig": "If we let h(t) be the system's impulse response and H(f) its frequency response,we have",
+      "text": "If we let h(t) be the system's impulse response and H(f) its frequency response,we have"
+    },
+    {
+      "self_ref": "#/texts/5",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "formula",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 55.07703145345052,
+            "t": 951.4460754394531,
+            "r": 375.8197428385417,
+            "b": 929.0655314127604,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            27
+          ]
+        }
+      ],
+      "orig": "AIR(1)=g-1{{\u25b3\uff08t)}H(f)} (1a)",
+      "text": ""
+    },
+    {
+      "self_ref": "#/texts/6",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "formula",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 103.13444010416667,
+            "t": 916.5105895996094,
+            "r": 375.8197428385417,
+            "b": 895.7676391601562,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            15
+          ]
+        }
+      ],
+      "orig": "=\u25b3\uff08t)*h\uff081) (1b)",
+      "text": ""
+    },
+    {
+      "self_ref": "#/texts/7",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 38.33793385823568,
+            "t": 880.4833780924479,
+            "r": 374.7398274739583,
+            "b": 623.9259033203125,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            698
+          ]
+        }
+      ],
+      "orig": "The term AIRcanbeparsedin two differentways. Forlinear systems the two interpretationsareidentical. We introduced the AIRabove as the analytic\"impulse response,\"a complex function whose real part is the impulse response.This interpretation follows (roughly) alyticimpulse\"response,the(complex) response of a system to a complex impulse,namely,\u25b3(t).This interpretation corresponds to Eq.(1b).In this light,\u25b3(t) appears as the AIR of an ideal system. This is to say, the function\u25b3(t)plays a dual role.From oneperspective it is the toolwe use to calculate theAIRforagiven system.But at the same time,we may regard it as the data itself, the response of a system with everywhereflat frequency response.",
+      "text": "The term AIRcanbeparsedin two differentways. Forlinear systems the two interpretationsareidentical. We introduced the AIRabove as the analytic\"impulse response,\"a complex function whose real part is the impulse response.This interpretation follows (roughly) alyticimpulse\"response,the(complex) response of a system to a complex impulse,namely,\u25b3(t).This interpretation corresponds to Eq.(1b).In this light,\u25b3(t) appears as the AIR of an ideal system. This is to say, the function\u25b3(t)plays a dual role.From oneperspective it is the toolwe use to calculate theAIRforagiven system.But at the same time,we may regard it as the data itself, the response of a system with everywhereflat frequency response."
+    },
+    {
+      "self_ref": "#/texts/8",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 38.33793385823568,
+            "t": 626.109375,
+            "r": 373.1199137369792,
+            "b": 573.1602783203125,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            150
+          ]
+        }
+      ],
+      "orig": "From theAIRitisa short step to theETC.The AIR isacomplexfunction ofarealvariable(time).Itsreal part is the impulse response of the system in question,",
+      "text": "From theAIRitisa short step to theETC.The AIR isacomplexfunction ofarealvariable(time).Itsreal part is the impulse response of the system in question,"
+    },
+    {
+      "self_ref": "#/texts/9",
+      "parent": {
+        "$ref": "#/pictures/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 57.236918131510414,
+            "t": 525.6698811848959,
+            "r": 76.13589986165364,
+            "b": 516.9359944661459,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            3
+          ]
+        }
+      ],
+      "orig": "rel",
+      "text": "rel"
+    },
+    {
+      "self_ref": "#/texts/10",
+      "parent": {
+        "$ref": "#/pictures/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 57.776885986328125,
+            "t": 517.4818522135416,
+            "r": 76.67586771647136,
+            "b": 507.65625,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            3
+          ]
+        }
+      ],
+      "orig": "nax",
+      "text": "nax"
+    },
+    {
+      "self_ref": "#/texts/11",
+      "parent": {
+        "$ref": "#/pictures/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 59.93677266438802,
+            "t": 497.83064778645837,
+            "r": 77.75581359863281,
+            "b": 489.64265950520837,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            3
+          ]
+        }
+      ],
+      "orig": "-20",
+      "text": "-20"
+    },
+    {
+      "self_ref": "#/texts/12",
+      "parent": {
+        "$ref": "#/pictures/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 60.47674051920573,
+            "t": 386.47379557291663,
+            "r": 76.13589986165364,
+            "b": 378.28580729166663,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            3
+          ]
+        }
+      ],
+      "orig": "-60",
+      "text": "-60"
+    },
+    {
+      "self_ref": "#/texts/13",
+      "parent": {
+        "$ref": "#/pictures/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 131.75289916992188,
+            "t": 375.01057942708337,
+            "r": 140.93241373697916,
+            "b": 365.18497721354163,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            1
+          ]
+        }
+      ],
+      "orig": "0",
+      "text": "0"
+    },
+    {
+      "self_ref": "#/texts/14",
+      "parent": {
+        "$ref": "#/pictures/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 341.26161702473956,
+            "t": 372.8271484375,
+            "r": 356.9207763671875,
+            "b": 364.63916015625,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            2
+          ]
+        }
+      ],
+      "orig": "55",
+      "text": "55"
+    },
+    {
+      "self_ref": "#/texts/15",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 84.77543131510417,
+            "t": 366.27669270833337,
+            "r": 188.4498494466146,
+            "b": 349.90071614583337,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            19
+          ]
+        }
+      ],
+      "orig": "Snoothedenergy-tine",
+      "text": "Snoothedenergy-tine"
+    },
+    {
+      "self_ref": "#/texts/16",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "caption",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 107.99418131510417,
+            "t": 342.804443359375,
+            "r": 302.3837076822917,
+            "b": 324.79085286458337,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            31
+          ]
+        }
+      ],
+      "orig": "Fig.2.ETC of function of Fig.1.",
+      "text": "Fig.2.ETC of function of Fig.1."
+    },
+    {
+      "self_ref": "#/texts/17",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 394.71875,
+            "t": 1048.6103846232097,
+            "r": 728.9607747395834,
+            "b": 911.0519205729166,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            361
+          ]
+        }
+      ],
+      "orig": "and its imaginarypart turns out to be theHilbert transform of the impulse response.TheETC,a realnonnegative function of time,is the magnitudeof theAIR. Forexample,theETCof an ideal system will be the magnitude of \u25b3(t).For this reason aninvestigation of the nature and properties of\u25b3\uff08t)proves to be very useful.We start with the purely real predecessors of #(t).",
+      "text": "and its imaginarypart turns out to be theHilbert transform of the impulse response.TheETC,a realnonnegative function of time,is the magnitudeof theAIR. Forexample,theETCof an ideal system will be the magnitude of \u25b3(t).For this reason aninvestigation of the nature and properties of\u25b3\uff08t)proves to be very useful.We start with the purely real predecessors of #(t)."
+    },
+    {
+      "self_ref": "#/texts/18",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 394.1787516276042,
+            "t": 891.4007161458334,
+            "r": 577.7688802083334,
+            "b": 873.3871053059896,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            18
+          ]
+        }
+      ],
+      "orig": "2THEDELTAFUNCTIONS",
+      "text": "2THEDELTAFUNCTIONS",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/19",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 393.0988362630208,
+            "t": 862.4697672526041,
+            "r": 727.8807779947916,
+            "b": 320.42390950520837,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            1566
+          ]
+        }
+      ],
+      "orig": "Itisgenerallyconsidereddesirabletohave symmetry in one's equations.Forinstance,we introduce negative numbersso wemightsay thereis exactlyone solution ofalinear equation.Further,we admit complexnumbers so thatevery nth-orderpolynomial hasexactly nzeros. In this spirtwe create8(t) so that theFourier transform will have a kernel:a function whose image under the mapping is a unit constant.Fig.3 shows this relation, with the double arrowindicatingthedirectionof the forward transform.Intuitively,S(t)isanarrow pulse As it has positive but no negative values,it has a dc component.Since it rises and falls very rapidly,it has a great deal of high-frequency energy.Following the precedent of referring to negative or imaginary\"numbers,Iwill call 8(t)and itsrelatives functions,although strictly speaking this is not correct.This function can be thought of as the limit of a sequence of (true) functions,as the derivative of the unit step function,or in distinctive ways.In the discrete-time domains,the difficulty of a rigorous delta function is gone.In the time domain of the z transform(Fig.4)we havea wellbehaved infinite sequence,zero everywhere except at one sample.In the discrete Fourier transform (DFT) domain(Fig.5),time is implicitlyperiodic,and sowe have a finite,cyclic sequence.Werefer to a circular plotofacyclicfunction,suchasinFig.5,asaBracewell ring[4,p.363].To stress the quantized nature of the independent variable,weuse square brackets,and call the variable . takes on only integer values.In the discrete frequency domain,we shall use the letter v,",
+      "text": "Itisgenerallyconsidereddesirabletohave symmetry in one's equations.Forinstance,we introduce negative numbersso wemightsay thereis exactlyone solution ofalinear equation.Further,we admit complexnumbers so thatevery nth-orderpolynomial hasexactly nzeros. In this spirtwe create8(t) so that theFourier transform will have a kernel:a function whose image under the mapping is a unit constant.Fig.3 shows this relation, with the double arrowindicatingthedirectionof the forward transform.Intuitively,S(t)isanarrow pulse As it has positive but no negative values,it has a dc component.Since it rises and falls very rapidly,it has a great deal of high-frequency energy.Following the precedent of referring to negative or imaginary\"numbers,Iwill call 8(t)and itsrelatives functions,although strictly speaking this is not correct.This function can be thought of as the limit of a sequence of (true) functions,as the derivative of the unit step function,or in distinctive ways.In the discrete-time domains,the difficulty of a rigorous delta function is gone.In the time domain of the z transform(Fig.4)we havea wellbehaved infinite sequence,zero everywhere except at one sample.In the discrete Fourier transform (DFT) domain(Fig.5),time is implicitlyperiodic,and sowe have a finite,cyclic sequence.Werefer to a circular plotofacyclicfunction,suchasinFig.5,asaBracewell ring[4,p.363].To stress the quantized nature of the independent variable,weuse square brackets,and call the variable . takes on only integer values.In the discrete frequency domain,we shall use the letter v,"
+    },
+    {
+      "self_ref": "#/texts/20",
+      "parent": {
+        "$ref": "#/pictures/1"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "caption",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 254.3262939453125,
+            "t": 58.40779622395826,
+            "r": 510.8125,
+            "b": 42.03173828125,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            44
+          ]
+        }
+      ],
+      "orig": "Fig.3.Dirac delta function and its spectrum.",
+      "text": "Fig.3.Dirac delta function and its spectrum."
+    },
+    {
+      "self_ref": "#/texts/21",
+      "parent": {
+        "$ref": "#/pictures/1"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 471.9345703125,
+            "t": 265.29134114583337,
+            "r": 497.313232421875,
+            "b": 251.64469401041663,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            4
+          ]
+        }
+      ],
+      "orig": "REAL",
+      "text": "REAL"
+    },
+    {
+      "self_ref": "#/texts/22",
+      "parent": {
+        "$ref": "#/pictures/1"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 77.21584065755208,
+            "t": 251.64469401041663,
+            "r": 101.51453653971355,
+            "b": 240.18147786458337,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            4
+          ]
+        }
+      ],
+      "orig": "REAL",
+      "text": "REAL"
+    },
+    {
+      "self_ref": "#/texts/23",
+      "parent": {
+        "$ref": "#/pictures/1"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 431.436767578125,
+            "t": 233.085205078125,
+            "r": 437.9164225260417,
+            "b": 225.98893229166663,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            1
+          ]
+        }
+      ],
+      "orig": "0",
+      "text": "0"
+    },
+    {
+      "self_ref": "#/texts/24",
+      "parent": {
+        "$ref": "#/pictures/1"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 355.8408203125,
+            "t": 171.40226236979163,
+            "r": 407.6780598958333,
+            "b": 150.65926106770837,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            5
+          ]
+        }
+      ],
+      "orig": "<-->>",
+      "text": "<-->>"
+    },
+    {
+      "self_ref": "#/texts/25",
+      "parent": {
+        "$ref": "#/pictures/1"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 71.27615865071614,
+            "t": 162.12247721354163,
+            "r": 120.41351318359375,
+            "b": 149.021728515625,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            8
+          ]
+        }
+      ],
+      "orig": "IHAGINRY",
+      "text": "IHAGINRY"
+    },
+    {
+      "self_ref": "#/texts/26",
+      "parent": {
+        "$ref": "#/pictures/1"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 461.1351725260417,
+            "t": 158.84733072916663,
+            "r": 510.2725016276042,
+            "b": 147.38411458333337,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            9
+          ]
+        }
+      ],
+      "orig": "IMHGIHARY",
+      "text": "IMHGIHARY"
+    },
+    {
+      "self_ref": "#/texts/27",
+      "parent": {
+        "$ref": "#/pictures/1"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 42.11773173014323,
+            "t": 145.74650065104163,
+            "r": 50.21729532877604,
+            "b": 138.10432942708337,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            1
+          ]
+        }
+      ],
+      "orig": "0",
+      "text": "0"
+    },
+    {
+      "self_ref": "#/texts/28",
+      "parent": {
+        "$ref": "#/pictures/1"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 128.5130818684896,
+            "t": 90.61393229166663,
+            "r": 145.79214477539062,
+            "b": 80.242431640625,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            2
+          ]
+        }
+      ],
+      "orig": "to",
+      "text": "to"
+    },
+    {
+      "self_ref": "#/texts/29",
+      "parent": {
+        "$ref": "#/pictures/1"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 516.2121988932291,
+            "t": 89.522216796875,
+            "r": 534.5712076822916,
+            "b": 79.69661458333337,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            3
+          ]
+        }
+      ],
+      "orig": "fao",
+      "text": "fao"
+    },
+    {
+      "self_ref": "#/texts/30",
+      "parent": {
+        "$ref": "#/pictures/1"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 446.5559488932292,
+            "t": 78.60481770833337,
+            "r": 541.0508626302084,
+            "b": 67.6875,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            16
+          ]
+        }
+      ],
+      "orig": "FLAT SPECTRUMOF1",
+      "text": "FLAT SPECTRUMOF1"
+    },
+    {
+      "self_ref": "#/texts/31",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_footer",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 39.417877197265625,
+            "t": 30.568603515625,
+            "r": 61.01671346028646,
+            "b": 18.013590494791742,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            3
+          ]
+        }
+      ],
+      "orig": "316",
+      "text": "316"
+    },
+    {
+      "self_ref": "#/texts/32",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_footer",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 523.7717692057291,
+            "t": 31.114420572916742,
+            "r": 725.720947265625,
+            "b": 10.371500651041742,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            36
+          ]
+        }
+      ],
+      "orig": "J.Audio Eng.Soc,Vol.36,No.5,1988 May",
+      "text": "J.Audio Eng.Soc,Vol.36,No.5,1988 May"
+    }
+  ],
+  "pictures": [
+    {
+      "self_ref": "#/pictures/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/9"
+        },
+        {
+          "$ref": "#/texts/10"
+        },
+        {
+          "$ref": "#/texts/11"
+        },
+        {
+          "$ref": "#/texts/12"
+        },
+        {
+          "$ref": "#/texts/13"
+        },
+        {
+          "$ref": "#/texts/14"
+        }
+      ],
+      "content_layer": "body",
+      "label": "picture",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 56.84169006347656,
+            "t": 564.5899047851562,
+            "r": 359.70721435546875,
+            "b": 356.2781982421875,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "annotations": []
+    },
+    {
+      "self_ref": "#/pictures/1",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/20"
+        },
+        {
+          "$ref": "#/texts/21"
+        },
+        {
+          "$ref": "#/texts/22"
+        },
+        {
+          "$ref": "#/texts/23"
+        },
+        {
+          "$ref": "#/texts/24"
+        },
+        {
+          "$ref": "#/texts/25"
+        },
+        {
+          "$ref": "#/texts/26"
+        },
+        {
+          "$ref": "#/texts/27"
+        },
+        {
+          "$ref": "#/texts/28"
+        },
+        {
+          "$ref": "#/texts/29"
+        },
+        {
+          "$ref": "#/texts/30"
+        }
+      ],
+      "content_layer": "body",
+      "label": "picture",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 39.94655227661133,
+            "t": 279.3023681640625,
+            "r": 727.399658203125,
+            "b": 68.552490234375,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [
+        {
+          "$ref": "#/texts/20"
+        }
+      ],
+      "references": [],
+      "footnotes": [],
+      "annotations": []
+    }
+  ],
+  "tables": [],
+  "key_value_items": [],
+  "form_items": [],
+  "pages": {
+    "1": {
+      "size": {
+        "width": 743.0,
+        "height": 1083.0
+      },
+      "page_no": 1
+    }
+  }
+}

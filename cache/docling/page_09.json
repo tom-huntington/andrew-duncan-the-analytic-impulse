@@ -1,0 +1,574 @@
+{
+  "schema_name": "DoclingDocument",
+  "version": "1.10.0",
+  "name": "tai_8",
+  "origin": {
+    "mimetype": "application/pdf",
+    "binary_hash": 10852714260674463185,
+    "filename": "tai_8.jpeg"
+  },
+  "furniture": {
+    "self_ref": "#/furniture",
+    "children": [],
+    "content_layer": "furniture",
+    "name": "_root_",
+    "label": "unspecified"
+  },
+  "body": {
+    "self_ref": "#/body",
+    "children": [
+      {
+        "$ref": "#/texts/0"
+      },
+      {
+        "$ref": "#/texts/1"
+      },
+      {
+        "$ref": "#/texts/2"
+      },
+      {
+        "$ref": "#/pictures/0"
+      },
+      {
+        "$ref": "#/texts/5"
+      },
+      {
+        "$ref": "#/texts/6"
+      },
+      {
+        "$ref": "#/texts/7"
+      },
+      {
+        "$ref": "#/texts/8"
+      },
+      {
+        "$ref": "#/texts/9"
+      },
+      {
+        "$ref": "#/texts/10"
+      },
+      {
+        "$ref": "#/texts/11"
+      },
+      {
+        "$ref": "#/texts/12"
+      },
+      {
+        "$ref": "#/texts/13"
+      },
+      {
+        "$ref": "#/texts/14"
+      },
+      {
+        "$ref": "#/texts/15"
+      }
+    ],
+    "content_layer": "body",
+    "name": "_root_",
+    "label": "unspecified"
+  },
+  "groups": [],
+  "texts": [
+    {
+      "self_ref": "#/texts/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 17.850001017252605,
+            "t": 1044.5060488382976,
+            "r": 352.2750244140625,
+            "b": 875.1411336263021,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            481
+          ]
+        }
+      ],
+      "orig": "nothing of the practical one, is not causal.This means that the interpretation of that envelope asa graph of energy versus time is only approximate. The best we can do is ask:what can we do to make such a graph look better?For example,we may make the skirts of a peak steeper,to help us visually sort closely spaced peaks,at the expense of making the peaks themselves somewhat broader. This is obviously a tradeoff,and ifdesired it can be accomplished with techniques of windowing.",
+      "text": "nothing of the practical one, is not causal.This means that the interpretation of that envelope asa graph of energy versus time is only approximate. The best we can do is ask:what can we do to make such a graph look better?For example,we may make the skirts of a peak steeper,to help us visually sort closely spaced peaks,at the expense of making the peaks themselves somewhat broader. This is obviously a tradeoff,and ifdesired it can be accomplished with techniques of windowing."
+    },
+    {
+      "self_ref": "#/texts/1",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 18.900000254313152,
+            "t": 874.0725911458334,
+            "r": 353.8500162760417,
+            "b": 691.8850911458333,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            543
+          ]
+        }
+      ],
+      "orig": "By windowing wemean themultiplication in the time or frequency domain of a measured functionby another function,called the window.Generally the windowgoestoOwherethedata aretobedeemphasized, and to 1 where the data are to be emphasized.For example,a cosine-squared(orraised-cosine) bell,called a Hann window after Julius von Hann,is one of the most common windows used in FFT processing. Fig. 16 shows a Hann window in a 64-point DFT domain. The particularly simple form of this function in a periodicdomain isrevealedbytheBracewellringformat.",
+      "text": "By windowing wemean themultiplication in the time or frequency domain of a measured functionby another function,called the window.Generally the windowgoestoOwherethedata aretobedeemphasized, and to 1 where the data are to be emphasized.For example,a cosine-squared(orraised-cosine) bell,called a Hann window after Julius von Hann,is one of the most common windows used in FFT processing. Fig. 16 shows a Hann window in a 64-point DFT domain. The particularly simple form of this function in a periodicdomain isrevealedbytheBracewellringformat."
+    },
+    {
+      "self_ref": "#/texts/2",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 21.0,
+            "t": 689.7480061848958,
+            "r": 354.9000244140625,
+            "b": 539.0826822916666,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            440
+          ]
+        }
+      ],
+      "orig": "Wefirst investigate theeffect ofwindowingonthe analyticimpulse itself.Wewill later see that thewindowed impulse or its spectrum may beused to find a windowed ETC for physical data.To windowx[], we multiply its spectrum by a cosine-squared shape. Thevalue of thewindow isO at the two edges of[]'s spectrum and I at the center. The results of this windowing are shown in Fig. 17. The algebraic expression for this smoothed analytic impulse is",
+      "text": "Wefirst investigate theeffect ofwindowingonthe analyticimpulse itself.Wewill later see that thewindowed impulse or its spectrum may beused to find a windowed ETC for physical data.To windowx[], we multiply its spectrum by a cosine-squared shape. Thevalue of thewindow isO at the two edges of[]'s spectrum and I at the center. The results of this windowing are shown in Fig. 17. The algebraic expression for this smoothed analytic impulse is"
+    },
+    {
+      "self_ref": "#/texts/3",
+      "parent": {
+        "$ref": "#/pictures/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "caption",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 372.75,
+            "t": 906.6633097330729,
+            "r": 705.0750325520834,
+            "b": 877.2782389322916,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            68
+          ]
+        }
+      ],
+      "orig": "Fig,16.Hann windowHANN[x]=cos\u00b2\uff08\u03c0x/N)=V[1+ cos(2mx/N])for64-pointDFT.",
+      "text": "Fig,16.Hann windowHANN[x]=cos\u00b2\uff08\u03c0x/N)=V[1+ cos(2mx/N])for64-pointDFT."
+    },
+    {
+      "self_ref": "#/texts/4",
+      "parent": {
+        "$ref": "#/pictures/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 623.1750081380209,
+            "t": 1048.2459678649902,
+            "r": 647.3250325520834,
+            "b": 1039.1633071899414,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            3
+          ]
+        }
+      ],
+      "orig": "=32",
+      "text": "=32"
+    },
+    {
+      "self_ref": "#/texts/5",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 370.6500244140625,
+            "t": 842.5504150390625,
+            "r": 703.5,
+            "b": 791.7943522135417,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            128
+          ]
+        }
+      ],
+      "orig": "in Sec.Iand say that the smoothed\"analytic impulse response\"is the same as the\"smoothed analytic impulse\"response.Algebraically,",
+      "text": "in Sec.Iand say that the smoothed\"analytic impulse response\"is the same as the\"smoothed analytic impulse\"response.Algebraically,"
+    },
+    {
+      "self_ref": "#/texts/6",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "formula",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 385.3500162760417,
+            "t": 778.4375,
+            "r": 707.175048828125,
+            "b": 657.1572672526042,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            76
+          ]
+        }
+      ],
+      "orig": "smoothedAIR\uff08t)=-{{\u25b3\uff08\uff09}[W(f\uff09H\uff08f)]} {\uff08H[(\uff09M{)}}= =g{{\u25b3()}H(f)} = \uff08t)*h\uff08t) (10)",
+      "text": ""
+    },
+    {
+      "self_ref": "#/texts/7",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 373.2750244140625,
+            "t": 642.1975911458333,
+            "r": 707.175048828125,
+            "b": 574.8790283203125,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            172
+          ]
+        }
+      ],
+      "orig": "where W(f) is the window function.Equivalently, smoothing merely involves substituting(t)(or one of its discreterelatives)for\u25b3(t) in the usualequations for finding the AIR.",
+      "text": "where W(f) is the window function.Equivalently, smoothing merely involves substituting(t)(or one of its discreterelatives)for\u25b3(t) in the usualequations for finding the AIR."
+    },
+    {
+      "self_ref": "#/texts/8",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 388.5,
+            "t": 574.8790283203125,
+            "r": 706.6499837239584,
+            "b": 557.7822672526042,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            48
+          ]
+        }
+      ],
+      "orig": "The art ofwindowing consists of picking a window",
+      "text": "The art ofwindowing consists of picking a window"
+    },
+    {
+      "self_ref": "#/texts/9",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "formula",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 139.6500040690104,
+            "t": 512.9032389322916,
+            "r": 711.375,
+            "b": 274.08268229166663,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            94
+          ]
+        }
+      ],
+      "orig": "V2, T=0 -4, T=\u00b12 real part 0, elsewhere [] (9) = 0, Teven imaginary part 1 -4 Ppo \u03c0T(T+2)\uff08T-2)",
+      "text": ""
+    },
+    {
+      "self_ref": "#/texts/10",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 23.625,
+            "t": 256.45166015625,
+            "r": 359.625,
+            "b": 154.93953450520837,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            291
+          ]
+        }
+      ],
+      "orig": "The real part of the impulse has become more spread out, but the imaginary part is more localized, and as a result the magnitude peak has narrower skirts,but is more broad at the top.Fig.18 shows awiderview of the magnitude, over the same range as Fig.14,and Fig.19 gives a still wider view.",
+      "text": "The real part of the impulse has become more spread out, but the imaginary part is more localized, and as a result the magnitude peak has narrower skirts,but is more broad at the top.Fig.18 shows awiderview of the magnitude, over the same range as Fig.14,and Fig.19 gives a still wider view."
+    },
+    {
+      "self_ref": "#/texts/11",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 24.6750005086263,
+            "t": 156.54239908854163,
+            "r": 358.5749918619792,
+            "b": 72.12703450520837,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            231
+          ]
+        }
+      ],
+      "orig": "Thiswindowmay be applied toreal-life data in the DFT domains.Fig.20 shows the smoothed analytic impulse and its spectrum fora 64-point DFT.As before, the numerical difference between infinite-and finitesample domains is very small.",
+      "text": "Thiswindowmay be applied toreal-life data in the DFT domains.Fig.20 shows the smoothed analytic impulse and its spectrum fora 64-point DFT.As before, the numerical difference between infinite-and finitesample domains is very small."
+    },
+    {
+      "self_ref": "#/texts/12",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 25.725001017252605,
+            "t": 71.5927734375,
+            "r": 358.5749918619792,
+            "b": 39.53629557291663,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            93
+          ]
+        },
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 376.9499918619792,
+            "t": 240.42342122395837,
+            "r": 710.8500162760416,
+            "b": 138.91129557291663,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            94,
+            339
+          ]
+        }
+      ],
+      "orig": "Tofind thesmoothedenvelopeofameasuredimpulse response,wemay usean argument similar to the one thatbestembodies the desiredtradeoffsbetween smoothness andresolution.TheHannwindow shown isoneofthemostelementaryof these.Otherwindows of interest include the Hann squared,the Blackmun, and the Kaiser.For futher discussion,see,for example, [6].",
+      "text": "Tofind thesmoothedenvelopeofameasuredimpulse response,wemay usean argument similar to the one thatbestembodies the desiredtradeoffsbetween smoothness andresolution.TheHannwindow shown isoneofthemostelementaryof these.Otherwindows of interest include the Hann squared,the Blackmun, and the Kaiser.For futher discussion,see,for example, [6]."
+    },
+    {
+      "self_ref": "#/texts/13",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 376.9499918619792,
+            "t": 119.14314778645837,
+            "r": 489.3000081380208,
+            "b": 102.58064778645837,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            11
+          ]
+        }
+      ],
+      "orig": "8RESOLUTION",
+      "text": "8RESOLUTION",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/14",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 379.5749918619792,
+            "t": 89.758056640625,
+            "r": 710.8500162760416,
+            "b": 40.070556640625,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            146
+          ]
+        }
+      ],
+      "orig": "The simplestdescription ofresolvingpower in an ETCis thewidthofaspike caused bya delta function in the impulse response.Forexample,without smooth-",
+      "text": "The simplestdescription ofresolvingpower in an ETCis thewidthofaspike caused bya delta function in the impulse response.Forexample,without smooth-"
+    },
+    {
+      "self_ref": "#/texts/15",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_footer",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 25.200002034505207,
+            "t": 26.179443359375,
+            "r": 226.2750040690104,
+            "b": 11.219807942708258,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            34
+          ]
+        }
+      ],
+      "orig": "J.AudioEng.Soc,Vol.36,No.5,1988May",
+      "text": "J.AudioEng.Soc,Vol.36,No.5,1988May"
+    }
+  ],
+  "pictures": [
+    {
+      "self_ref": "#/pictures/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/3"
+        },
+        {
+          "$ref": "#/texts/4"
+        }
+      ],
+      "content_layer": "body",
+      "label": "picture",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 393.32672119140625,
+            "t": 1051.7286930084229,
+            "r": 681.6752319335938,
+            "b": 917.2505340576172,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [
+        {
+          "$ref": "#/texts/3"
+        }
+      ],
+      "references": [],
+      "footnotes": [],
+      "annotations": []
+    }
+  ],
+  "tables": [],
+  "key_value_items": [],
+  "form_items": [],
+  "pages": {
+    "1": {
+      "size": {
+        "width": 756.0,
+        "height": 1060.0
+      },
+      "page_no": 1
+    }
+  }
+}
