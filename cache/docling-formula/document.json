@@ -765,7 +765,7 @@
         }
       ],
       "orig": "ANDREWDUNCAN**",
-      "text": "ANDREWDUNCAN**",
+      "text": "ANDREW DUNCAN**",
       "level": 1
     },
     {
@@ -819,8 +819,8 @@
           ]
         }
       ],
-      "orig": "A complex analytic function is to its real part as a solidobjcct is to its shadow.The analytic impulse \u25b3(t)isa complex\"function\"whose real part is the familiar Dirac symbol 8(t).This impulse finds application in energy-time calculations.The nature of thisimpulse and its application to finding energy-time curves are examined in the continuous,z-transform,and DFT domains.A simple window is also discussed which leadstoa smoother impulse\u25b3(1).",
-      "text": "A complex analytic function is to its real part as a solid object is to its shadow. The analytic impulse △(t) is a complex \"function\" whose real part is the familiar Dirac symbol 8(t). This impulse finds application in energy-time calculations. The nature of this impulse and its application to finding energy-time curves are examined in the continuous, z-transform, and DFT domains. A simple window is also discussed which leads to a smoother impulse △(1)."
+      "orig": "A complex analytic function is to its real part as a solidobjcct is to its shadow.The analytic impulse \u25b3(t)isa complex\"function\"whose real part is the familiar Dirac symbol δ(t).This impulse finds application in energy-time calculations.The nature of thisimpulse and its application to finding energy-time curves are examined in the continuous,z-transform,and DFT domains.A simple window is also discussed which leadstoa smoother impulse\u25b3(1).",
+      "text": "A complex analytic function is to its real part as a solid object is to its shadow. The analytic impulse △(t) is a complex \"function\" whose real part is the familiar Dirac symbol δ(t). This impulse finds application in energy-time calculations. The nature of this impulse and its application to finding energy-time curves are examined in the continuous, z-transform, and DFT domains. A simple window is also discussed which leads to a smoother impulse △(1)."
     },
     {
       "self_ref": "#/texts/5",
@@ -847,7 +847,7 @@
         }
       ],
       "orig": "OINTRODUCTION",
-      "text": "OINTRODUCTION",
+      "text": "0 INTRODUCTION",
       "level": 1
     },
     {
@@ -929,7 +929,7 @@
         }
       ],
       "orig": "*Presentedat the 8lst Convention of the Audio Engineering Socicty,Los Angeles,1986November 12-16;revised 1987 December 29.",
-      "text": "*Presentedat the 8lst Convention of the Audio Engineering Socicty,Los Angeles,1986November 12-16;revised 1987 December 29."
+      "text": "*Presented at the 81st Convention of the Audio Engineering Society, Los Angeles, 1986 November 12-16; revised 1987 December 29."
     },
     {
       "self_ref": "#/texts/9",
@@ -956,7 +956,7 @@
         }
       ],
       "orig": "**Present address:Department of Mathematics,University of California,Santa Cruz,CA 95064.",
-      "text": "**Present address:Department of Mathematics,University of California,Santa Cruz,CA 95064."
+      "text": "**Present address: Department of Mathematics, University of California, Santa Cruz, CA 95064."
     },
     {
       "self_ref": "#/texts/10",
@@ -1010,7 +1010,7 @@
         }
       ],
       "orig": "1THE MECHANICS",
-      "text": "1THE MECHANICS",
+      "text": "1 THE MECHANICS",
       "level": 1
     },
     {
@@ -1092,7 +1092,7 @@
         }
       ],
       "orig": "Fig.l.Superpositionof two damped sinusoids with different attack times.",
-      "text": "Fig.l.Superpositionof two damped sinusoids with different attack times."
+      "text": "Fig. 1. Superposition of two damped sinusoids with different attack times."
     },
     {
       "self_ref": "#/texts/15",
@@ -1173,7 +1173,7 @@
         }
       ],
       "orig": "J.Audio Eng.Soc.,Vol.36,No.5.1988 May",
-      "text": "J.Audio Eng.Soc.,Vol.36,No.5.1988 May"
+      "text": "J. Audio Eng. Soc., Vol. 36, No. 5, 1988 May"
     },
     {
       "self_ref": "#/texts/18",
@@ -1634,7 +1634,7 @@
         }
       ],
       "orig": "Snoothedenergy-tine",
-      "text": "Snoothedenergy-tine"
+      "text": "Smoothed energy-time"
     },
     {
       "self_ref": "#/texts/35",
@@ -1661,7 +1661,7 @@
         }
       ],
       "orig": "Fig.2.ETC of function of Fig.1.",
-      "text": "Fig.2.ETC of function of Fig.1."
+      "text": "Fig. 2. ETC of function of Fig. 1."
     },
     {
       "self_ref": "#/texts/36",
@@ -1715,7 +1715,7 @@
         }
       ],
       "orig": "2THEDELTAFUNCTIONS",
-      "text": "2THEDELTAFUNCTIONS",
+      "text": "2 THE DELTA FUNCTIONS",
       "level": 1
     },
     {
@@ -1770,7 +1770,7 @@
         }
       ],
       "orig": "Fig.3.Dirac delta function and its spectrum.",
-      "text": "Fig.3.Dirac delta function and its spectrum."
+      "text": "Fig. 3. Dirac delta function and its spectrum."
     },
     {
       "self_ref": "#/texts/40",
@@ -1905,7 +1905,7 @@
         }
       ],
       "orig": "IHAGINRY",
-      "text": "IHAGINRY"
+      "text": "IMAGINARY"
     },
     {
       "self_ref": "#/texts/45",
@@ -1932,7 +1932,7 @@
         }
       ],
       "orig": "IMHGIHARY",
-      "text": "IMHGIHARY"
+      "text": "IMAGINARY"
     },
     {
       "self_ref": "#/texts/46",
@@ -2040,7 +2040,7 @@
         }
       ],
       "orig": "FLAT SPECTRUMOF1",
-      "text": "FLAT SPECTRUMOF1"
+      "text": "FLAT SPECTRUM OF 1"
     },
     {
       "self_ref": "#/texts/50",
@@ -2094,7 +2094,7 @@
         }
       ],
       "orig": "J.Audio Eng.Soc,Vol.36,No.5,1988 May",
-      "text": "J.Audio Eng.Soc,Vol.36,No.5,1988 May"
+      "text": "J. Audio Eng. Soc., Vol. 36, No. 5, 1988 May"
     },
     {
       "self_ref": "#/texts/52",
@@ -2121,7 +2121,7 @@
         }
       ],
       "orig": "3ANALYTICFUNCTIONS",
-      "text": "3ANALYTICFUNCTIONS",
+      "text": "3 ANALYTIC FUNCTIONS",
       "level": 1
     },
     {
@@ -2230,7 +2230,7 @@
         }
       ],
       "orig": "Fig.4.Discrete-time infinite-sample delta function 8[].",
-      "text": "Fig.4.Discrete-time infinite-sample delta function 8[]."
+      "text": "Fig. 4. Discrete-time infinite-sample delta function 8[]."
     },
     {
       "self_ref": "#/texts/57",
@@ -2419,7 +2419,7 @@
         }
       ],
       "orig": "Fig.5.Discrete-timefinite-sample delta function8[T]for 64-pointDFTinBracewellringformat.",
-      "text": "Fig.5.Discrete-timefinite-sample delta function8[T]for 64-pointDFTinBracewellringformat."
+      "text": "Fig. 5. Discrete-time finite-sample delta function 8[T] for 64-point DFT in Bracewell ring format."
     },
     {
       "self_ref": "#/texts/64",
@@ -2500,7 +2500,7 @@
         }
       ],
       "orig": "Fig.6.Heyser corkscrew of ej.",
-      "text": "Fig.6.Heyser corkscrew of ej."
+      "text": "Fig. 6. Heyser corkscrew of ej."
     },
     {
       "self_ref": "#/texts/67",
@@ -2608,7 +2608,7 @@
         }
       ],
       "orig": "J.Audio Eng.Soc,Vol.36,No.5,1988 May",
-      "text": "J.Audio Eng.Soc,Vol.36,No.5,1988 May"
+      "text": "J. Audio Eng. Soc., Vol. 36, No. 5, 1988 May"
     },
     {
       "self_ref": "#/texts/71",
@@ -2824,7 +2824,7 @@
         }
       ],
       "orig": "SPECTRUM OFCOSINE",
-      "text": "SPECTRUM OFCOSINE"
+      "text": "SPECTRUM OF COSINE"
     },
     {
       "self_ref": "#/texts/79",
@@ -2878,7 +2878,7 @@
         }
       ],
       "orig": "SPECTRUMOFEXP(jWt)",
-      "text": "SPECTRUMOFEXP(jWt)"
+      "text": "SPECTRUM OF EXP(jWt)"
     },
     {
       "self_ref": "#/texts/81",
@@ -3121,7 +3121,7 @@
         }
       ],
       "orig": "4THECONTINUOUSDOMAINS",
-      "text": "4THECONTINUOUSDOMAINS",
+      "text": "4 THE CONTINUOUS DOMAINS",
       "level": 1
     },
     {
@@ -3419,7 +3419,7 @@
         }
       ],
       "orig": "1Hz WIDE EVEN VINDOW",
-      "text": "1Hz WIDE EVEN VINDOW"
+      "text": "1 Hz WIDE EVEN WINDOW"
     },
     {
       "self_ref": "#/texts/101",
@@ -3446,7 +3446,7 @@
         }
       ],
       "orig": "Fig.8.Sinc(t) and its spectrum.",
-      "text": "Fig.8.Sinc(t) and its spectrum."
+      "text": "Fig. 8. Sinc(t) and its spectrum."
     },
     {
       "self_ref": "#/texts/102",
@@ -3554,7 +3554,7 @@
         }
       ],
       "orig": "J.Audio Eng.Soc.Vol.36,No.5,1988 May",
-      "text": "J.Audio Eng.Soc.Vol.36,No.5,1988 May"
+      "text": "J. Audio Eng. Soc., Vol. 36, No. 5, 1988 May"
     },
     {
       "self_ref": "#/texts/106",
@@ -3851,7 +3851,7 @@
         }
       ],
       "orig": "THEANALYTIC IMPULSE",
-      "text": "THEANALYTIC IMPULSE"
+      "text": "THE ANALYTIC IMPULSE"
     },
     {
       "self_ref": "#/texts/117",
@@ -3878,7 +3878,7 @@
         }
       ],
       "orig": "sometimesreferred to asa doublet ord(t),is notcausal, andhence the magnitude of\u25b3\uff08t)[the ETCof8()] on the upper left handof Fig.ll must also be noncausal. InAppendixI thereisafurther discussionofwhyd(t) does not vanishfornonzero argument.For the moment, as the magnitudeof\u25b3(t)represents the ETCofanideal system,we may conclude that the ETCof any loudstrength in the continuous and discrete domains.Although the evidence for this is plentiful [2],[4]-[6], it appears onlyin fragments,in widely scattered texts, usually addressingvery different topics.Further,there is some confusion about thenecessity of this effect. Perhaps theresolutionofour instruments is toolow, ormaybeamore sophisticatedwindowingwouldmake ourETC start at t=O.The foregoing analysis shows that this is not so in continuous domains.The following addresses the same issue in the discrete domains.",
-      "text": "sometimes referred to as a doublet or d(t), is not causal, and hence the magnitude of △（t)[the ETC of 8()] on the upper left hand of Fig. 11 must also be noncausal. In Appendix I there is a further discussion of why d(t) does not vanish for nonzero argument. For the moment, as the magnitude of △(t) represents the ETC of an ideal system, we may conclude that the ETC of any loudstrength in the continuous and discrete domains. Although the evidence for this is plentiful [2], [4]-[6], it appears only in fragments, in widely scattered texts, usually addressing very different topics. Further, there is some confusion about the necessity of this effect. Perhaps the resolutionof our instruments is too low, or maybe a more sophisticated windowing would make our ETC start at t=O. The foregoing analysis shows that this is not so in continuous domains. The following addresses the same issue in the discrete domains."
+      "text": "sometimes referred to as a doublet or d(t), is not causal, and hence the magnitude of △（t)[the ETC of 8()] on the upper left hand of Fig. 11 must also be noncausal. In Appendix I there is a further discussion of why d(t) does not vanish for nonzero argument. For the moment, as the magnitude of △(t) represents the ETC of an ideal system, we may conclude that the ETC of any loudstrength in the continuous and discrete domains. Although the evidence for this is plentiful [2], [4]-[6], it appears only in fragments, in widely scattered texts, usually addressing very different topics. Further, there is some confusion about the necessity of this effect. Perhaps the resolution of our instruments is too low, or maybe a more sophisticated windowing would make our ETC start at t=O. The foregoing analysis shows that this is not so in continuous domains. The following addresses the same issue in the discrete domains."
     },
     {
       "self_ref": "#/texts/118",
@@ -3905,7 +3905,7 @@
         }
       ],
       "orig": "5THEZ-TRANSFORMDOMAINS",
-      "text": "5THEZ-TRANSFORMDOMAINS",
+      "text": "5 THE Z-TRANSFORM DOMAINS",
       "level": 1
     },
     {
@@ -3933,7 +3933,7 @@
         }
       ],
       "orig": "Ournext step is to make time discrete,that is,we nowknow thevalue of the signal atinteger multiples ofa samplinginterval.Without loss ofgenerality we canreplacetwith ,an integervariable.There are still an infinite number of samples,but now a countable infinity.Theeffectofsamplingin timeis tomake the spectrum periodic.In fact,the spectrum is now the z transform evaluated on theunit circle.Fig.12shows CAUS(f)for this situation and its inverse transform",
-      "text": "Our next step is to make time discrete, that is, we now know the value of the signal at integer multiples of a sampling interval. Without loss of generality we can replace t with , an integer variable. There are still an infinite number of samples, but now a countable infinity. Theeffectofsamplingin timeis tomake the spectrum periodic. In fact, the spectrum is now the z transform evaluated on the unit circle. Fig. 12shows CAUS(f) for this situation and its inverse transform"
+      "text": "Our next step is to make time discrete, that is, we now know the value of the signal at integer multiples of a sampling interval. Without loss of generality we can replace t with , an integer variable. There are still an infinite number of samples, but now a countable infinity. The effect of sampling in time is to make the spectrum periodic. In fact, the spectrum is now the z transform evaluated on the unit circle. Fig. 12 shows CAUS(f) for this situation and its inverse transform"
     },
     {
       "self_ref": "#/texts/120",
@@ -3960,7 +3960,7 @@
         }
       ],
       "orig": "Fig.9.Analytic sinc function asinc(t),its ETC,and its spectrum.",
-      "text": "Fig.9.Analytic sinc function asinc(t),its ETC,and its spectrum."
+      "text": "Fig. 9. Analytic sinc function asinc(t), its ETC, and its spectrum."
     },
     {
       "self_ref": "#/texts/121",
@@ -4257,7 +4257,7 @@
         }
       ],
       "orig": "ERERGY-TIHEOFANALYTICSINC(>",
-      "text": "ERERGY-TIHEOFANALYTICSINC(>"
+      "text": "ENERGY-TIME OF ANALYTIC SINC(>"
     },
     {
       "self_ref": "#/texts/132",
@@ -4338,7 +4338,7 @@
         }
       ],
       "orig": "IMAOINARY",
-      "text": "IMAOINARY"
+      "text": "IMAGINARY"
     },
     {
       "self_ref": "#/texts/135",
@@ -4419,7 +4419,7 @@
         }
       ],
       "orig": "EMAGIHARY",
-      "text": "EMAGIHARY"
+      "text": "IMAGINARY"
     },
     {
       "self_ref": "#/texts/138",
@@ -4446,7 +4446,7 @@
         }
       ],
       "orig": "CAUSAL1/2 HzWINDOW",
-      "text": "CAUSAL1/2 HzWINDOW"
+      "text": "CAUSAL 1/2 Hz WINDOW"
     },
     {
       "self_ref": "#/texts/139",
@@ -4527,7 +4527,7 @@
         }
       ],
       "orig": "J.AudioEng.Soc.,Vol.36,No.5,1988May",
-      "text": "J.AudioEng.Soc.,Vol.36,No.5,1988May"
+      "text": "J. Audio Eng. Soc., Vol. 36, No. 5, 1988 May"
     },
     {
       "self_ref": "#/texts/142",
@@ -4635,7 +4635,7 @@
         }
       ],
       "orig": "Fig.10.Heysercorkscrew ofasinc(t).",
-      "text": "Fig.10.Heysercorkscrew ofasinc(t)."
+      "text": "Fig. 10. Heyser corkscrew of asinc(t)."
     },
     {
       "self_ref": "#/texts/146",
@@ -4743,7 +4743,7 @@
         }
       ],
       "orig": "Fig.11.Continuous-time analytic impulse time infinite-sample analytic impulse],its ETC,and its spectrum.",
-      "text": "Fig.11.Continuous-time analytic impulse time infinite-sample analytic impulse],its ETC,and its spectrum."
+      "text": "Fig. 11. Continuous-time analytic impulse time infinite-sample analytic impulse], its ETC, and its spectrum."
     },
     {
       "self_ref": "#/texts/150",
@@ -5013,7 +5013,7 @@
         }
       ],
       "orig": "FEAL",
-      "text": "FEAL"
+      "text": "REAL"
     },
     {
       "self_ref": "#/texts/160",
@@ -5094,7 +5094,7 @@
         }
       ],
       "orig": "IMHGINORY",
-      "text": "IMHGINORY"
+      "text": "IMAGINARY"
     },
     {
       "self_ref": "#/texts/163",
@@ -5283,7 +5283,7 @@
         }
       ],
       "orig": "J.AudioEng.Soc.,Vol.36,No.5,1988May",
-      "text": "J.AudioEng.Soc.,Vol.36,No.5,1988May"
+      "text": "J. Audio Eng. Soc., Vol. 36, No. 5, 1988 May"
     },
     {
       "self_ref": "#/texts/170",
@@ -5445,7 +5445,7 @@
         }
       ],
       "orig": "Now let us compare Eqs.(5a) and (7a).We see that in this\"intermediate\"domain ofquantized time and continuous frequency the analyticimpulse has exactly thesameformasthecompletelycontinuousimpulse beforelimiting.One onlyneedwriteaTwheretwould normallyappear.Fig.13isan overlayofFigs.9and 12and shows even more clearly what Eq.\uff087b) tends to obscure:[]is justa sampledversionof the analytic sincfunction.However,we see thatEq.(7b)isreminiscentofEq.(6).Thesuddenappearanceof thefactor 2in the imaginary part can beexplained by noting that d[T]alternatesbetweenOand2/\u03c0,thusgivinganav-",
-      "text": "Now let us compare Eqs. (5a) and (7a). We see that in this \"intermediate\" domain of quantized time and continuous frequency the analytic impulse has exactly the same form as the completely continuous impulse before limiting. One only need write a T where t would normally appear. Fig. 13isan overlayofFigs. 9and 12and shows even more clearly what Eq.（7b) tends to obscure: [] is just a sampled versionof the analytic sinc function. However, we see that Eq. (7b) isreminiscentof Eq. (6). The sudden appearance of the factor 2in the imaginary part can be explained by noting that d[T] alternates between 0 and 2/π, thus giving an av-"
+      "text": "Now let us compare Eqs. (5a) and (7a). We see that in this \"intermediate\" domain of quantized time and continuous frequency the analytic impulse has exactly the same form as the completely continuous impulse before limiting. One only need write a T where t would normally appear. Fig. 13 is an overlay of Figs. 9 and 12 and shows even more clearly what Eq.（7b) tends to obscure: [] is just a sampled version of the analytic sinc function. However, we see that Eq. (7b) is reminiscent of Eq. (6). The sudden appearance of the factor 2 in the imaginary part can be explained by noting that d[T] alternates between 0 and 2/π, thus giving an av-"
     },
     {
       "self_ref": "#/texts/176",
@@ -5742,7 +5742,7 @@
         }
       ],
       "orig": "OUERLAYOFMAGPHASE",
-      "text": "OUERLAYOFMAGPHASE"
+      "text": "OVERLAY OF MAG PHASE"
     },
     {
       "self_ref": "#/texts/187",
@@ -5769,7 +5769,7 @@
         }
       ],
       "orig": "Fig.13.Overiay of Figs.9and 12.",
-      "text": "Fig.13.Overiay of Figs.9and 12."
+      "text": "Fig. 13. Overlay of Figs. 9 and 12."
     },
     {
       "self_ref": "#/texts/188",
@@ -5931,7 +5931,7 @@
         }
       ],
       "orig": "DVERLAYOFCT AND ANALYTICSINCC)",
-      "text": "DVERLAYOFCT AND ANALYTICSINCC)"
+      "text": "OVERLAY OF ETC AND ANALYTIC SINC)"
     },
     {
       "self_ref": "#/texts/194",
@@ -5958,7 +5958,7 @@
         }
       ],
       "orig": "Fig.12.Discrete-time infinite-sample analytic impulse \u25b3x[],its ETC,and its z transform evaluated on unit circle.",
-      "text": "Fig.12.Discrete-time infinite-sample analytic impulse \u25b3x[],its ETC,and its z transform evaluated on unit circle."
+      "text": "Fig. 12. Discrete-time infinite-sample analytic impulse \u25b3x[], its ETC, and its z transform evaluated on unit circle."
     },
     {
       "self_ref": "#/texts/195",
@@ -6228,7 +6228,7 @@
         }
       ],
       "orig": "MGPHASEOFA[]",
-      "text": "MGPHASEOFA[]"
+      "text": "MAG PHASE OF A[]"
     },
     {
       "self_ref": "#/texts/205",
@@ -6309,7 +6309,7 @@
         }
       ],
       "orig": "IHNGINARY",
-      "text": "IHNGINARY"
+      "text": "IMAGINARY"
     },
     {
       "self_ref": "#/texts/208",
@@ -6498,7 +6498,7 @@
         }
       ],
       "orig": "J.AudioEng.Soc.,Vol.36,No.5,1988May",
-      "text": "J.AudioEng.Soc.,Vol.36,No.5,1988May"
+      "text": "J. Audio Eng. Soc., Vol. 36, No. 5, 1988 May"
     },
     {
       "self_ref": "#/texts/215",
@@ -6579,7 +6579,7 @@
         }
       ],
       "orig": "PArEno",
-      "text": "PArEno"
+      "text": "PAPERS"
     },
     {
       "self_ref": "#/texts/218",
@@ -6633,7 +6633,7 @@
         }
       ],
       "orig": "Ifwe step back fromFig.12 and enlarge our field of view, we get a picture like Fig. 14. This figure shows thatit takesroughly 60 samples for the envelope of eventhebriefesttransienttodecayto40dBbelowthe peakvalue.This suggests that there isapractical limit to theresolution ofan energy-timemeasurement made with sampled signals.",
-      "text": "If we step back from Fig. 12 and enlarge our field of view, we get a picture like Fig. 14. This figure shows that it takes roughly 60 samples for the envelope of even the briefest transient to decay to 40 dB below the peak value. This suggests that there is a practical limit to the resolution of an energy-timemeasurement made with sampled signals."
+      "text": "If we step back from Fig. 12 and enlarge our field of view, we get a picture like Fig. 14. This figure shows that it takes roughly 60 samples for the envelope of even the briefest transient to decay to 40 dB below the peak value. This suggests that there is a practical limit to the resolution of an energy-time measurement made with sampled signals."
     },
     {
       "self_ref": "#/texts/220",
@@ -6660,7 +6660,7 @@
         }
       ],
       "orig": "6THEDFTDOMAINS",
-      "text": "6THEDFTDOMAINS",
+      "text": "6 THE DFT DOMAINS",
       "level": 1
     },
     {
@@ -6688,7 +6688,7 @@
         }
       ],
       "orig": "Our final step,one thatiswell justified bythedemands ofphysical reality,is to consider only a finite number of signal samples. This final restriction changes the spectrum from periodic continuous toperiodic discrete. The discrete nature of the spectrum,in turn,forces us toconclude that thetimefunctionisimplicitlyperiodic. Nowboth domains are again of the same form.The number of samples Nis the same forboth signal and spectrum.",
-      "text": "Our final step, one that is well justified by the demands of physical reality, is to consider only a finite number of signal samples. This final restriction changes the spectrum from periodic continuous to periodic discrete. The discrete nature of the spectrum, in turn, forces us toconclude that thetimefunctionisimplicitly periodic. Now both domains are again of the same form. The number of samples N is the same for both signal and spectrum."
+      "text": "Our final step, one that is well justified by the demands of physical reality, is to consider only a finite number of signal samples. This final restriction changes the spectrum from periodic continuous to periodic discrete. The discrete nature of the spectrum, in turn, forces us to conclude that the time function is implicitly periodic. Now both domains are again of the same form. The number of samples N is the same for both signal and spectrum."
     },
     {
       "self_ref": "#/texts/222",
@@ -6715,7 +6715,7 @@
         }
       ],
       "orig": "Fig.14.Wider view of Fig.12.",
-      "text": "Fig.14.Wider view of Fig.12."
+      "text": "Fig. 14. Wider view of Fig. 12."
     },
     {
       "self_ref": "#/texts/223",
@@ -6985,7 +6985,7 @@
         }
       ],
       "orig": "haved[]=2/\u03c0=0.6366..,which differsbyless than 0.1%.Because of this,Fig. 14 and the upper left of Fig.12 may serve asETCs for the analytic impulse in theDFT domains for large N.Any measurement technique that yields information about signal and spectrum thatisrestricted to discrete samples,and this includesbothFFT(aparticularlyefficientway of doing a similarlylimitedresolution.",
-      "text": "have d[]=2/π=0. 6366.., which differs by less than 0. 1%. Because of this, Fig. 14 and the upper left of Fig. 12 may serve as ETCs for the analytic impulse in the DFT domains for large N. Any measurement technique that yields information about signal and spectrum that is restricted to discrete samples, and this includes both FFT(aparticularly efficient way of doing a similarly limited resolution."
+      "text": "have d[]=2/π=0. 6366.., which differs by less than 0. 1%. Because of this, Fig. 14 and the upper left of Fig. 12 may serve as ETCs for the analytic impulse in the DFT domains for large N. Any measurement technique that yields information about signal and spectrum that is restricted to discrete samples, and this includes both FFT (a particularly efficient way of doing a similarly limited resolution."
     },
     {
       "self_ref": "#/texts/233",
@@ -7148,7 +7148,7 @@
         }
       ],
       "orig": "Fig.15.Discrete-time finite-sample analytic impulse4[],its ETC,and its spectrum for 64-point DFT.",
-      "text": "Fig.15.Discrete-time finite-sample analytic impulse4[],its ETC,and its spectrum for 64-point DFT."
+      "text": "Fig. 15. Discrete-time finite-sample analytic impulse4[], its ETC, and its spectrum for 64-point DFT."
     },
     {
       "self_ref": "#/texts/239",
@@ -7283,7 +7283,7 @@
         }
       ],
       "orig": "IHAGINARY",
-      "text": "IHAGINARY"
+      "text": "IMAGINARY"
     },
     {
       "self_ref": "#/texts/244",
@@ -7526,7 +7526,7 @@
         }
       ],
       "orig": "J.AudioEng.Soc,Vol.36,No.5,1988May",
-      "text": "J.AudioEng.Soc,Vol.36,No.5,1988May"
+      "text": "J. Audio Eng. Soc., Vol. 36, No. 5, 1988 May"
     },
     {
       "self_ref": "#/texts/253",
@@ -7634,7 +7634,7 @@
         }
       ],
       "orig": "Fig,16.Hann windowHANN[x]=cos\u00b2\uff08\u03c0x/N)=V[1+ cos(2mx/N])for64-pointDFT.",
-      "text": "Fig,16.Hann windowHANN[x]=cos\u00b2\uff08\u03c0x/N)=V[1+ cos(2mx/N])for64-pointDFT."
+      "text": "Fig. 16. Hann window HANN[x]=cos\u00b2\uff08\u03c0x/N)=V[1+ cos(2mx/N]) for 64-point DFT."
     },
     {
       "self_ref": "#/texts/257",
@@ -7688,7 +7688,7 @@
         }
       ],
       "orig": "in Sec.Iand say that the smoothed\"analytic impulse response\"is the same as the\"smoothed analytic impulse\"response.Algebraically,",
-      "text": "in Sec. Iand say that the smoothed \"analytic impulse response\" is the same as the \"smoothed analytic impulse\" response. Algebraically,"
+      "text": "in Sec. I and say that the smoothed \"analytic impulse response\" is the same as the \"smoothed analytic impulse\" response. Algebraically,"
     },
     {
       "self_ref": "#/texts/259",
@@ -7918,7 +7918,7 @@
         }
       ],
       "orig": "8RESOLUTION",
-      "text": "8RESOLUTION",
+      "text": "8 RESOLUTION",
       "level": 1
     },
     {
@@ -7973,7 +7973,7 @@
         }
       ],
       "orig": "J.AudioEng.Soc,Vol.36,No.5,1988May",
-      "text": "J.AudioEng.Soc,Vol.36,No.5,1988May"
+      "text": "J. Audio Eng. Soc., Vol. 36, No. 5, 1988 May"
     },
     {
       "self_ref": "#/texts/269",
@@ -8243,7 +8243,7 @@
         }
       ],
       "orig": "MAGPHASEOFC",
-      "text": "MAGPHASEOFC"
+      "text": "MAG PHASE OF C"
     },
     {
       "self_ref": "#/texts/279",
@@ -8324,7 +8324,7 @@
         }
       ],
       "orig": "IRAGINARY",
-      "text": "IRAGINARY"
+      "text": "IMAGINARY"
     },
     {
       "self_ref": "#/texts/282",
@@ -8648,7 +8648,7 @@
         }
       ],
       "orig": "Fig.17. Smoothed discrete-time infinite-sample analytic impulse [],its ETC,and its z transform evaluated on unit circle.",
-      "text": "Fig.17. Smoothed discrete-time infinite-sample analytic impulse [],its ETC,and its z transform evaluated on unit circle."
+      "text": "Fig. 17. Smoothed discrete-time infinite-sample analytic impulse [], its ETC, and its z transform evaluated on unit circle."
     },
     {
       "self_ref": "#/texts/294",
@@ -8864,7 +8864,7 @@
         }
       ],
       "orig": "MAONITUOEOFC\uff09",
-      "text": "MAONITUOEOFC）"
+      "text": "MAGNITUDE OF C）"
     },
     {
       "self_ref": "#/texts/302",
@@ -8891,7 +8891,7 @@
         }
       ],
       "orig": "Fig.19.Magnitudeof\u25b3[T] on 180-dB scale.",
-      "text": "Fig.19.Magnitudeof\u25b3[T] on 180-dB scale."
+      "text": "Fig. 19. Magnitude of \u25b3[T] on 180-dB scale."
     },
     {
       "self_ref": "#/texts/303",
@@ -9107,7 +9107,7 @@
         }
       ],
       "orig": "ing,the-30-dbwidthis 42 samples in time;with the smoothing discussed,itis 10 samples.With the typical experimenter's lab equipment,the total number of samples Nis fixed,and the equipment's display window orprintoutwill showthedata samplesspaced atequal intervalssoastofill thespaceallotted.Inparticular, changing theequipment'sfrequencyrange or sampling windowwillnotchangethespacingofsamplesinthe display.In thiscase a peakinETCwill have awidth thatisaconstantfractionofthedisplaywidth,regardiess offrequencysetting.Inotherwords,if theexperimenter turnsupthesamplingrateonthelabFFTinhopesof narrowing theapparentwidthofapeakin theenergy-time function, it will have no effect. However, in terms of absolute time,thepeakwill benarrower since theentiredisplaywillnowcover asmallerintervalof time.",
-      "text": "ing, the -30-dB width is 42 samples in time; with the smoothing discussed, it is 10 samples. With the typical experimenter's lab equipment, the total number of samples N is fixed, and the equipment's display window or printout will show the data samples spaced at equal intervals so as to fill the space allotted. In particular, changing the equipment's frequency range or sampling window will not change the spacing of samples in the display. In thiscase a peak in ETC will have a width that is a constant fraction of the display width, regardless of frequency setting. In other words, if the experimenter turns up the sampling rate on the lab FFT in hopes of narrowing the apparent width of a peak in theenergy-time function, it will have no effect. However, in terms of absolute time, thepeakwill benarrower since the entire display will now cover a smaller intervalof time."
+      "text": "ing, the -30-dB width is 42 samples in time; with the smoothing discussed, it is 10 samples. With the typical experimenter's lab equipment, the total number of samples N is fixed, and the equipment's display window or printout will show the data samples spaced at equal intervals so as to fill the space allotted. In particular, changing the equipment's frequency range or sampling window will not change the spacing of samples in the display. In this case a peak in ETC will have a width that is a constant fraction of the display width, regardless of frequency setting. In other words, if the experimenter turns up the sampling rate on the lab FFT in hopes of narrowing the apparent width of a peak in the energy-time function, it will have no effect. However, in terms of absolute time, the peak will be narrower since the entire display will now cover a smaller interval of time."
     },
     {
       "self_ref": "#/texts/311",
@@ -9134,7 +9134,7 @@
         }
       ],
       "orig": "9EXAMPLES",
-      "text": "9EXAMPLES",
+      "text": "9 EXAMPLES",
       "level": 1
     },
     {
@@ -9216,7 +9216,7 @@
         }
       ],
       "orig": "J.Audio Eng.Soc.,Vol.36,No.5,1988May",
-      "text": "J.Audio Eng.Soc.,Vol.36,No.5,1988May"
+      "text": "J. Audio Eng. Soc., Vol. 36, No. 5, 1988 May"
     },
     {
       "self_ref": "#/texts/315",
@@ -9270,7 +9270,7 @@
         }
       ],
       "orig": "THEANALYTICIMPULSE",
-      "text": "THEANALYTICIMPULSE"
+      "text": "THE ANALYTIC IMPULSE"
     },
     {
       "self_ref": "#/texts/317",
@@ -9324,7 +9324,7 @@
         }
       ],
       "orig": "10CONCLUSIONS",
-      "text": "10CONCLUSIONS",
+      "text": "10 CONCLUSIONS",
       "level": 1
     },
     {
@@ -9420,7 +9420,7 @@
         }
       ],
       "orig": "From 8(t)weexpanded our consideration to thefully complex \u25b3(t),and we investigated theoretically the properties of the envelope of a general or nonideal system'simpulseresponse.\u25b3(t) appears both as a tool forfinding this envelope and as an idealmeasurement itself:a benchmark to becomparedwith expectations or actual measurements.Wehave seen how the mathematical process ofwindowingmaymakevisual interpretation of that envelope easier.Since graphic display is generally the ultimate destiny ofnumerical calculation,windowing appears as a fundamental tool for such processing.",
-      "text": "From 8(t) we expanded our consideration to the fully complex △(t), and we investigated theoretically the properties of the envelope of a general or nonideal system's impulse response. △(t) appears both as a tool for finding this envelope and as an ideal measurement itself: a benchmark to be compared with expectations or actual measurements. We have seen how the mathematical process of windowingmaymakevisual interpretation of that envelope easier. Since graphic display is generally the ultimate destiny of numerical calculation, windowing appears as a fundamental tool for such processing."
+      "text": "From 8(t) we expanded our consideration to the fully complex △(t), and we investigated theoretically the properties of the envelope of a general or nonideal system's impulse response. △(t) appears both as a tool for finding this envelope and as an ideal measurement itself: a benchmark to be compared with expectations or actual measurements. We have seen how the mathematical process of windowing may make visual interpretation of that envelope easier. Since graphic display is generally the ultimate destiny of numerical calculation, windowing appears as a fundamental tool for such processing."
     },
     {
       "self_ref": "#/texts/322",
@@ -9447,7 +9447,7 @@
         }
       ],
       "orig": "11ACKNOWLEDGMENT",
-      "text": "11ACKNOWLEDGMENT",
+      "text": "11 ACKNOWLEDGMENT",
       "level": 1
     },
     {
@@ -9718,7 +9718,7 @@
         }
       ],
       "orig": "UNSNOOTHEO ENERGY-TINE OF TWEETER",
-      "text": "UNSNOOTHEO ENERGY-TINE OF TWEETER"
+      "text": "UNSMOOTHED ENERGY-TIME OF TWEETER"
     },
     {
       "self_ref": "#/texts/333",
@@ -9745,7 +9745,7 @@
         }
       ],
       "orig": "Fig.21.ETCof high-quality tweeter,measured with 1024 sampleFFT sampling at 256kHz;no weighting.",
-      "text": "Fig.21.ETCof high-quality tweeter,measured with 1024 sampleFFT sampling at 256kHz;no weighting."
+      "text": "Fig. 21. ETC of high-quality tweeter, measured with 1024-sample FFT sampling at 256 kHz; no weighting."
     },
     {
       "self_ref": "#/texts/334",
@@ -9772,7 +9772,7 @@
         }
       ],
       "orig": "Fig.22.ETC for same twccter as in Fig.21.but with raisedcosine smoothingin frequency domain.",
-      "text": "Fig.22.ETC for same twccter as in Fig.21.but with raisedcosine smoothingin frequency domain."
+      "text": "Fig. 22. ETC for same tweeter as in Fig. 21, but with raised-cosine smoothing in frequency domain."
     },
     {
       "self_ref": "#/texts/335",
@@ -9988,7 +9988,7 @@
         }
       ],
       "orig": "SMDOTHED EHEROY-TIME OF THEETER",
-      "text": "SMDOTHED EHEROY-TIME OF THEETER"
+      "text": "SMOOTHED ENERGY-TIME OF TWEETER"
     },
     {
       "self_ref": "#/texts/343",
@@ -10015,7 +10015,7 @@
         }
       ],
       "orig": "Fig.20. Smoothed discrete-time finite-sample analytic impulse ] and its spectrum for 64-point DFT.",
-      "text": "Fig.20. Smoothed discrete-time finite-sample analytic impulse ] and its spectrum for 64-point DFT."
+      "text": "Fig. 20. Smoothed discrete-time finite-sample analytic impulse ] and its spectrum for 64-point DFT."
     },
     {
       "self_ref": "#/texts/344",
@@ -10231,7 +10231,7 @@
         }
       ],
       "orig": "INAGIMHRY",
-      "text": "INAGIMHRY"
+      "text": "IMAGINARY"
     },
     {
       "self_ref": "#/texts/352",
@@ -10258,7 +10258,7 @@
         }
       ],
       "orig": "IMAGIHARY",
-      "text": "IMAGIHARY"
+      "text": "IMAGINARY"
     },
     {
       "self_ref": "#/texts/353",
@@ -10366,7 +10366,7 @@
         }
       ],
       "orig": "J.AudioEng.Soc.,Vol.36,No.5,1988 May",
-      "text": "J.AudioEng.Soc.,Vol.36,No.5,1988 May"
+      "text": "J. Audio Eng. Soc., Vol. 36, No. 5, 1988 May"
     },
     {
       "self_ref": "#/texts/357",
@@ -10501,7 +10501,7 @@
         }
       ],
       "orig": "12REFERENCES",
-      "text": "12REFERENCES",
+      "text": "12 REFERENCES",
       "level": 1
     },
     {
@@ -10529,7 +10529,7 @@
         }
       ],
       "orig": "[1]P.A.M.Dirac,ThePrinciples of Quantum Mechanics,3rd ed.(Oxford University Press,Oxford, England,1947).",
-      "text": "[1]P.A.M.Dirac,ThePrinciples of Quantum Mechanics,3rd ed.(Oxford University Press,Oxford, England,1947).",
+      "text": "[1] P. A. M. Dirac, The Principles of Quantum Mechanics, 3rd ed. (Oxford University Press, Oxford, England, 1947).",
       "enumerated": false,
       "marker": ""
     },
@@ -10558,7 +10558,7 @@
         }
       ],
       "orig": "[2] R.C.Heyser,\"Determination of Loudspeaker Signal Arrival Times,Parts I,I,and III,\"J.Audio Eng.Soc.,vol.19,pp.734-743(1971 Oct.);pp. 829-834(1971Nov.);Pp.902-905(1971 Dec.).",
-      "text": "R.C.Heyser,\"Determination of Loudspeaker Signal Arrival Times,Parts I,I,and III,\"J.Audio Eng.Soc.,vol.19,pp.734-743(1971 Oct.);pp. 829-834(1971Nov.);Pp.902-905(1971 Dec.).",
+      "text": "R. C. Heyser, \"Determination of Loudspeaker Signal Arrival Times, Parts I, I, and III,\" J. Audio Eng. Soc., vol. 19, pp. 734-743 (1971 Oct.); pp. 829-834 (1971 Nov.); pp. 902-905 (1971 Dec.).",
       "enumerated": true,
       "marker": "[2]"
     },
@@ -10587,7 +10587,7 @@
         }
       ],
       "orig": "[4] R.N.Bracewell,The Fourier Transform and Its Applications,2nd ed.(McGraw-Hill,New York, 1978).",
-      "text": "R.N.Bracewell,The Fourier Transform and Its Applications,2nd ed.(McGraw-Hill,New York, 1978).",
+      "text": "R. N. Bracewell, The Fourier Transform and Its Applications, 2nd ed. (McGraw-Hill, New York, 1978).",
       "enumerated": true,
       "marker": "[4]"
     },
@@ -10616,7 +10616,7 @@
         }
       ],
       "orig": "[3] S. P. Lipshitz, T. C. Scott, and J. Vanderkooy, \"Increasing theAudio Measurement Capability of FFT Analyzers by Microcomputer Postprocessing,\" J. Audio Eng.Soc.,vol.33,pp.626-648\uff081985 Sept.).",
-      "text": "S. P. Lipshitz, T. C. Scott, and J. Vanderkooy, \"Increasing theAudio Measurement Capability of FFT Analyzers by Microcomputer Postprocessing,\" J. Audio Eng.Soc.,vol.33,pp.626-648\uff081985 Sept.).",
+      "text": "S. P. Lipshitz, T. C. Scott, and J. Vanderkooy, \"Increasing the Audio Measurement Capability of FFT Analyzers by Microcomputer Postprocessing,\" J. Audio Eng. Soc., vol. 33, pp. 626-648\uff081985 Sept.).",
       "enumerated": true,
       "marker": "[3]"
     },
@@ -10645,7 +10645,7 @@
         }
       ],
       "orig": "[5]A.V.Oppenheim and R.W.Schafer,Digital Signal Processing (Prentice-Hall,Englewood Cliffs, NJ,1975).",
-      "text": "[5]A.V.Oppenheim and R.W.Schafer,Digital Signal Processing (Prentice-Hall,Englewood Cliffs, NJ,1975).",
+      "text": "[5] A. V. Oppenheim and R. W. Schafer, Digital Signal Processing (Prentice-Hall, Englewood Cliffs, NJ, 1975).",
       "enumerated": false,
       "marker": ""
     },
@@ -10674,7 +10674,7 @@
         }
       ],
       "orig": "[6] L.R.Rabiner and B. Gold,Theory and Application of Digital Signal Processing(Prentice-Hall, Englewood Cliffs,NJ,1975).",
-      "text": "L.R.Rabiner and B. Gold,Theory and Application of Digital Signal Processing(Prentice-Hall, Englewood Cliffs,NJ,1975).",
+      "text": "L. R. Rabiner and B. Gold, Theory and Application of Digital Signal Processing (Prentice-Hall, Englewood Cliffs, NJ, 1975).",
       "enumerated": true,
       "marker": "[6]"
     },
@@ -10703,7 +10703,7 @@
         }
       ],
       "orig": "APPENDIXI",
-      "text": "APPENDIXI",
+      "text": "APPENDIX I",
       "level": 1
     },
     {
@@ -10731,7 +10731,7 @@
         }
       ],
       "orig": "It has been suggested by Heyser[2] that the analytic impulse ought to look likeFig.24.In fact,this reference introducestwo analyticimpulses:oneis the function discussed in this paper and the other is a function with bounded totalenergy.Iwould liketoexamineina little more detail why the doublet function does not vanish for nonzero time,andexplore the question of bounded energy.",
-      "text": "It has been suggested by Heyser [2] that the analytic impulse ought to look like Fig. 24. In fact, this reference introduces two analytic impulses: one is the function discussed in this paper and the other is a function with bounded total energy. I would like to examine in a little more detail why the doublet function does not vanish for nonzero time, andexplore the question of bounded energy."
+      "text": "It has been suggested by Heyser [2] that the analytic impulse ought to look like Fig. 24. In fact, this reference introduces two analytic impulses: one is the function discussed in this paper and the other is a function with bounded total energy. I would like to examine in a little more detail why the doublet function does not vanish for nonzero time, and explore the question of bounded energy."
     },
     {
       "self_ref": "#/texts/370",
@@ -11028,7 +11028,7 @@
         }
       ],
       "orig": "Fig.23.ETC for same tweeter as inFig.21,measured with tweeter mounted at end of long sound-absorbing tube; smoothing used.",
-      "text": "Fig.23.ETC for same tweeter as inFig.21,measured with tweeter mounted at end of long sound-absorbing tube; smoothing used."
+      "text": "Fig. 23. ETC for same tweeter as in Fig. 21, measured with tweeter mounted at end of long sound-absorbing tube; smoothing used."
     },
     {
       "self_ref": "#/texts/381",
@@ -11163,7 +11163,7 @@
         }
       ],
       "orig": "Fig.24.Essentially duplicate of [2,fig.A.3].",
-      "text": "Fig.24.Essentially duplicate of [2,fig.A.3]."
+      "text": "Fig. 24. Essentially duplicate of [2, fig. A.3]."
     },
     {
       "self_ref": "#/texts/386",
@@ -11298,7 +11298,7 @@
         }
       ],
       "orig": "J.AudioEng.Soc.,Vol.36,No.5,1988 May",
-      "text": "J.AudioEng.Soc.,Vol.36,No.5,1988 May"
+      "text": "J. Audio Eng. Soc., Vol. 36, No. 5, 1988 May"
     },
     {
       "self_ref": "#/texts/391",
@@ -11325,7 +11325,7 @@
         }
       ],
       "orig": "the discreteFourier transform,",
-      "text": "the discreteFourier transform,"
+      "text": "the discrete Fourier transform,"
     },
     {
       "self_ref": "#/texts/392",
@@ -11352,7 +11352,7 @@
         }
       ],
       "orig": "APPENDIXII",
-      "text": "APPENDIXII",
+      "text": "APPENDIX II",
       "level": 1
     },
     {
@@ -11637,7 +11637,7 @@
         }
       ],
       "orig": "THEAUTHOR",
-      "text": "THEAUTHOR",
+      "text": "THE AUTHOR",
       "level": 1
     },
     {
@@ -11679,7 +11679,7 @@
         }
       ],
       "orig": "Andrew Duncan was bom in London,U.K.,in 1960. He received a B.S.degree in engineering and-applied sciences from the California Institute of Technology in1983.Hetaught high school physics for 2years in Pasadena, California,while studying at Caltech,and for anotheryear after graduation.He then worked for 2years,with Marshall Buck,as a programmer at Cerwin-Vega Inc.Mr.Duncan is currentlya doctoral student inmathematicsat the Universityof California at Santa Cruz,where he is studying the application of group theory to the thcory of tonal harmony. He has also worked as a consultant at E-mu Systems,Inc.in the area of digital pitch shifting.",
-      "text": "Andrew Duncan was bom in London, U.K., in 1960. He received a B.S. degree in engineering and applied sciences from the California Institute of Technology in 1983. He taught high school physics for 2 years in Pasadena, California, while studying at Caltech, and for another year after graduation. He then worked for 2 years, with Marshall Buck, as a programmer at Cerwin-Vega Inc. Mr. Duncan is currentlya doctoral student in mathematics at the University of California at Santa Cruz, where he is studying the application of group theory to the theory of tonal harmony. He has also worked as a consultant at E-mu Systems, Inc. in the area of digital pitch shifting."
+      "text": "Andrew Duncan was born in London, U.K., in 1960. He received a B.S. degree in engineering and applied sciences from the California Institute of Technology in 1983. He taught high school physics for 2 years in Pasadena, California, while studying at Caltech, and for another year after graduation. He then worked for 2 years, with Marshall Buck, as a programmer at Cerwin-Vega Inc. Mr. Duncan is currently a doctoral student in mathematics at the University of California at Santa Cruz, where he is studying the application of group theory to the theory of tonal harmony. He has also worked as a consultant at E-mu Systems, Inc. in the area of digital pitch shifting."
     },
     {
       "self_ref": "#/texts/404",
@@ -11733,7 +11733,7 @@
         }
       ],
       "orig": "J.Audio Eng.Soc.,Vol.36,No.5,1988May",
-      "text": "J.Audio Eng.Soc.,Vol.36,No.5,1988May"
+      "text": "J. Audio Eng. Soc., Vol. 36, No. 5, 1988 May"
     },
     {
       "self_ref": "#/texts/406",
