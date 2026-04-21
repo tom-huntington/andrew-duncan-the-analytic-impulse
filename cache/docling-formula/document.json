@@ -2203,7 +2203,7 @@
         }
       ],
       "orig": "In a way, ejr is the most continuous complex function we can find with cos(@t) as its real part.Fig.6 shows the solidfigure thatresultswhen both parts of thefunction are plotted against time.The figure's projections show both thereal and the imaginaryparts as functions of time.Therear projection plane shows the function",
-      "text": "In a way, ejr is the most continuous complex function we can find with cos(@t) as its real part. Fig. 6 shows the solid figure that results when both parts of the function are plotted against time. The figure's projections show both the real and the imaginary parts as functions of time. The rear projection plane shows the function"
+      "text": "In a way, ejr is the most continuous complex function we can find with cos(ωt) as its real part. Fig. 6 shows the solid figure that results when both parts of the function are plotted against time. The figure's projections show both the real and the imaginary parts as functions of time. The rear projection plane shows the function"
     },
     {
       "self_ref": "#/texts/56",
