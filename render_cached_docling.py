@@ -6,14 +6,12 @@ from pathlib import Path
 from docling_core.types.doc import DoclingDocument, ImageRefMode
 
 
+DOCUMENT_PATH = Path("cache/docling-formula/document.json")
+
+
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(
-        description="Render Markdown and HTML from a cached Docling document JSON."
-    )
-    parser.add_argument(
-        "--document",
-        default="cache/docling/document.json",
-        help="Path to the cached single DoclingDocument JSON.",
+        description="Render Markdown and HTML from the formula-enriched Docling cache."
     )
     parser.add_argument(
         "--output-dir",
@@ -34,7 +32,10 @@ def safe_output_stem(value: str) -> str:
 
 def main() -> None:
     args = parse_args()
-    document_path = Path(args.document).resolve()
+    document_path = DOCUMENT_PATH.resolve()
+    if not document_path.exists():
+        raise FileNotFoundError(f"Formula-enriched Docling cache not found: {document_path}")
+
     output_dir = Path(args.output_dir).resolve()
     output_dir.mkdir(parents=True, exist_ok=True)
 
@@ -57,6 +58,7 @@ def main() -> None:
     markdown_path.write_text(markdown.rstrip() + "\n", encoding="utf-8")
     html_path.write_text(html, encoding="utf-8")
 
+    print(f"Read Docling cache: {document_path}")
     print(f"Wrote Markdown: {markdown_path}")
     print(f"Wrote HTML: {html_path}")
 

@@ -34,9 +34,9 @@ the time domain.
 
 If we let h(t) be the system's impulse response and H(f) its frequency response,we have
 
-<!-- formula-not-decoded -->
+$$A I R ( t ) = \mathcal { F } ^ { - 1 } \{ \mathcal { F } \{ \Delta ( t ) \} \, H ( f ) \} & & ( 1 a ) & \, \text {useful} \\$$
 
-<!-- formula-not-decoded -->
+$$= \Delta ( t ) \ast h ( t ) \ .$$
 
 The term AIRcanbeparsedin two differentways. Forlinear systems the two interpretationsareidentical. We introduced the AIRabove as the analytic"impulse response,"a complex function whose real part is the impulse response.This interpretation follows (roughly) alyticimpulse"response,the(complex) response of a system to a complex impulse,namely,△(t).This interpretation corresponds to Eq.(1b).In this light,△(t) appears as the AIR of an ideal system. This is to say, the function△(t)plays a dual role.From oneperspective it is the toolwe use to calculate theAIRforagiven system.But at the same time,we may regard it as the data itself, the response of a system with everywhereflat frequency response.
 
@@ -62,7 +62,7 @@ Fig.3.Dirac delta function and its spectrum.
 
 An analytic function is to itsreal part as a solid object is toits shadow.For example,consider the function cos(wt).Thecomplexextension ofcos(wt)is
 
-<!-- formula-not-decoded -->
+$$e ^ { j \omega t } = \cos ( \omega t ) \, + \, _ { j } \, \sin ( \omega t ) \, . \quad \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \$$
 
 In a way, ejr is the most continuous complex function we can find with cos(@t) as its real part.Fig.6 shows the solidfigure thatresultswhen both parts of thefunction are plotted against time.The figure's projections show both thereal and the imaginaryparts as functions of time.Therear projection plane shows the function
 
@@ -86,7 +86,7 @@ tion el.Ina Heysercorkscrew this magnitude appears astheradial distance of thece
 
 Theconnection between thereal and imaginaryparts is called the Hilbert transform.The connection between thereal part and the wholeis best illustrated by examining the relation.
 
-<!-- formula-not-decoded -->
+$$\cos ( \omega t ) = \frac { e ^ { j \omega t } + e ^ { - j \omega t } } { 2 } & & \frac { a \text { speed} } { 3 } & & \frac { \text {difference} } { 2 } & & \frac { ( 3 ) } { 2 } & & \text {real} & & \text {analy}$$
 
 which is an inversion ofEq.2.To get the complex extension of cos(wt) we express it in its exponential form, suppress thenegative frequency termej,and double the positive frequency part,as shown in Fig. 7.This complex-valuedfunction whosereal part is the original function of time is called the analytic signal, although this is something ofa misnomer,as noted below.Any real function of timewill have a spectrum that is two-sided and symmetric. To get the analytic signal,we go into the frequency domain,remove the negative-frequency components,and double theresult (except at the dcpoint).This corresponds to performing the operation in Eq.(la),where {△(t)},the spectrum of△(t),is a function that has a value of O fornegative
 
@@ -110,7 +110,7 @@ Asamatterofnomenclature,thetermanalyticrefers toa complexfunction of a complexva
 
 In the continuous domains we may say,in light of the foregoing, that if the real impulse 8（r) is a signal with a flat spectrum of 1,then the analytic impulse (t)is asignalwith a spectrum thatiszero for negative frequencies,1 for dc,and2 forpositive frequencies. This is correct,but it will be more illuminating to approach this limit slowly.Fig.8shows a signal that has positive and negativefrequency content only up to Hz (that is,a bandwidth of 1 Hz and a unit area).The algebraicexpression of thissignal is
 
-<!-- formula-not-decoded -->
+$$f ( t ) = \frac { \sin ( \pi t ) } { \pi t } \, = \, \sin ( t ) \, .$$
 
 Ifwe remove the negative-frequency components,we get a transform pair as in Fig.9,shown in both linear andlogarithmicphasemagnitude(ETC) displays.This
 
@@ -128,19 +128,19 @@ t=O
 
 function is given by
 
-<!-- formula-not-decoded -->
+$$f ( t ) & = \frac { \sin ( \pi t ) } { \pi t } + j \, \frac { 1 - \cos ( \pi t ) } { \pi t } \\ & = \left [ \frac { e ^ { j t } - 1 } { \pi t } \right ] ^ { * } \\ & = \sin ( t ) + j \cdot \cos ( t ) = \, \text {as} ( t ) \, . \quad ( 5 a ) \\ \intertext { s u n t i o n s i m e s a l o s d e r h a s } \intertext { i t }$$
 
-<!-- formula-not-decoded -->
+$$( 5 a )$$
 
 This function is sometimes also described as [4,p. 391]
 
-<!-- formula-not-decoded -->
+$$\text {asc} ( t ) \, = \, \text {inc} ( t ) \, + \, j \, \cdot \, \text {inc} ( t / 2 ) \, \sin ( \pi t / 2 ) \quad ( 5 b ) \quad _ { \text {or} \, \max } ^ { \text {Perhah} }$$
 
 a form which,if studied,will reveal certain convolution properties of the imaginary part.In Fig.10 we see the same function andnote itshelical form.
 
 Passing to the limit,we let the band edge move indefinitely to the right,giving us the transform pair shown in Fig.11.The spectrum is now a function called CAUS(f)and the signalis thecontinuous analytic impulse,
 
-<!-- formula-not-decoded -->
+$$\Delta ( t ) & = \delta ( t ) + j \, \frac { 1 } { \pi t } \quad & \text {can reach} \\ & = \delta ( t ) + j \cdot d ( t ) \ . & \text {trans}$$
 
 We see immediately that theimaginary part of△(t),
 
@@ -166,11 +166,11 @@ J.AudioEng.Soc.,Vol.36,No.5,1988May
 
 [].Inalgebraic form[5,p.360],[6,p.71],
 
-<!-- formula-not-decoded -->
+$$\Delta _ { \alpha } [ \tau ] & = \frac { \sin ( \pi \tau ) } { \pi \tau } + j \, \frac { 1 \, - \, \cos ( \pi \tau ) } { \pi \tau } \\ & = \left [ \frac { e ^ { j \pi \, \pi } - 1 } { \pi \tau } \right ] ^ { * }$$
 
 or,equivalently,
 
-<!-- formula-not-decoded -->
+$$A _ { \mathbb { Z } } [ \tau ] \equiv \begin{cases} 1 , & \tau = 0 \\ j \frac { 2 } { \pi \tau } , & \tau \text { odd} \\ 0 , & \tau \text { even, } \neq 0 \end{cases}$$
 
 Now let us compare Eqs.(5a) and (7a).We see that in this"intermediate"domain ofquantized time and continuous frequency the analyticimpulse has exactly thesameformasthecompletelycontinuousimpulse beforelimiting.One onlyneedwriteaTwheretwould normallyappear.Fig.13isan overlayofFigs.9and 12and shows even more clearly what Eq.（7b) tends to obscure:[]is justa sampledversionof the analytic sincfunction.However,we see thatEq.(7b)isreminiscentofEq.(6).Thesuddenappearanceof thefactor 2in the imaginary part can beexplained by noting that d[T]alternatesbetweenOand2/π,thusgivinganav-
 
@@ -202,7 +202,7 @@ haved[]=2/π=0.6366..,which differsbyless than 0.1%.Because of this,Fig. 14 and 
 
 Wecannotnowexpect△v[t]to have thesame algebraic form as[T].What wasT=±now corresponds to=±N/2,the antipodal point.Eqs.（7a) and(7b)need tobe modified inorder that theenvelope of△[]vanishes at this point.In fact,
 
-<!-- formula-not-decoded -->
+$$\Delta _ { N } [ \tau ] & = \frac { 1 } { N } \left [ 2 e ^ { j 2 \pi / N } \frac { 1 - e ^ { j \pi \tau } } { 1 - e ^ { j 2 \pi / N } } + ( 1 - e ^ { j \pi \tau } ) \right ] \\ & = \begin{cases} 1 , & \tau = 0 \\ j \frac { 2 } { N } \cot \left ( \frac { \pi \tau } { N } \right ) , & \tau \text { odd} \quad [ 5 , p . 3 5 ] \\ 0 , & \tau \text { even } \neq 0 \end{cases}$$
 
 which is shown in Fig.15.This looks very different from Eq.(7).The difference in form between Eqs.(7) and (8) was one initial stimulus to my investigations: However,these two cquations arenumerically almost identical.For example,in the 64-point DFT domain, thefirstnonzerovalueofd64[T]iscot（π/64)/32=0.6361 ...In the infinite-point z-transform time domain we
 
@@ -226,13 +226,13 @@ Fig,16.Hann windowHANN[x]=cos²（πx/N)=V[1+ cos(2mx/N])for64-pointDFT.
 
 in Sec.Iand say that the smoothed"analytic impulse response"is the same as the"smoothed analytic impulse"response.Algebraically,
 
-<!-- formula-not-decoded -->
+$$\text {lled} \quad & \quad \text {the} \quad \text {smoother AIR} ( t ) \, = \, \mathbb { F } ^ { - 1 } \{ \mathcal { F } \left \{ \Delta ( t ) \{ W ( f ) H ( f ) \} \right \} \\ \text {Fig.} \quad & \quad \text {main.} \quad & = \, \mathbb { F } ^ { - 1 } \left \{ [ \mathcal { F } \{ \Delta ( t ) \} \, W ( f ) ] \ H ( f ) \right \} \\ \text {pe-} \quad & \quad \text {mat.} \quad & = \, \mathbb { F } ^ { - 1 } \left \{ \mathcal { F } \{ \widehat { \Delta } ( t ) \} H ( f ) \right \} \\ \text {the} \quad & \quad \text {win-} \quad & = \, \widetilde { \Delta } ( t ) \, * \, h ( t ) \quad & ( 1 0 ) \\ \text {and a} \quad & \quad \text {in} \quad & = \, \mathbb { F } ^ { - 1 } \{ \mathcal { F } ( t ) \, \text {is the window function} \, \text {equiv.} \quad &$$
 
 where W(f) is the window function.Equivalently, smoothing merely involves substituting(t)(or one of its discreterelatives)for△(t) in the usualequations for finding the AIR.
 
 The art ofwindowing consists of picking a window
 
-<!-- formula-not-decoded -->
+$$\tilde { \Delta } _ { [ \tau ] } \, = \, \begin{cases} & \longrightarrow & \longrightarrow \\ & & \quad V _ { z } , & \tau \, = \, 0 \\ & & & \quad \tau \, = \, \pm \, 2 \ \Big \} \, \real \, \text {part} \\ & & & \quad 0 , & \text { elsewhere} \end{cases} .$$
 
 The real part of the impulse has become more spread out, but the imaginary part is more localized, and as a result the magnitude peak has narrower skirts,but is more broad at the top.Fig.18 shows awiderview of the magnitude, over the same range as Fig.14,and Fig.19 gives a still wider view.
 
@@ -315,7 +315,7 @@ has localextrema that oscillate between O and (approximately) 2/πt.As we tend t
 
 Let us bemore explicit about the limiting process. We are in effect expanding the frequency function, or shrinking the frequency scale,and hence expanding the time scale.Ifwelet II(f)be the spectrum of asinc(t), the limitingprocessis
 
-<!-- formula-not-decoded -->
+$$\Delta ( t ) = \lim _ { \alpha \to 0 } \frac { 1 } { \alpha } \, \text {as} \, \left ( \frac { t } { \alpha } \right ) \, \underset { < \dots > } { \mathcal { F } } \, \lim _ { \alpha \to 0 } \, \Pi ( \alpha f ) \, , \ \ ( 1 1 )$$
 
 In the context of the theory of generalizedfunctions, this is a rigorous definition of the analytic impulse, and its real part does converge to the familiar delta function.If we substitute a = 1/α,we get [2,eq.35]. This function does not have unit energy.To see this, itismerelynecessary toobserve that theareaunder its spectrum (Fig.1l,right side)is infinite.One may alsocarry out the energy integral in the time domain to convince oneself.How then do we explain [2,eq. 32],which arrives at the opposite conclusion？A look at [2,eq.30] will reveal that this equation has an additional 1/√a term init.Buta is the term thatgoesto infinity.Thus we have slipped in an additional convergence term.In this case it is correct to say that the function so defined has unit area,but at the expense of introducing a rival impulse function.Heyser [2] seems to suggest that these distinct functions are one and the same.But it iscontradictory for a signal to have equal nonzero energy density at all frequencies and still have bounded total energy.To further the confusion,the comment in[2,fig.A-3] concedes that the envelope of the'doublet goes as l/t,but this is juxtaposedwithapicture of therivalimpulsefunction (the same as myFig.24).
 
@@ -327,17 +327,19 @@ Fig.24.Essentially duplicate of [2,fig.A.3].
 
 Following are the equations used in this paper to carry out the required transforms. The continuous Fourier transforms;
 
-<!-- formula-not-decoded -->
+$$F ( f ) & = \int _ { - x } ^ { x } f ( t ) \, e ^ { - j 2 \pi f l } \, d t \, , & f & & & f [ t ] = \int _ { - x } ^ { x } F ( f ) \, e ^ { j 2 \pi f l } \, d f \\ f ( t ) & = \int _ { - x } ^ { x } F ( f ) \, e ^ { j 2 \pi f l } \, d f & & & ( 1 2 )$$
 
 theztransform,
 
-<!-- formula-not-decoded -->
+$$F ( z ) \, = \, \sum _ { z } f [ \tau ] z ^ { - \tau } \, ,$$
 
-<!-- formula-not-decoded -->
+$$f [ \tau ] = \frac { 1 } { 2 \pi j } \oint _ { \ } F ( z ) z ^ { \tau - 1 } \, d z$$
 
-<!-- formula-not-decoded -->
+$$f [ \tau ] = \frac { 1 } { 2 \pi j } \, \oint \, F ( z ) z ^ { \tau - 1 } \, d z \quad \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \$$
 
-<!-- formula-not-decoded -->
+$$F [ \nu ] = \sum _ { - N / 2 } ^ { N / 2 - 1 } f [ \tau ] \, e ^ { - j ( 2 \pi / N ) \nu \tau } \, ,$$
+
+$$f [ \tau ] = \frac { 1 } { N } \sum _ { - N / 2 } ^ { N / 2 - 1 } f [ \nu ] \, e ^ { j ( 2 \pi / N ) \tau } \, .$$
 
 Note thatthisconventionfortheDFTmeans thatthe area under a function squared is not the same as the area under its transform squared-a factor Nmust be includedin theParseval-Rayleighformula.Alternate conventionscould have a l/√Non both sides or the 1/Non the other side.Thisconventionmakes the forward transform ofaunit impulseequal toaconstant spectrum of one,analogous to the continuous case.
 
