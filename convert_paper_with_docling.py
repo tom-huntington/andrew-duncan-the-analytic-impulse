@@ -5,7 +5,7 @@ import re
 from pathlib import Path
 
 from docling.datamodel.base_models import InputFormat
-from docling.datamodel.pipeline_options import PdfPipelineOptions
+from docling.datamodel.pipeline_options import CodeFormulaVlmOptions, PdfPipelineOptions
 from docling.document_converter import DocumentConverter, ImageFormatOption
 from docling_core.types.doc import DoclingDocument, ImageRefMode
 
@@ -37,6 +37,17 @@ def parse_args() -> argparse.Namespace:
         action="store_true",
         help="Rebuild cached JSON even if it already exists.",
     )
+    parser.add_argument(
+        "--no-formula-enrichment",
+        action="store_true",
+        help="Disable Docling's formula recognition and LaTeX conversion stage.",
+    )
+    parser.add_argument(
+        "--formula-preset",
+        choices=["codeformulav2", "granite_docling"],
+        default="codeformulav2",
+        help="Docling code/formula VLM preset to use when formula enrichment is enabled.",
+    )
     return parser.parse_args()
 
 
@@ -59,12 +70,18 @@ def image_paths_from_html(html_path: Path) -> list[Path]:
     return image_paths
 
 
-def make_converter() -> DocumentConverter:
+def make_converter(*, formula_enrichment: bool, formula_preset: str) -> DocumentConverter:
     pipeline_options = PdfPipelineOptions()
     pipeline_options.do_ocr = True
     pipeline_options.do_table_structure = True
     pipeline_options.do_code_enrichment = False
-    pipeline_options.do_formula_enrichment = False
+    pipeline_options.do_formula_enrichment = formula_enrichment
+    if formula_enrichment:
+        pipeline_options.code_formula_options = CodeFormulaVlmOptions.from_preset(
+            formula_preset
+        )
+        pipeline_options.code_formula_options.extract_code = False
+        pipeline_options.code_formula_options.extract_formulas = True
 
     return DocumentConverter(
         allowed_formats=[InputFormat.IMAGE],
@@ -86,7 +103,10 @@ def main() -> None:
         return
 
     image_paths = image_paths_from_html(html_path)
-    converter = make_converter()
+    converter = make_converter(
+        formula_enrichment=not args.no_formula_enrichment,
+        formula_preset=args.formula_preset,
+    )
     docs = []
     for index, image_path in enumerate(image_paths, start=1):
         result = converter.convert(image_path)
