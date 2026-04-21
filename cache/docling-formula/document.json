@@ -1364,7 +1364,7 @@
         }
       ],
       "orig": "AIR(1)=g-1{{\u25b3\uff08t)}H(f)} (1a)",
-      "text": "A I R ( t ) = \\mathcal { F } ^ { - 1 } \\{ \\mathcal { F } \\{ \\Delta ( t ) \\} \\, H ( f ) \\} & & ( 1 a ) & \\, \\text {useful} \\\\"
+      "text": "A I R ( t ) = \\mathcal { F } ^ { - 1 } \\{ \\mathcal { F } \\{ \\Delta ( t ) \\} \\, H ( f ) \\} \\tag{ 1 a }"
     },
     {
       "self_ref": "#/texts/25",
