@@ -7,7 +7,9 @@ import re
 import subprocess
 from pathlib import Path
 
-from docling_core.types.doc import DoclingDocument, ImageRefMode
+from docling_core.types.doc import DoclingDocument, ImageRef, ImageRefMode
+from docling_core.types.doc.base import Size
+from PIL import Image
 
 
 DOCUMENT_PATH = Path("cache/docling-formula/document.json")
@@ -19,7 +21,22 @@ MATHML_FORMULA_RE = re.compile(
     re.DOTALL,
 )
 KATEX_HEAD = """\
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.45/dist/katex.min.css">"""
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.45/dist/katex.min.css">
+<style>
+figure {
+  margin: 1.5rem auto;
+  text-align: center;
+}
+figure img {
+  display: block;
+  max-width: min(100%, 720px);
+  height: auto;
+  margin: 0 auto 0.5rem;
+}
+figcaption {
+  font-size: 0.95rem;
+}
+</style>"""
 
 
 def parse_args() -> argparse.Namespace:
@@ -40,6 +57,17 @@ def parse_args() -> argparse.Namespace:
         choices=["katex", "mathml"],
         default="katex",
         help="Formula renderer to use in the HTML output.",
+    )
+    parser.add_argument(
+        "--source-image-dir",
+        default="The Analytic Impulse_files",
+        help="Directory containing source page JPEGs to crop Docling pictures from.",
+    )
+    parser.add_argument(
+        "--picture-padding",
+        type=int,
+        default=8,
+        help="Pixels of padding to add around cropped pictures.",
     )
     return parser.parse_args()
 
@@ -96,6 +124,90 @@ def mathml_to_katex(html: str) -> str:
     return MATHML_FORMULA_RE.sub(replace_formula, html)
 
 
+def sorted_source_images(source_image_dir: Path) -> list[Path]:
+    def sort_key(path: Path) -> tuple[str, int | str]:
+        match = re.search(r"(\d+)$", path.stem)
+        if match:
+            return (path.stem[: match.start()], int(match.group(1)))
+        return (path.stem, path.stem)
+
+    image_paths = [
+        *source_image_dir.glob("*.jpg"),
+        *source_image_dir.glob("*.jpeg"),
+        *source_image_dir.glob("*.png"),
+    ]
+    return sorted(image_paths, key=sort_key)
+
+
+def crop_picture_images(
+    *,
+    document_json: dict,
+    source_image_dir: Path,
+    output_image_dir: Path,
+    html_path: Path,
+    padding: int,
+) -> list[tuple[int, str, int, int]]:
+    source_images = sorted_source_images(source_image_dir)
+    if not source_images:
+        return []
+
+    output_image_dir.mkdir(parents=True, exist_ok=True)
+    image_refs: list[tuple[int, str, int, int]] = []
+    pictures = document_json.get("pictures", [])
+    for picture_index, picture in enumerate(pictures):
+        prov = picture.get("prov") or []
+        if not prov:
+            continue
+
+        page_no = prov[0].get("page_no")
+        if not isinstance(page_no, int) or page_no < 1 or page_no > len(source_images):
+            continue
+
+        bbox = prov[0].get("bbox") or {}
+        source_path = source_images[page_no - 1]
+        with Image.open(source_path) as page_image:
+            width, height = page_image.size
+            left = max(0, int(bbox.get("l", 0)) - padding)
+            right = min(width, int(bbox.get("r", width)) + padding)
+            top = max(0, int(height - bbox.get("t", height)) - padding)
+            bottom = min(height, int(height - bbox.get("b", 0)) + padding)
+            if left >= right or top >= bottom:
+                continue
+
+            output_path = output_image_dir / f"picture_{picture_index + 1:02d}.jpeg"
+            crop = page_image.crop((left, top, right, bottom)).convert("RGB")
+            crop.save(
+                output_path,
+                "JPEG",
+                quality=92,
+                optimize=True,
+            )
+            crop_width, crop_height = crop.size
+
+        image_refs.append(
+            (
+                picture_index,
+                output_path.relative_to(html_path.parent).as_posix(),
+                crop_width,
+                crop_height,
+            )
+        )
+
+    return image_refs
+
+
+def add_picture_image_refs(
+    doc: DoclingDocument, image_refs: list[tuple[int, str, int, int]]
+) -> None:
+    for picture_index, image_src, width, height in image_refs:
+        doc.pictures[picture_index].image = ImageRef(
+            mimetype="image/jpeg",
+            dpi=72,
+            size=Size(width=width, height=height),
+            uri=Path(image_src),
+        )
+
+
 def main() -> None:
     args = parse_args()
     document_path = DOCUMENT_PATH.resolve()
@@ -111,18 +223,29 @@ def main() -> None:
     output_stem = safe_output_stem(args.output_stem or doc.name)
     markdown_path = output_dir / f"{output_stem}.md"
     html_path = output_dir / f"{output_stem}.html"
+    image_dir = output_dir / f"{output_stem}_images"
+    document_json = json.loads(document_path.read_text(encoding="utf-8"))
+    image_refs = crop_picture_images(
+        document_json=document_json,
+        source_image_dir=Path(args.source_image_dir).resolve(),
+        output_image_dir=image_dir,
+        html_path=html_path,
+        padding=args.picture_padding,
+    )
+    add_picture_image_refs(doc, image_refs)
 
     markdown = doc.export_to_markdown(
-        image_mode=ImageRefMode.PLACEHOLDER,
+        image_mode=ImageRefMode.REFERENCED if image_refs else ImageRefMode.PLACEHOLDER,
         page_break_placeholder=None,
     )
     html_head = KATEX_HEAD if args.html_formulas == "katex" else "null"
     html = doc.export_to_html(
-        image_mode=ImageRefMode.PLACEHOLDER,
+        image_mode=ImageRefMode.REFERENCED if image_refs else ImageRefMode.PLACEHOLDER,
         split_page_view=False,
         formula_to_mathml=True,
         html_head=html_head,
     )
+    html = html.replace("%5C", "/")
     if args.html_formulas == "katex":
         html = mathml_to_katex(html)
 
@@ -132,6 +255,7 @@ def main() -> None:
     print(f"Read Docling cache: {document_path}")
     print(f"Wrote Markdown: {markdown_path}")
     print(f"Wrote HTML: {html_path}")
+    print(f"Wrote picture JPEGs: {len(image_refs)}")
 
 
 if __name__ == "__main__":
