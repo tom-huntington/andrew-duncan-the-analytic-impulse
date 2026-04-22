@@ -195,7 +195,13 @@ Fig. 16. Hann window HANN[x]=cos²（πx/N)=½[1+ cos(2mx/N]) for 64-point DFT.
 
 in Sec. I and say that the smoothed "analytic impulse response" is the same as the "smoothed analytic impulse" response. Algebraically,
 
-$$\begin{aligned} \text {smoother AIR} ( t ) & = \mathbb { F } ^ { - 1 } \left \{  \mathcal { F } \{ \Delta ( t ) \}[ \, W ( f )  H ( f ) ] \right \} \\ & = \mathbb { F } ^ { - 1 } \left \{ [ \mathcal { F } \{ \Delta ( t ) \} \, W ( f ) ] H ( f ) \right \} \\ & = \mathbb { F } ^ { - 1 } \left \{ \mathcal { F } \{ \widehat { \Delta } ( t ) \} H ( f ) \right \} \\ & = \widetilde { \Delta } ( t ) \ast h ( t ) \quad ( 1 0 ) \end{aligned}$$
+\begin{aligned}
+\text{smoother AIR}(t)
+&= \mathbb{F}^{-1} \left\lbrace \mathcal{F}\{\Delta(t)\}[W(f)H(f)] \right\rbrace \\
+&= \mathbb{F}^{-1} \left\lbrace [\mathcal{F}\{\Delta(t)\}\,W(f)] H(f) \right\rbrace \\
+&= \mathbb{F}^{-1} \left\lbrace \mathcal{F}\{\widehat{\Delta}(t)\} H(f) \right\rbrace \\
+&= \widetilde{\Delta}(t) \ast h(t) \quad (10)
+\end{aligned}
 
 where W(f) is the window function. Equivalently, smoothing merely involves substituting (t) (or one of its discrete relatives) for △(t) in the usual equations for finding the AIR.
 
