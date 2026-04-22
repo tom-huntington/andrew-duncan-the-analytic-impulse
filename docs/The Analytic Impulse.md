@@ -29,7 +29,7 @@ Fig. 1. Superposition of two damped sinusoids with different attack times.
 
 If we let h(t) be the system's impulse response and H(f) its frequency response, we have
 
-$$A I R ( t ) = \mathcal { F } ^ { - 1 } \{ \mathcal { F } \{ \Delta ( t ) \} \, H ( f ) \} \tag{ 1 a }$$
+$$A I R ( t ) = \mathcal { F } ^ { - 1 } \{ \mathcal { F } \{ \Delta ( t ) \} \, H ( f ) \} \tag{1a}$$
 
 $$= \Delta ( t ) \ast h ( t ) \ .$$
 
