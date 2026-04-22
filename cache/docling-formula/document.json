@@ -52,7 +52,7 @@
         "$ref": "#/texts/12"
       },
       {
-        "$ref": "#/texts/13"
+        "$ref": "#/groups/1"
       },
       {
         "$ref": "#/pictures/0"
@@ -68,12 +68,6 @@
       },
       {
         "$ref": "#/texts/20"
-      },
-      {
-        "$ref": "#/texts/21"
-      },
-      {
-        "$ref": "#/groups/1"
       },
       {
         "$ref": "#/texts/23"
@@ -585,6 +579,9 @@
       },
       "children": [
         {
+          "$ref": "#/texts/13"
+        },
+        {
           "$ref": "#/texts/22"
         }
       ],
@@ -995,7 +992,7 @@
     {
       "self_ref": "#/texts/13",
       "parent": {
-        "$ref": "#/body"
+        "$ref": "#/groups/1"
       },
       "children": [],
       "content_layer": "body",
@@ -1016,8 +1013,10 @@
           ]
         }
       ],
-      "orig": "1) We multiply the system's frequency response by the spectrum of △(t) and then perform an inverse transform (Fourier,2,or DFT),which gives us the AIR in",
-      "text": "1) We multiply the system's frequency response by the spectrum of △(t) and then perform an inverse transform (Fourier, 2, or DFT), which gives us the AIR in"
+      "orig": "1) We multiply the system's frequency response by the spectrum of △(t) and then perform an inverse transform (Fourier,2,or DFT),which gives us the AIR in the time domain.",
+      "text": "1) We multiply the system's frequency response by the spectrum of △(t) and then perform an inverse transform (Fourier, 2, or DFT), which gives us the AIR in the time domain.",
+      "enumerated": false,
+      "marker": ""
     },
     {
       "self_ref": "#/texts/14",
@@ -1560,6 +1559,18 @@
       ],
       "orig": "55",
       "text": "55"
+    },
+    {
+      "self_ref": "#/texts/34",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "",
+      "text": ""
     },
     {
       "self_ref": "#/texts/35",
