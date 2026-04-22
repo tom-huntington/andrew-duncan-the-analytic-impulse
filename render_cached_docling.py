@@ -4,6 +4,7 @@ import argparse
 import html as html_lib
 import json
 import re
+import shutil
 import subprocess
 from pathlib import Path
 
@@ -20,22 +21,37 @@ MATHML_FORMULA_RE = re.compile(
     r"(?(wrapper)</div>)",
     re.DOTALL,
 )
-KATEX_HEAD = """\
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.45/dist/katex.min.css">
+INLINE_DOLLAR_FORMULA_RE = re.compile(
+    r"(?<!\\)\$(?P<tex>[^$\n]+?)(?<!\\)\$"
+)
+HTML_TAG_RE = re.compile(r"(<[^>]+>)")
+READING_WIDTH_CH = 72
+KATEX_ASSET_DIR = "katex"
+HTML_HEAD_TEMPLATE = """\
+{katex_stylesheet}
 <style>
-figure {
+body {{
+  max-width: {reading_width}ch;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  line-height: 1.55;
+}}
+figure {{
   margin: 1.5rem auto;
   text-align: center;
-}
-figure img {
+}}
+figure img {{
   display: block;
   max-width: min(100%, 720px);
   height: auto;
   margin: 0 auto 0.5rem;
-}
-figcaption {
+}}
+figcaption {{
   font-size: 0.95rem;
-}
+}}
+.formula {{
+  overflow-x: auto;
+}}
 </style>"""
 
 
@@ -124,6 +140,36 @@ def mathml_to_katex(html: str) -> str:
     return MATHML_FORMULA_RE.sub(replace_formula, html)
 
 
+def inline_dollar_math_to_katex(html: str) -> str:
+    """Render inline $...$ formulas in text nodes without touching HTML tags."""
+
+    def replace_formula(match: re.Match[str]) -> str:
+        tex = html_lib.unescape(match.group("tex"))
+        return f'<span class="formula">{render_katex(tex, display_mode=False)}</span>'
+
+    parts = HTML_TAG_RE.split(html)
+    rendered_parts: list[str] = []
+    skip_text = False
+    for part in parts:
+        if not part:
+            continue
+
+        if part.startswith("<") and part.endswith(">"):
+            tag = part.lower()
+            if tag.startswith("<script") or tag.startswith("<style"):
+                skip_text = True
+            elif tag.startswith("</script") or tag.startswith("</style"):
+                skip_text = False
+            rendered_parts.append(part)
+            continue
+
+        rendered_parts.append(
+            part if skip_text else INLINE_DOLLAR_FORMULA_RE.sub(replace_formula, part)
+        )
+
+    return "".join(rendered_parts)
+
+
 def sorted_source_images(source_image_dir: Path) -> list[Path]:
     def sort_key(path: Path) -> tuple[str, int | str]:
         match = re.search(r"(\d+)$", path.stem)
@@ -208,6 +254,22 @@ def add_picture_image_refs(
         )
 
 
+def copy_katex_assets(output_dir: Path) -> str:
+    katex_dist = Path("node_modules/katex/dist")
+    stylesheet = katex_dist / "katex.min.css"
+    fonts = katex_dist / "fonts"
+    if not stylesheet.exists() or not fonts.exists():
+        raise RuntimeError(
+            "Local KaTeX assets were not found. Install dependencies with: npm install"
+        )
+
+    asset_dir = output_dir / KATEX_ASSET_DIR
+    asset_dir.mkdir(parents=True, exist_ok=True)
+    shutil.copy2(stylesheet, asset_dir / stylesheet.name)
+    shutil.copytree(fonts, asset_dir / "fonts", dirs_exist_ok=True)
+    return f"{KATEX_ASSET_DIR}/{stylesheet.name}"
+
+
 def main() -> None:
     args = parse_args()
     document_path = DOCUMENT_PATH.resolve()
@@ -238,7 +300,17 @@ def main() -> None:
         image_mode=ImageRefMode.REFERENCED if image_refs else ImageRefMode.PLACEHOLDER,
         page_break_placeholder=None,
     )
-    html_head = KATEX_HEAD if args.html_formulas == "katex" else "null"
+    katex_stylesheet = ""
+    if args.html_formulas == "katex":
+        katex_stylesheet = (
+            '<link rel="stylesheet" '
+            f'href="{copy_katex_assets(output_dir)}">'
+        )
+
+    html_head = HTML_HEAD_TEMPLATE.format(
+        katex_stylesheet=katex_stylesheet,
+        reading_width=READING_WIDTH_CH,
+    )
     html = doc.export_to_html(
         image_mode=ImageRefMode.REFERENCED if image_refs else ImageRefMode.PLACEHOLDER,
         split_page_view=False,
@@ -248,6 +320,7 @@ def main() -> None:
     html = html.replace("%5C", "/")
     if args.html_formulas == "katex":
         html = mathml_to_katex(html)
+        html = inline_dollar_math_to_katex(html)
 
     markdown_path.write_text(markdown.rstrip() + "\n", encoding="utf-8")
     html_path.write_text(html, encoding="utf-8")

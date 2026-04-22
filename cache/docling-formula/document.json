@@ -1688,7 +1688,7 @@
         }
       ],
       "orig": "and its imaginarypart turns out to be theHilbert transform of the impulse response.TheETC,a realnonnegative function of time,is the magnitudeof theAIR. Forexample,theETCof an ideal system will be the magnitude of \u25b3(t).For this reason aninvestigation of the nature and properties of\u25b3\uff08t)proves to be very useful.We start with the purely real predecessors of #(t).",
-      "text": "and its imaginary part turns out to be the Hilbert transform of the impulse response. The ETC, a real nonnegative function of time, is the magnitude of the AIR. For example, the ETC of an ideal system will be the magnitude of △(t). For this reason an investigation of the nature and properties of △（t) proves to be very useful. We start with the purely real predecessors of #(t)."
+      "text": "and its imaginary part turns out to be the Hilbert transform of the impulse response. The ETC, a real nonnegative function of time, is the magnitude of the AIR. For example, the ETC of an ideal system will be the magnitude of △(t). For this reason an investigation of the nature and properties of △(t) proves to be very useful. We start with the purely real predecessors of △(t)."
     },
     {
       "self_ref": "#/texts/37",
@@ -2203,7 +2203,7 @@
         }
       ],
       "orig": "In a way, ejr is the most continuous complex function we can find with cos(@t) as its real part.Fig.6 shows the solidfigure thatresultswhen both parts of thefunction are plotted against time.The figure's projections show both thereal and the imaginaryparts as functions of time.Therear projection plane shows the function",
-      "text": "In a way, ejr is the most continuous complex function we can find with cos(ωt) as its real part. Fig. 6 shows the solid figure that results when both parts of the function are plotted against time. The figure's projections show both the real and the imaginary parts as functions of time. The rear projection plane shows the function"
+      "text": "In a way, $e^{j\\omega t}$ is the most continuous complex function we can find with cos(ωt) as its real part. Fig. 6 shows the solid figure that results when both parts of the function are plotted against time. The figure's projections show both the real and the imaginary parts as functions of time. The rear projection plane shows the function"
     },
     {
       "self_ref": "#/texts/56",
