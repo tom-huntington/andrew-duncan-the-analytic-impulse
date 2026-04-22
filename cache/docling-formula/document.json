@@ -400,9 +400,6 @@
         "$ref": "#/pictures/17"
       },
       {
-        "$ref": "#/texts/260"
-      },
-      {
         "$ref": "#/pictures/18"
       },
       {
@@ -454,9 +451,6 @@
         "$ref": "#/pictures/20"
       },
       {
-        "$ref": "#/texts/300"
-      },
-      {
         "$ref": "#/pictures/21"
       },
       {
@@ -494,12 +488,6 @@
       },
       {
         "$ref": "#/pictures/23"
-      },
-      {
-        "$ref": "#/texts/343"
-      },
-      {
-        "$ref": "#/texts/344"
       },
       {
         "$ref": "#/texts/345"
@@ -2278,7 +2266,7 @@
         }
       ],
       "orig": "Fig.5.Discrete-timefinite-sample delta function8[T]for 64-pointDFTinBracewellringformat.",
-      "text": "Fig. 5. Discrete-time finite-sample delta function 8[T] for 64-point DFT in Bracewell ring format."
+      "text": "Fig. 5. Discrete-time finite-sample delta function $\\delta_{64}[\\tau]$ for 64-point DFT in Bracewell ring format."
     },
     {
       "self_ref": "#/texts/60",
@@ -7702,7 +7690,7 @@
     {
       "self_ref": "#/texts/260",
       "parent": {
-        "$ref": "#/body"
+        "$ref": "#/pictures/17"
       },
       "children": [],
       "content_layer": "body",
@@ -8799,7 +8787,7 @@
     {
       "self_ref": "#/texts/300",
       "parent": {
-        "$ref": "#/body"
+        "$ref": "#/pictures/20"
       },
       "children": [],
       "content_layer": "body",
@@ -9974,7 +9962,7 @@
     {
       "self_ref": "#/texts/343",
       "parent": {
-        "$ref": "#/body"
+        "$ref": "#/pictures/23"
       },
       "children": [],
       "content_layer": "body",
@@ -10001,7 +9989,7 @@
     {
       "self_ref": "#/texts/344",
       "parent": {
-        "$ref": "#/body"
+        "$ref": "#/pictures/23"
       },
       "children": [],
       "content_layer": "body",
@@ -11758,6 +11746,9 @@
         },
         {
           "$ref": "#/texts/259"
+        },
+        {
+          "$ref": "#/texts/260"
         }
       ],
       "content_layer": "body",
@@ -11778,7 +11769,11 @@
           ]
         }
       ],
-      "captions": [],
+      "captions": [
+        {
+          "$ref": "#/texts/260"
+        }
+      ],
       "references": [],
       "footnotes": [],
       "annotations": []
@@ -11931,6 +11926,9 @@
         },
         {
           "$ref": "#/texts/299"
+        },
+        {
+          "$ref": "#/texts/300"
         }
       ],
       "content_layer": "body",
@@ -11951,7 +11949,11 @@
           ]
         }
       ],
-      "captions": [],
+      "captions": [
+        {
+          "$ref": "#/texts/300"
+        }
+      ],
       "references": [],
       "footnotes": [],
       "annotations": []
@@ -12110,6 +12112,12 @@
         },
         {
           "$ref": "#/texts/342"
+        },
+        {
+          "$ref": "#/texts/343"
+        },
+        {
+          "$ref": "#/texts/344"
         }
       ],
       "content_layer": "body",
@@ -12130,7 +12138,11 @@
           ]
         }
       ],
-      "captions": [],
+      "captions": [
+        {
+          "$ref": "#/texts/344"
+        }
+      ],
       "references": [],
       "footnotes": [],
       "annotations": []
