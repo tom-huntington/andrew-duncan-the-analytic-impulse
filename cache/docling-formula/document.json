@@ -2230,7 +2230,7 @@
         }
       ],
       "orig": "Fig.4.Discrete-time infinite-sample delta function 8[].",
-      "text": "Fig. 4. Discrete-time infinite-sample delta function 8[]."
+      "text": "Fig. 4. Discrete-time infinite-sample delta function $\\delta_\\infin [t]$."
     },
     {
       "self_ref": "#/texts/57",
@@ -2716,7 +2716,7 @@
         }
       ],
       "orig": "tion el.Ina Heysercorkscrew this magnitude appears astheradial distance of thecentral figure to the time axis.FromFig.6itis clear thatthe envelopeofcos(@r) is always1.Aplot of thisradius as a function of time istheETCof thefunction.",
-      "text": "tion el. In a Heyser corkscrew this magnitude appears as the radial distance of the central figure to the time axis. From Fig. 6 it is clear that the envelope of cos(@r) is always 1. A plot of this radius as a function of time is the ETC of the function."
+      "text": "tion $e^{j \\omega t}$. In a Heyser corkscrew this magnitude appears as the radial distance of the central figure to the time axis. From Fig. 6 it is clear that the envelope of cos(ωt) is always 1. A plot of this radius as a function of time is the ETC of the function."
     },
     {
       "self_ref": "#/texts/75",
@@ -2796,7 +2796,7 @@
           ]
         }
       ],
-      "orig": "which is an inversion ofEq.2.To get the complex extension of cos(wt) we express it in its exponential form, suppress thenegative frequency termej,and double the positive frequency part,as shown in Fig. 7.This complex-valuedfunction whosereal part is the original function of time is called the analytic signal, although this is something ofa misnomer,as noted below.Any real function of timewill have a spectrum that is two-sided and symmetric. To get the analytic signal,we go into the frequency domain,remove the negative-frequency components,and double theresult (except at the dcpoint).This corresponds to performing the operation in Eq.(la),where {\u25b3(t)},the spectrum of\u25b3(t),is a function that has a value of O fornegative",
+      "orig": "which is an inversion ofEq.2.To get the complex extension of cos(wt) we express it in its exponential form, suppress thenegative frequency termej,and double the positive frequency part,as shown in Fig. 7.This complex-valuedfunction whosereal part is the original function of time is called the analytic signal, although this is something ofa misnomer,as noted below.Any real function of timewill have a spectrum that is two-sided and symmetric. To get the analytic signal,we go into the frequency domain,remove the negative-frequency components,and double theresult (except at the dcpoint).This corresponds to performing the operation in Eq.(la),where {\u25b3(t)},the spectrum of\u25b3(t),is a function that has a value of 0 fornegative",
       "text": "which is an inversion of Eq. 2. To get the complex extension of cos(wt) we express it in its exponential form, suppress the negative frequency term ej, and double the positive frequency part, as shown in Fig. 7. This complex-valued function whose real part is the original function of time is called the analytic signal, although this is something of a misnomer, as noted below. Any real function of time will have a spectrum that is two-sided and symmetric. To get the analytic signal, we go into the frequency domain, remove the negative-frequency components, and double the result (except at the dc point). This corresponds to performing the operation in Eq. (la), where {△(t)}, the spectrum of △(t), is a function that has a value of O for negative"
     },
     {
@@ -3149,7 +3149,7 @@
         }
       ],
       "orig": "In the continuous domains we may say,in light of the foregoing, that if the real impulse 8\uff08r) is a signal with a flat spectrum of 1,then the analytic impulse (t)is asignalwith a spectrum thatiszero for negative frequencies,1 for dc,and2 forpositive frequencies. This is correct,but it will be more illuminating to approach this limit slowly.Fig.8shows a signal that has positive and negativefrequency content only up to Hz (that is,a bandwidth of 1 Hz and a unit area).The algebraicexpression of thissignal is",
-      "text": "In the continuous domains we may say, in light of the foregoing, that if the real impulse 8（r) is a signal with a flat spectrum of 1, then the analytic impulse (t) is a signal with a spectrum that is zero for negative frequencies, 1 for dc, and 2 for positive frequencies. This is correct, but it will be more illuminating to approach this limit slowly. Fig. 8 shows a signal that has positive and negative frequency content only up to Hz (that is, a bandwidth of 1 Hz and a unit area). The algebraic expression of this signal is"
+      "text": "In the continuous domains we may say, in light of the foregoing, that if the real impulse δ(t) is a signal with a flat spectrum of 1, then the analytic impulse Δ(t) is a signal with a spectrum that is zero for negative frequencies, 1 for dc, and 2 for positive frequencies. This is correct, but it will be more illuminating to approach this limit slowly. Fig. 8 shows a signal that has positive and negative frequency content only up to Hz (that is, a bandwidth of 1 Hz and a unit area). The algebraic expression of this signal is"
     },
     {
       "self_ref": "#/texts/91",
@@ -3716,7 +3716,7 @@
         }
       ],
       "orig": "asinc\uff08t\uff09=sinc\uff08t\uff09+j\u00b7sinc\uff08t/2)sin\uff08\u03c01/2) (5b)",
-      "text": "\\text {asc} ( t ) \\, = \\, \\text {inc} ( t ) \\, + \\, j \\, \\cdot \\, \\text {inc} ( t / 2 ) \\, \\sin ( \\pi t / 2 ) \\quad ( 5 b ) \\quad _ { \\text {or} \\, \\max } ^ { \\text {Perhah} }"
+      "text": "\\text {asc} ( t ) \\, = \\, \\text {inc} ( t ) \\, + \\, j \\, \\cdot \\, \\text {inc} ( t / 2 ) \\, \\sin ( \\pi t / 2 ) \\tag{5b}"
     },
     {
       "self_ref": "#/texts/112",
@@ -3878,7 +3878,7 @@
         }
       ],
       "orig": "sometimesreferred to asa doublet ord(t),is notcausal, andhence the magnitude of\u25b3\uff08t)[the ETCof8()] on the upper left handof Fig.ll must also be noncausal. InAppendixI thereisafurther discussionofwhyd(t) does not vanishfornonzero argument.For the moment, as the magnitudeof\u25b3(t)represents the ETCofanideal system,we may conclude that the ETCof any loudstrength in the continuous and discrete domains.Although the evidence for this is plentiful [2],[4]-[6], it appears onlyin fragments,in widely scattered texts, usually addressingvery different topics.Further,there is some confusion about thenecessity of this effect. Perhaps theresolutionofour instruments is toolow, ormaybeamore sophisticatedwindowingwouldmake ourETC start at t=O.The foregoing analysis shows that this is not so in continuous domains.The following addresses the same issue in the discrete domains.",
-      "text": "sometimes referred to as a doublet or d(t), is not causal, and hence the magnitude of △(t) [the ETC of 8()] on the upper left hand of Fig. 11 must also be noncausal. In Appendix I there is a further discussion of why d(t) does not vanish for nonzero argument. For the moment, as the magnitude of △(t) represents the ETC of an ideal system, we may conclude that the ETC of any loudstrength in the continuous and discrete domains. Although the evidence for this is plentiful [2], [4]-[6], it appears only in fragments, in widely scattered texts, usually addressing very different topics. Further, there is some confusion about the necessity of this effect. Perhaps the resolution of our instruments is too low, or maybe a more sophisticated windowing would make our ETC start at t=0. The foregoing analysis shows that this is not so in continuous domains. The following addresses the same issue in the discrete domains."
+      "text": "sometimes referred to as a doublet or d(t), is not causal, and hence the magnitude of △(t) [the ETC of δ(t)] on the upper left hand of Fig. 11 must also be noncausal. In Appendix I there is a further discussion of why d(t) does not vanish for nonzero argument. For the moment, as the magnitude of △(t) represents the ETC of an ideal system, we may conclude that the ETC of any loudstrength in the continuous and discrete domains. Although the evidence for this is plentiful [2], [4]-[6], it appears only in fragments, in widely scattered texts, usually addressing very different topics. Further, there is some confusion about the necessity of this effect. Perhaps the resolution of our instruments is too low, or maybe a more sophisticated windowing would make our ETC start at t=0. The foregoing analysis shows that this is not so in continuous domains. The following addresses the same issue in the discrete domains."
     },
     {
       "self_ref": "#/texts/118",
@@ -5445,7 +5445,7 @@
         }
       ],
       "orig": "Now let us compare Eqs.(5a) and (7a).We see that in this\"intermediate\"domain ofquantized time and continuous frequency the analyticimpulse has exactly thesameformasthecompletelycontinuousimpulse beforelimiting.One onlyneedwriteaTwheretwould normallyappear.Fig.13isan overlayofFigs.9and 12and shows even more clearly what Eq.\uff087b) tends to obscure:[]is justa sampledversionof the analytic sincfunction.However,we see thatEq.(7b)isreminiscentofEq.(6).Thesuddenappearanceof thefactor 2in the imaginary part can beexplained by noting that d[T]alternatesbetweenOand2/\u03c0,thusgivinganav-",
-      "text": "Now let us compare Eqs. (5a) and (7a). We see that in this \"intermediate\" domain of quantized time and continuous frequency the analytic impulse has exactly the same form as the completely continuous impulse before limiting. One only need write a T where t would normally appear. Fig. 13 is an overlay of Figs. 9 and 12 and shows even more clearly what Eq.（7b) tends to obscure: [] is just a sampled version of the analytic sinc function. However, we see that Eq. (7b) is reminiscent of Eq. (6). The sudden appearance of the factor 2 in the imaginary part can be explained by noting that d[T] alternates between 0 and 2/π, thus giving an av-"
+      "text": "Now let us compare Eqs. (5a) and (7a). We see that in this \"intermediate\" domain of quantized time and continuous frequency the analytic impulse has exactly the same form as the completely continuous impulse before limiting. One only need write a T where t would normally appear. Fig. 13 is an overlay of Figs. 9 and 12 and shows even more clearly what Eq. (7b) tends to obscure: $\\Delta_\\infin[\\tau]$ is just a sampled version of the analytic sinc function. However, we see that Eq. (7b) is reminiscent of Eq. (6). The sudden appearance of the factor 2 in the imaginary part can be explained by noting that $d_\\infin [\\tau]$ alternates between 0 and 2/π, thus giving an av-"
     },
     {
       "self_ref": "#/texts/176",
@@ -5958,7 +5958,7 @@
         }
       ],
       "orig": "Fig.12.Discrete-time infinite-sample analytic impulse \u25b3x[],its ETC,and its z transform evaluated on unit circle.",
-      "text": "Fig. 12. Discrete-time infinite-sample analytic impulse \u25b3x[], its ETC, and its z transform evaluated on unit circle."
+      "text": "Fig. 12. Discrete-time infinite-sample analytic impulse $\\Delta_\\infin [\\tau]$, its ETC, and its z transform evaluated on unit circle."
     },
     {
       "self_ref": "#/texts/195",
@@ -6985,7 +6985,7 @@
         }
       ],
       "orig": "haved[]=2/\u03c0=0.6366..,which differsbyless than 0.1%.Because of this,Fig. 14 and the upper left of Fig.12 may serve asETCs for the analytic impulse in theDFT domains for large N.Any measurement technique that yields information about signal and spectrum thatisrestricted to discrete samples,and this includesbothFFT(aparticularlyefficientway of doing a similarlylimitedresolution.",
-      "text": "have d[]=2/π=0. 6366.., which differs by less than 0. 1%. Because of this, Fig. 14 and the upper left of Fig. 12 may serve as ETCs for the analytic impulse in the DFT domains for large N. Any measurement technique that yields information about signal and spectrum that is restricted to discrete samples, and this includes both FFT (a particularly efficient way of doing a similarly limited resolution."
+      "text": "have $d_\\infin[\\tau]=2/\\pi=0. 6366..$, which differs by less than 0. 1%. Because of this, Fig. 14 and the upper left of Fig. 12 may serve as ETCs for the analytic impulse in the DFT domains for large N. Any measurement technique that yields information about signal and spectrum that is restricted to discrete samples, and this includes both FFT (a particularly efficient way of doing a similarly limited resolution."
     },
     {
       "self_ref": "#/texts/233",
@@ -7012,7 +7012,7 @@
         }
       ],
       "orig": "Wecannotnowexpect\u25b3v[t]to have thesame algebraic form as[T].What wasT=\u00b1now corresponds to=\u00b1N/2,the antipodal point.Eqs.\uff087a) and(7b)need tobe modified inorder that theenvelope of\u25b3[]vanishes at this point.In fact,",
-      "text": "We cannot now expect △v[t] to have the same algebraic form as [T]. What was T=± now corresponds to = ±N/2, the antipodal point. Eqs. (7a) and (7b) need to be modified in order that the envelope of △[] vanishes at this point. In fact,"
+      "text": "We cannot now expect $\\Delta_N[t]$ to have the same algebraic form as $\\Delta_\\infin[T]$. What was 𝜏=±∞. now corresponds to 𝜏=±N/2, the antipodal point. Eqs. (7a) and (7b) need to be modified in order that the envelope of △[𝜏] vanishes at this point. In fact,"
     },
     {
       "self_ref": "#/texts/234",
@@ -7148,7 +7148,7 @@
         }
       ],
       "orig": "Fig.15.Discrete-time finite-sample analytic impulse4[],its ETC,and its spectrum for 64-point DFT.",
-      "text": "Fig. 15. Discrete-time finite-sample analytic impulse4[], its ETC, and its spectrum for 64-point DFT."
+      "text": "Fig. 15. Discrete-time finite-sample analytic impulse $\\Delta_{64}[\\tau]$, its ETC, and its spectrum for 64-point DFT."
     },
     {
       "self_ref": "#/texts/239",
@@ -7634,7 +7634,7 @@
         }
       ],
       "orig": "Fig,16.Hann windowHANN[x]=cos\u00b2\uff08\u03c0x/N)=V[1+ cos(2mx/N])for64-pointDFT.",
-      "text": "Fig. 16. Hann window HANN[x]=cos\u00b2\uff08\u03c0x/N)=V[1+ cos(2mx/N]) for 64-point DFT."
+      "text": "Fig. 16. Hann window HANN[x]=cos\u00b2\uff08\u03c0x/N)=½[1+ cos(2mx/N]) for 64-point DFT."
     },
     {
       "self_ref": "#/texts/257",
@@ -7715,7 +7715,7 @@
         }
       ],
       "orig": "smoothedAIR\uff08t)=-{{\u25b3\uff08\uff09}[W(f\uff09H\uff08f)]} {\uff08H[(\uff09M{)}}= =g{{\u25b3()}H(f)} = \uff08t)*h\uff08t) (10)",
-      "text": "\\begin{aligned} \\text {smoother AIR} ( t ) & = \\mathbb { F } ^ { - 1 } \\left \\{ [ \\mathcal { F } \\{ \\Delta ( t ) \\} \\, W ( f ) ] H ( f ) \\right \\} \\\\ & = \\mathbb { F } ^ { - 1 } \\left \\{ \\mathcal { F } \\{ \\widehat { \\Delta } ( t ) \\} H ( f ) \\right \\} \\\\ & = \\widetilde { \\Delta } ( t ) \\ast h ( t ) \\quad ( 1 0 ) \\end{aligned}"
+      "text": "\\begin{aligned} \\text {smoother AIR} ( t ) & = \\mathbb { F } ^ { - 1 } \\left \\{  \\mathcal { F } \\{ \\Delta ( t ) \\}[ \\, W ( f )  H ( f ) ] \\right \\} \\\\ & = \\mathbb { F } ^ { - 1 } \\left \\{ [ \\mathcal { F } \\{ \\Delta ( t ) \\} \\, W ( f ) ] H ( f ) \\right \\} \\\\ & = \\mathbb { F } ^ { - 1 } \\left \\{ \\mathcal { F } \\{ \\widehat { \\Delta } ( t ) \\} H ( f ) \\right \\} \\\\ & = \\widetilde { \\Delta } ( t ) \\ast h ( t ) \\quad ( 1 0 ) \\end{aligned}"
     },
     {
       "self_ref": "#/texts/260",
@@ -7796,7 +7796,7 @@
         }
       ],
       "orig": "V2, T=0 -4, T=\u00b12 real part 0, elsewhere [] (9) = 0, Teven imaginary part 1 -4 Ppo \u03c0T(T+2)\uff08T-2)",
-      "text": "\\tilde { \\Delta } _ { [ \\tau ] } \\, = \\, \\begin{cases} & \\longrightarrow & \\longrightarrow \\\\ & & \\quad V _ { z } , & \\tau \\, = \\, 0 \\\\ & & & \\quad \\tau \\, = \\, \\pm \\, 2 \\ \\Big \\} \\, \\real \\, \\text {part} \\\\ & & & \\quad 0 , & \\text { elsewhere} \\end{cases} ."
+      "text": "\\tilde{\\Delta}_x[\\tau] = \\left\\{ \\begin{array}{ll} \\begin{array}{ll} \\frac{1}{2}, & \\tau = 0 \\\\ -\\frac{1}{4}, & \\tau = \\pm 2 \\\\ 0, & \\text{elsewhere} \\end{array} & \\left.\\begin{array}{l} \\\\ \\\\ \\end{array}\\right\\} \\text{real part} \\\\[1.5em] \\begin{array}{ll} 0, & \\tau \\text{ even} \\\\ \\frac{1}{\\pi}\\frac{-4}{\\tau(\\tau+2)(\\tau-2)}, & \\tau \\text{ odd} \\end{array} & \\left.\\begin{array}{l} \\\\ \\end{array}\\right\\} \\text{imaginary part} \\end{array} \\right."
     },
     {
       "self_ref": "#/texts/263",
@@ -9379,7 +9379,7 @@
         }
       ],
       "orig": "We may investigate this numerical discourse mathematically by the judicious selection of theoretical functions torepresent prototypical physical measurements.The convolution properties enjoyed by 8(t) make it an excellent choice for this purpose. Since the set {8(t-a)}formsanorthonormal basisforawideclass of functions,a discussion of signal-processing techniquesapplied to 8(t) alone will have a much wider applicability.Further,8(t) may itself be viewed as a physical measurement:the impulse response of an ideal system.",
-      "text": "We may investigate this numerical discourse mathematically by the judicious selection of theoretical functions to represent prototypical physical measurements. The convolution properties enjoyed by δ(t) make it an excellent choice for this purpose. Since the set {8(t-a)} forms an orthonormal basis for a wide class of functions, a discussion of signal-processing techniques applied to δ(t) alone will have a much wider applicability. Further, δ(t) may itself be viewed as a physical measurement: the impulse response of an ideal system."
+      "text": "We may investigate this numerical discourse mathematically by the judicious selection of theoretical functions to represent prototypical physical measurements. The convolution properties enjoyed by δ(t) make it an excellent choice for this purpose. Since the set {δ(t-a)} forms an orthonormal basis for a wide class of functions, a discussion of signal-processing techniques applied to δ(t) alone will have a much wider applicability. Further, δ(t) may itself be viewed as a physical measurement: the impulse response of an ideal system."
     },
     {
       "self_ref": "#/texts/321",
