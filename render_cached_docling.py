@@ -93,11 +93,23 @@ def parse_args() -> argparse.Namespace:
         default=8,
         help="Pixels of padding to add around cropped pictures.",
     )
+    parser.add_argument(
+        "--image-dir-name",
+        help=(
+            "Directory name for cropped picture assets inside the output directory. "
+            "Defaults to a URL-safe form of the output stem plus '_images'."
+        ),
+    )
     return parser.parse_args()
 
 
 def safe_output_stem(value: str) -> str:
     stem = "".join(ch if ch.isalnum() or ch in " ._-" else "_" for ch in value).strip()
+    return stem or "document"
+
+
+def safe_url_path_stem(value: str) -> str:
+    stem = re.sub(r"[^A-Za-z0-9]+", "-", value).strip("-").lower()
     return stem or "document"
 
 
@@ -319,7 +331,9 @@ def main() -> None:
     output_stem = safe_output_stem(args.output_stem or doc.name)
     markdown_path = output_dir / f"{output_stem}.md"
     html_path = output_dir / safe_output_filename(args.html_output, ".html")
-    image_dir = output_dir / f"{output_stem}_images"
+    image_dir_name = args.image_dir_name or f"{safe_url_path_stem(output_stem)}_images"
+    image_dir_name = Path(image_dir_name).name
+    image_dir = output_dir / image_dir_name
     document_json = json.loads(document_path.read_text(encoding="utf-8"))
     image_refs = crop_picture_images(
         document_json=document_json,
@@ -334,6 +348,7 @@ def main() -> None:
         image_mode=ImageRefMode.REFERENCED if image_refs else ImageRefMode.PLACEHOLDER,
         page_break_placeholder=None,
     )
+    markdown = markdown.replace(f"{image_dir_name}\\", f"{image_dir_name}/")
     markdown = remove_blocklisted_markdown(markdown)
     katex_stylesheet = ""
     if args.html_formulas == "katex":
