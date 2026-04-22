@@ -72,6 +72,11 @@ def parse_args() -> argparse.Namespace:
         help="Filename stem for the rendered outputs. Defaults to the Docling document name.",
     )
     parser.add_argument(
+        "--html-output",
+        default="index.html",
+        help="HTML filename to write inside the output directory. Defaults to index.html for GitHub Pages.",
+    )
+    parser.add_argument(
         "--html-formulas",
         choices=["katex", "mathml"],
         default="katex",
@@ -94,6 +99,16 @@ def parse_args() -> argparse.Namespace:
 def safe_output_stem(value: str) -> str:
     stem = "".join(ch if ch.isalnum() or ch in " ._-" else "_" for ch in value).strip()
     return stem or "document"
+
+
+def safe_output_filename(value: str, default_suffix: str) -> str:
+    name = Path(value).name.strip()
+    name = "".join(ch if ch.isalnum() or ch in " ._-" else "_" for ch in name)
+    if not name:
+        name = f"document{default_suffix}"
+    if Path(name).suffix.lower() != default_suffix:
+        name = f"{name}{default_suffix}"
+    return name
 
 
 def render_katex(tex: str, display_mode: bool) -> str:
@@ -303,7 +318,7 @@ def main() -> None:
 
     output_stem = safe_output_stem(args.output_stem or doc.name)
     markdown_path = output_dir / f"{output_stem}.md"
-    html_path = output_dir / f"{output_stem}.html"
+    html_path = output_dir / safe_output_filename(args.html_output, ".html")
     image_dir = output_dir / f"{output_stem}_images"
     document_json = json.loads(document_path.read_text(encoding="utf-8"))
     image_refs = crop_picture_images(
