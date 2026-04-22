@@ -983,7 +983,7 @@
         }
       ],
       "orig": "intuitive notions about what such a curve should mean. We will see that in finding such a curve there is an inevitable smearing of impulses in the time domain, and that what ishappening is that the sharp rise at= Ois actually\"leaking backward.\"",
-      "text": "intuitive notions about what such a curve should mean. We will see that in finding such a curve there is an inevitable smearing of impulses in the time domain, and that what is happening is that the sharp rise at = O is actually \"leaking backward.\""
+      "text": "intuitive notions about what such a curve should mean. We will see that in finding such a curve there is an inevitable smearing of impulses in the time domain, and that what is happening is that the sharp rise at t=0 is actually \"leaking backward.\""
     },
     {
       "self_ref": "#/texts/11",
