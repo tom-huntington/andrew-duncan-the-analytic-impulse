@@ -179,6 +179,12 @@ def copy_image_assets(image_source_dir: Path, output_dir: Path) -> None:
     shutil.copytree(image_source_dir, output_dir / IMAGE_ASSET_DIR)
 
 
+def copy_markdown_source(markdown_path: Path, output_dir: Path) -> Path:
+    copied_path = output_dir / markdown_path.name
+    shutil.copy2(markdown_path, copied_path)
+    return copied_path
+
+
 def normalize_image_src(src: str) -> str:
     for source_dir_name in (
         DEFAULT_IMAGE_SOURCE_DIR.name,
@@ -321,6 +327,7 @@ def render_site(
         raise FileNotFoundError(f"Markdown source not found: {markdown_path}")
 
     clean_output_dir(output_dir)
+    copy_markdown_source(markdown_path, output_dir)
     copy_image_assets(image_source_dir, output_dir)
     katex_stylesheet = (
         '<link rel="stylesheet" '
@@ -352,6 +359,7 @@ def main() -> None:
         image_source_dir=Path(args.image_source_dir).resolve(),
     )
     print(f"Read Markdown: {Path(args.input).resolve()}")
+    print(f"Copied Markdown: {Path(args.input).resolve()} -> {Path(args.output_dir).resolve() / Path(args.input).name}")
     print(f"Copied images: {Path(args.image_source_dir).resolve()} -> {Path(args.output_dir).resolve() / IMAGE_ASSET_DIR}")
     print(f"Wrote HTML: {html_path}")
 
