@@ -57,12 +57,12 @@ figcaption {{
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(
-        description="Render docs/index.html from paper.md as the source of truth."
+        description="Render docs/index.html from docs/paper.md as the source of truth."
     )
     parser.add_argument(
         "--input",
-        default="paper.md",
-        help="Markdown source file. Defaults to paper.md.",
+        default="docs/paper.md",
+        help="Markdown source file. Defaults to docs/paper.md.",
     )
     parser.add_argument(
         "--output-dir",
@@ -162,13 +162,9 @@ def copy_katex_assets(output_dir: Path) -> str:
     return f"{KATEX_ASSET_DIR}/{stylesheet.name}"
 
 
-def clean_output_dir(output_dir: Path) -> None:
+def prepare_output_dir(output_dir: Path) -> None:
     if output_dir.exists() and not output_dir.is_dir():
         raise NotADirectoryError(f"Output path is not a directory: {output_dir}")
-    if output_dir.anchor == str(output_dir):
-        raise ValueError(f"Refusing to wipe filesystem root: {output_dir}")
-
-    shutil.rmtree(output_dir, ignore_errors=True)
     output_dir.mkdir(parents=True, exist_ok=True)
 
 
@@ -176,11 +172,13 @@ def copy_image_assets(image_source_dir: Path, output_dir: Path) -> None:
     if not image_source_dir.exists() or not image_source_dir.is_dir():
         raise FileNotFoundError(f"Image source directory not found: {image_source_dir}")
 
-    shutil.copytree(image_source_dir, output_dir / IMAGE_ASSET_DIR)
+    shutil.copytree(image_source_dir, output_dir / IMAGE_ASSET_DIR, dirs_exist_ok=True)
 
 
 def copy_markdown_source(markdown_path: Path, output_dir: Path) -> Path:
     copied_path = output_dir / markdown_path.name
+    if markdown_path.resolve() == copied_path.resolve():
+        return copied_path
     shutil.copy2(markdown_path, copied_path)
     return copied_path
 
@@ -326,7 +324,7 @@ def render_site(
     if not markdown_path.exists():
         raise FileNotFoundError(f"Markdown source not found: {markdown_path}")
 
-    clean_output_dir(output_dir)
+    prepare_output_dir(output_dir)
     copy_markdown_source(markdown_path, output_dir)
     copy_image_assets(image_source_dir, output_dir)
     katex_stylesheet = (

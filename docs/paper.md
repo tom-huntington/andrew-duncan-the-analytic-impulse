@@ -25,7 +25,7 @@ Here we describe the mechanism of finding the ETC and discuss the utility of △
 
 Fig. 1. Superposition of two damped sinusoids with different attack times.
 
-![Image](the-analytic-impulse_images/picture_01.jpeg)
+![Image](images/picture_01.jpeg)
 
 If we let h(t) be the system's impulse response and H(f) its frequency response, we have
 
@@ -39,7 +39,7 @@ From the AIR it is a short step to the ETC. The AIR is a complex function of a r
 
 Fig. 2. ETC of function of Fig. 1.
 
-![Image](the-analytic-impulse_images/picture_02.jpeg)
+![Image](images/picture_02.jpeg)
 
 ## 2 THE DELTA FUNCTIONS
 
@@ -47,7 +47,7 @@ It is generally considered desirable to have symmetry in one's equations. For in
 
 Fig. 3. Dirac delta function and its spectrum.
 
-![Image](the-analytic-impulse_images/picture_03.jpeg)
+![Image](images/picture_03.jpeg)
 
 ## 3 ANALYTIC FUNCTIONS
 
@@ -59,7 +59,7 @@ In a way, $e^{j\omega t}$ is the most continuous complex function we can find wi
 
 Fig. 4. Discrete-time infinite-sample delta function $\delta\_\infin [t]$.
 
-![Image](the-analytic-impulse_images/picture_04.jpeg)
+![Image](images/picture_04.jpeg)
 
 plotted on the complex plane, with time as a parameter (a Nyquist diagram). Henning Moller refers to Nyquist diagrams of loudspeaker impedance plots as Heyser spirals, after the graphs that Richard Heyser used in Audio magazine to analyze loudspeaker performance. Following that line, we used to refer to such graphs as shown in Fig. 6 as generalized Heyser spirals, but the term proved too formal and cumbersome and has been shortened to Heyser corkscrew. Similar three-dimensional plots have also been used by Heyser [2].
 
@@ -67,11 +67,11 @@ The magnitude of cos(wt) varies from -1 to +1 and at times it is zero. However, 
 
 Fig. 5. Discrete-time finite-sample delta function $\delta\_{64}[\tau]$ for 64-point DFT in Bracewell ring format.
 
-![Image](the-analytic-impulse_images/picture_05.jpeg)
+![Image](images/picture_05.jpeg)
 
 Fig. 6. Heyser corkscrew of ej.
 
-![Image](the-analytic-impulse_images/picture_06.jpeg)
+![Image](images/picture_06.jpeg)
 
 The connection between the real and imaginary parts is called the Hilbert transform. The connection between the real part and the whole is best illustrated by examining the relation.
 
@@ -81,7 +81,7 @@ which is an inversion of Eq. 2. To get the complex extension of cos(wt) we expre
 
 Fig. 7. Spectra of cos(2πt) and ej
 
-![Image](the-analytic-impulse_images/picture_07.jpeg)
+![Image](images/picture_07.jpeg)
 
 As a matter of nomenclature, the term analytic refers to a complex function of a complex variable that has a special smoothness property, that of being everywhere differentiable. In principle, given a reasonably smooth real function of a single variable, there is a unique analytic function whose real part along a specified axis is the same as the original function. One finds this analytic function by first applying the Hilbert transform and then integrating the Cauchy-Riemann equations to extend the function to the entire complex plane. In the process described, we stop short of finding the entire analytic continuation of our signal, but the term analytic signal has behind it the inertia of history. The notion of an analytic signal as one with no negative-frequency terms will also be used in the discrete domains, where the concept of differentiability is meaningless.
 
@@ -95,7 +95,7 @@ If we remove the negative-frequency components, we get a transform pair as in Fi
 
 Fig. 8. Sinc(t) and its spectrum.
 
-![Image](the-analytic-impulse_images/picture_08.jpeg)
+![Image](images/picture_08.jpeg)
 
 $$\begin{aligned} f ( t ) & = \frac { \sin ( \pi t ) } { \pi t } + j \, \frac { 1 - \cos ( \pi t ) } { \pi t } \\ & = \left [ \frac { e ^ { j t } - 1 } { \pi t } \right ] ^ { * } \\ & = \sin ( t ) + j \cdot \cos ( t ) = \, \text {asinc} ( t ) \, . \quad ( 5 a ) \end{aligned}$$
 
@@ -119,15 +119,15 @@ Our next step is to make time discrete, that is, we now know the value of the si
 
 Fig. 9. Analytic sinc function asinc(t), its ETC, and its spectrum.
 
-![Image](the-analytic-impulse_images/picture_09.jpeg)
+![Image](images/picture_09.jpeg)
 
 Fig. 10. Heyser corkscrew of asinc(t).
 
-![Image](the-analytic-impulse_images/picture_10.jpeg)
+![Image](images/picture_10.jpeg)
 
 Fig. 11. Continuous-time analytic impulse time infinite-sample analytic impulse], its ETC, and its spectrum.
 
-![Image](the-analytic-impulse_images/picture_11.jpeg)
+![Image](images/picture_11.jpeg)
 
 J. Audio Eng. Soc., Vol. 36, No. 5, 1988 May
 
@@ -141,15 +141,15 @@ $$A _ { \mathbb { Z } } [ \tau ] \equiv \begin{cases} 1 , & \tau = 0 \\ j \frac 
 
 Now let us compare Eqs. (5a) and (7a). We see that in this "intermediate" domain of quantized time and continuous frequency the analytic impulse has exactly the same form as the completely continuous impulse before limiting. One only need write a T where t would normally appear. Fig. 13 is an overlay of Figs. 9 and 12 and shows even more clearly what Eq. (7b) tends to obscure: $\Delta\_\infin[\tau]$ is just a sampled version of the analytic sinc function. However, we see that Eq. (7b) is reminiscent of Eq. (6). The sudden appearance of the factor 2 in the imaginary part can be explained by noting that $d\_\infin [\tau]$ alternates between 0 and 2/π, thus giving an average value of 1/π (see also Appendix I).
 
-![Image](the-analytic-impulse_images/picture_12.jpeg)
+![Image](images/picture_12.jpeg)
 
 Fig. 13. Overlay of Figs. 9 and 12.
 
-![Image](the-analytic-impulse_images/picture_13.jpeg)
+![Image](images/picture_13.jpeg)
 
 Fig. 12. Discrete-time infinite-sample analytic impulse $\Delta\_\infin [\tau]$, its ETC, and its z transform evaluated on unit circle.
 
-![Image](the-analytic-impulse_images/picture_14.jpeg)
+![Image](images/picture_14.jpeg)
 
 If we step back from Fig. 12 and enlarge our field of view, we get a picture like Fig. 14. This figure shows that it takes roughly 60 samples for the envelope of even the briefest transient to decay to 40 dB below the peak value. This suggests that there is a practical limit to the resolution of an energy-time measurement made with sampled signals.
 
@@ -159,7 +159,7 @@ Our final step, one that is well justified by the demands of physical reality, i
 
 Fig. 14. Wider view of Fig. 12.
 
-![Image](the-analytic-impulse_images/picture_15.jpeg)
+![Image](images/picture_15.jpeg)
 
 We cannot now expect $\Delta\_N[t]$ to have the same algebraic form as $\Delta\_\infin[T]$. What was 𝜏=±∞. now corresponds to 𝜏=±N/2, the antipodal point. Eqs. (7a) and (7b) need to be modified in order that the envelope of △[𝜏] vanishes at this point. In fact,
 
@@ -173,7 +173,7 @@ Thus the analytic impulse, discrete or continuous, has a magnitude that does not
 
 Fig. 15. Discrete-time finite-sample analytic impulse $\Delta\_{64}[\tau]$, its ETC, and its spectrum for 64-point DFT.
 
-![Image](the-analytic-impulse_images/picture_16.jpeg)
+![Image](images/picture_16.jpeg)
 
 nothing of the practical one, is not causal. This means that the interpretation of that envelope as a graph of energy versus time is only approximate. The best we can do is ask: what can we do to make such a graph look better? For example, we may make the skirts of a peak steeper, to help us visually sort closely spaced peaks, at the expense of making the peaks themselves somewhat broader. This is obviously a tradeoff, and if desired it can be accomplished with techniques of windowing.
 
@@ -191,7 +191,7 @@ To find the smoothed envelope of a measured impulse response, we may use an argu
 
 Fig. 16. Hann window HANN[x]=cos²（πx/N)=½[1+ cos(2mx/N]) for 64-point DFT.
 
-![Image](the-analytic-impulse_images/picture_17.jpeg)
+![Image](images/picture_17.jpeg)
 
 in Sec. I and say that the smoothed "analytic impulse response" is the same as the "smoothed analytic impulse" response. Algebraically,
 
@@ -207,15 +207,15 @@ The simplest description of resolving power in an ETC is the width of a spike ca
 
 Fig. 17. Smoothed discrete-time infinite-sample analytic impulse [], its ETC, and its z transform evaluated on unit circle.
 
-![Image](the-analytic-impulse_images/picture_18.jpeg)
+![Image](images/picture_18.jpeg)
 
 Fig. 18. Magnitude of [T] on 60-dB scale.
 
-![Image](the-analytic-impulse_images/picture_19.jpeg)
+![Image](images/picture_19.jpeg)
 
 Fig. 19. Magnitude of △[T] on 180-dB scale.
 
-![Image](the-analytic-impulse_images/picture_20.jpeg)
+![Image](images/picture_20.jpeg)
 
 ing, the -30-dB width is 42 samples in time; with the smoothing discussed, it is 10 samples. With the typical experimenter's lab equipment, the total number of samples N is fixed, and the equipment's display window or printout will show the data samples spaced at equal intervals so as to fill the space allotted. In particular, changing the equipment's frequency range or sampling window will not change the spacing of samples in the display. In this case a peak in ETC will have a width that is a constant fraction of the display width, regardless of frequency setting. In other words, if the experimenter turns up the sampling rate on the lab FFT in hopes of narrowing the apparent width of a peak in the energy-time function, it will have no effect. However, in terms of absolute time, the peak will be narrower since the entire display will now cover a smaller interval of time.
 
@@ -239,15 +239,15 @@ I would like to give special thanks to Dr. Marshall Buck and Eugene Czerwinski f
 
 Fig. 21. ETC of high-quality tweeter, measured with 1024-sample FFT sampling at 256 kHz; no weighting.
 
-![Image](the-analytic-impulse_images/picture_21.jpeg)
+![Image](images/picture_21.jpeg)
 
 Fig. 22. ETC for same tweeter as in Fig. 21, but with raised-cosine smoothing in frequency domain.
 
-![Image](the-analytic-impulse_images/picture_22.jpeg)
+![Image](images/picture_22.jpeg)
 
 Fig. 20. Smoothed discrete-time finite-sample analytic impulse ] and its spectrum for 64-point DFT.
 
-![Image](the-analytic-impulse_images/picture_23.jpeg)
+![Image](images/picture_23.jpeg)
 
 couragement. Thanks are also due Dr. John Vanderkooy and Dr. Stanley Lipshitz for their helpful discussions about windowing. Finally, I am grateful to Daniel Hirsch and the Stevenson Program on Nuclear Policy at the University of California at Santa Cruz for the use of their facilities.
 
@@ -268,7 +268,7 @@ In Figs. 9 and 10 we saw the analytic sinc function a sinc(t). The imaginary par
 
 Fig. 23. ETC for same tweeter as in Fig. 21, measured with tweeter mounted at end of long sound-absorbing tube; smoothing used.
 
-![Image](the-analytic-impulse_images/picture_24.jpeg)
+![Image](images/picture_24.jpeg)
 
 has local extrema that oscillate between O and (approximately) 2/πt. As we tend to the limit, the band edge of the spectrum moves to the right, and the extrema of the signal move closer together. At the limit, we might feel that the signal becomes infinitely discontinuous, but a property of the Fourier integral saves us. This is the property that at a discontinuity, the integral converges to the average of the left- and the right-hand limits. Thus the inverse transform of CAUS(f) has the form given in Eq. 5. The real part does converge to zero for t ≠ 0, but the imaginary part converges to the "average" value of 1/t.
 
@@ -280,7 +280,7 @@ In the context of the theory of generalized functions, this is a rigorous defini
 
 Fig. 24. Essentially duplicate of [2, fig. A.3].
 
-![Image](the-analytic-impulse_images/picture_25.jpeg)
+![Image](images/picture_25.jpeg)
 
 ## APPENDIX II
 
@@ -304,7 +304,7 @@ Note that this convention for the DFT means that the area under a function squar
 
 ## THE AUTHOR
 
-![Image](the-analytic-impulse_images/picture_26.jpeg)
+![Image](images/picture_26.jpeg)
 
 Andrew Duncan was born in London, U.K., in 1960. He received a B.S. degree in engineering and applied sciences from the California Institute of Technology in 1983. He taught high school physics for 2 years in Pasadena, California, while studying at Caltech, and for another year after graduation. He then worked for 2 years, with Marshall Buck, as a programmer at Cerwin-Vega Inc. Mr. Duncan is currently a doctoral student in mathematics at the University of California at Santa Cruz, where he is studying the application of group theory to the theory of tonal harmony. He has also worked as a consultant at E-mu Systems, Inc. in the area of digital pitch shifting.
 
