@@ -89,3 +89,6 @@ Run this after editing. This is the check that catches positional-ref and parent
 . .venv\Scripts\Activate.ps1
 python -c 'from pathlib import Path; from docling_core.types.doc.document import DoclingDocument; DoclingDocument.load_from_json(Path("cache/docling-formula/document.json")); print("Docling load: ok")'
 ```
+
+codex session id for joining paragraphs
+019db43a-6506-7aa2-a132-fa7e8f948445

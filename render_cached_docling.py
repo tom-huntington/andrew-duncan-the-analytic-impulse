@@ -64,7 +64,7 @@ def parse_args() -> argparse.Namespace:
     )
     parser.add_argument(
         "--output-dir",
-        default="output",
+        default="docs",
         help="Directory to write the Markdown and HTML outputs.",
     )
     parser.add_argument(

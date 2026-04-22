@@ -43,9 +43,6 @@
         "$ref": "#/texts/9"
       },
       {
-        "$ref": "#/texts/10"
-      },
-      {
         "$ref": "#/texts/11"
       },
       {
@@ -86,9 +83,6 @@
       },
       {
         "$ref": "#/pictures/1"
-      },
-      {
-        "$ref": "#/texts/36"
       },
       {
         "$ref": "#/texts/37"
@@ -145,9 +139,6 @@
         "$ref": "#/texts/68"
       },
       {
-        "$ref": "#/texts/69"
-      },
-      {
         "$ref": "#/texts/70"
       },
       {
@@ -158,9 +149,6 @@
       },
       {
         "$ref": "#/pictures/6"
-      },
-      {
-        "$ref": "#/texts/78"
       },
       {
         "$ref": "#/texts/79"
@@ -190,9 +178,6 @@
         "$ref": "#/texts/91"
       },
       {
-        "$ref": "#/texts/92"
-      },
-      {
         "$ref": "#/texts/93"
       },
       {
@@ -218,9 +203,6 @@
       },
       {
         "$ref": "#/groups/2"
-      },
-      {
-        "$ref": "#/texts/102"
       },
       {
         "$ref": "#/texts/103"
@@ -295,9 +277,6 @@
         "$ref": "#/texts/189"
       },
       {
-        "$ref": "#/texts/190"
-      },
-      {
         "$ref": "#/texts/191"
       },
       {
@@ -317,9 +296,6 @@
       },
       {
         "$ref": "#/texts/207"
-      },
-      {
-        "$ref": "#/texts/204"
       },
       {
         "$ref": "#/texts/208"
@@ -850,8 +826,8 @@
           ]
         }
       ],
-      "orig": "The motivation for using the ETC derives from the utility of envelopes ineliminating interference effects. that appear in the time domain.Fig.1 shows the impulse response ofa simulated system.Itis composed of two damped sinusoids,a high-amplitude oscillation that dies away rapidly and a delayed lower amplitude one that lingers.Because of interference it is not easy to discern this visually. Using the techniques described in this paper we find the ETC (Fig. 2). In this graph the information wewant is casy to see.However,we note that the energy-time graph is noncausal, that is, it starts to leap up before1=O,in opposition to our",
-      "text": "The motivation for using the ETC derives from the utility of envelopes in eliminating interference effects that appear in the time domain. Fig. 1 shows the impulse response of a simulated system. It is composed of two damped sinusoids, a high-amplitude oscillation that dies away rapidly and a delayed lower amplitude one that lingers. Because of interference it is not easy to discern this visually. Using the techniques described in this paper we find the ETC (Fig. 2). In this graph the information we want is easy to see. However, we note that the energy-time graph is noncausal, that is, it starts to leap up before t=0, in opposition to our"
+      "orig": "The motivation for using the ETC derives from the utility of envelopes in eliminating interference effects that appear in the time domain. Fig. 1 shows the impulse response of a simulated system. It is composed of two damped sinusoids, a high-amplitude oscillation that dies away rapidly and a delayed lower amplitude one that lingers. Because of interference it is not easy to discern this visually. Using the techniques described in this paper we find the ETC (Fig. 2). In this graph the information we want is easy to see. However, we note that the energy-time graph is noncausal, that is, it starts to leap up before t=0, in opposition to our intuitive notions about what such a curve should mean. We will see that in finding such a curve there is an inevitable smearing of impulses in the time domain, and that what is happening is that the sharp rise at t=0 is actually \"leaking backward.\"",
+      "text": "The motivation for using the ETC derives from the utility of envelopes in eliminating interference effects that appear in the time domain. Fig. 1 shows the impulse response of a simulated system. It is composed of two damped sinusoids, a high-amplitude oscillation that dies away rapidly and a delayed lower amplitude one that lingers. Because of interference it is not easy to discern this visually. Using the techniques described in this paper we find the ETC (Fig. 2). In this graph the information we want is easy to see. However, we note that the energy-time graph is noncausal, that is, it starts to leap up before t=0, in opposition to our intuitive notions about what such a curve should mean. We will see that in finding such a curve there is an inevitable smearing of impulses in the time domain, and that what is happening is that the sharp rise at t=0 is actually \"leaking backward.\""
     },
     {
       "self_ref": "#/texts/8",
@@ -931,8 +907,8 @@
           ]
         }
       ],
-      "orig": "intuitive notions about what such a curve should mean. We will see that in finding such a curve there is an inevitable smearing of impulses in the time domain, and that what ishappening is that the sharp rise at= Ois actually\"leaking backward.\"",
-      "text": "intuitive notions about what such a curve should mean. We will see that in finding such a curve there is an inevitable smearing of impulses in the time domain, and that what is happening is that the sharp rise at t=0 is actually \"leaking backward.\""
+      "orig": "",
+      "text": ""
     },
     {
       "self_ref": "#/texts/11",
@@ -1395,8 +1371,8 @@
           ]
         }
       ],
-      "orig": "From theAIRitisa short step to theETC.The AIR isacomplexfunction ofarealvariable(time).Itsreal part is the impulse response of the system in question,",
-      "text": "From the AIR it is a short step to the ETC. The AIR is a complex function of a real variable (time). Its real part is the impulse response of the system in question,"
+      "orig": "From the AIR it is a short step to the ETC. The AIR is a complex function of a real variable (time). Its real part is the impulse response of the system in question, and its imaginary part turns out to be the Hilbert transform of the impulse response. The ETC, a real nonnegative function of time, is the magnitude of the AIR. For example, the ETC of an ideal system will be the magnitude of △(t). For this reason an investigation of the nature and properties of △(t) proves to be very useful. We start with the purely real predecessors of △(t).",
+      "text": "From the AIR it is a short step to the ETC. The AIR is a complex function of a real variable (time). Its real part is the impulse response of the system in question, and its imaginary part turns out to be the Hilbert transform of the impulse response. The ETC, a real nonnegative function of time, is the magnitude of the AIR. For example, the ETC of an ideal system will be the magnitude of △(t). For this reason an investigation of the nature and properties of △(t) proves to be very useful. We start with the purely real predecessors of △(t)."
     },
     {
       "self_ref": "#/texts/28",
@@ -1623,8 +1599,8 @@
           ]
         }
       ],
-      "orig": "and its imaginarypart turns out to be theHilbert transform of the impulse response.TheETC,a realnonnegative function of time,is the magnitudeof theAIR. Forexample,theETCof an ideal system will be the magnitude of △(t).For this reason aninvestigation of the nature and properties of△（t)proves to be very useful.We start with the purely real predecessors of #(t).",
-      "text": "and its imaginary part turns out to be the Hilbert transform of the impulse response. The ETC, a real nonnegative function of time, is the magnitude of the AIR. For example, the ETC of an ideal system will be the magnitude of △(t). For this reason an investigation of the nature and properties of △(t) proves to be very useful. We start with the purely real predecessors of △(t)."
+      "orig": "",
+      "text": ""
     },
     {
       "self_ref": "#/texts/37",
@@ -2219,8 +2195,8 @@
           ]
         }
       ],
-      "orig": "Themagnitudeofcos(wt)variesfrom-1to+1 and at times it is zero.However,we feel that its envelope is constant.Our intuition is satisfied by defining the envelopetobethemagnitudeofthefullcomplexfunc-",
-      "text": "The magnitude of cos(wt) varies from -1 to +1 and at times it is zero. However, we feel that its envelope is constant. Our intuition is satisfied by defining the envelope to be the magnitude of the full complex func-"
+      "orig": "The magnitude of cos(wt) varies from -1 to +1 and at times it is zero. However, we feel that its envelope is constant. Our intuition is satisfied by defining the envelope to be the magnitude of the full complex function $e^{j \\omega t}$. In a Heyser corkscrew this magnitude appears as the radial distance of the central figure to the time axis. From Fig. 6 it is clear that the envelope of cos(ωt) is always 1. A plot of this radius as a function of time is the ETC of the function.",
+      "text": "The magnitude of cos(wt) varies from -1 to +1 and at times it is zero. However, we feel that its envelope is constant. Our intuition is satisfied by defining the envelope to be the magnitude of the full complex function $e^{j \\omega t}$. In a Heyser corkscrew this magnitude appears as the radial distance of the central figure to the time axis. From Fig. 6 it is clear that the envelope of cos(ωt) is always 1. A plot of this radius as a function of time is the ETC of the function."
     },
     {
       "self_ref": "#/texts/59",
@@ -2516,8 +2492,8 @@
           ]
         }
       ],
-      "orig": "tion el.Ina Heysercorkscrew this magnitude appears astheradial distance of thecentral figure to the time axis.FromFig.6itis clear thatthe envelopeofcos(@r) is always1.Aplot of thisradius as a function of time istheETCof thefunction.",
-      "text": "tion $e^{j \\omega t}$. In a Heyser corkscrew this magnitude appears as the radial distance of the central figure to the time axis. From Fig. 6 it is clear that the envelope of cos(ωt) is always 1. A plot of this radius as a function of time is the ETC of the function."
+      "orig": "",
+      "text": ""
     },
     {
       "self_ref": "#/texts/70",
@@ -2597,8 +2573,8 @@
           ]
         }
       ],
-      "orig": "which is an inversion ofEq.2.To get the complex extension of cos(wt) we express it in its exponential form, suppress thenegative frequency termej,and double the positive frequency part,as shown in Fig. 7.This complex-valuedfunction whosereal part is the original function of time is called the analytic signal, although this is something ofa misnomer,as noted below.Any real function of timewill have a spectrum that is two-sided and symmetric. To get the analytic signal,we go into the frequency domain,remove the negative-frequency components,and double theresult (except at the dcpoint).This corresponds to performing the operation in Eq.(la),where {△(t)},the spectrum of△(t),is a function that has a value of 0 fornegative",
-      "text": "which is an inversion of Eq. 2. To get the complex extension of cos(wt) we express it in its exponential form, suppress the negative frequency term ej, and double the positive frequency part, as shown in Fig. 7. This complex-valued function whose real part is the original function of time is called the analytic signal, although this is something of a misnomer, as noted below. Any real function of time will have a spectrum that is two-sided and symmetric. To get the analytic signal, we go into the frequency domain, remove the negative-frequency components, and double the result (except at the dc point). This corresponds to performing the operation in Eq. (la), where {△(t)}, the spectrum of △(t), is a function that has a value of O for negative"
+      "orig": "which is an inversion of Eq. 2. To get the complex extension of cos(wt) we express it in its exponential form, suppress the negative frequency term ej, and double the positive frequency part, as shown in Fig. 7. This complex-valued function whose real part is the original function of time is called the analytic signal, although this is something of a misnomer, as noted below. Any real function of time will have a spectrum that is two-sided and symmetric. To get the analytic signal, we go into the frequency domain, remove the negative-frequency components, and double the result (except at the dc point). This corresponds to performing the operation in Eq. (la), where {△(t)}, the spectrum of △(t), is a function that has a value of O for negative frequencies, 1 for dc, and 2 for positive frequencies. Performing this operation is referred to as causalizing the spectrum. In this way, the term causal has been generalized to refer to a function that is zero for negative argument. If the argument is time, this corresponds to conventional usage. In fact, as we shall see, a function cannot be causal in both time and frequency.",
+      "text": "which is an inversion of Eq. 2. To get the complex extension of cos(wt) we express it in its exponential form, suppress the negative frequency term ej, and double the positive frequency part, as shown in Fig. 7. This complex-valued function whose real part is the original function of time is called the analytic signal, although this is something of a misnomer, as noted below. Any real function of time will have a spectrum that is two-sided and symmetric. To get the analytic signal, we go into the frequency domain, remove the negative-frequency components, and double the result (except at the dc point). This corresponds to performing the operation in Eq. (la), where {△(t)}, the spectrum of △(t), is a function that has a value of O for negative frequencies, 1 for dc, and 2 for positive frequencies. Performing this operation is referred to as causalizing the spectrum. In this way, the term causal has been generalized to refer to a function that is zero for negative argument. If the argument is time, this corresponds to conventional usage. In fact, as we shall see, a function cannot be causal in both time and frequency."
     },
     {
       "self_ref": "#/texts/73",
@@ -2759,8 +2735,8 @@
           ]
         }
       ],
-      "orig": "frequencies,1 for dc,and 2 for positive frequencies. Performing this operationis referred to as causalizing the spectrum.In this way, the term causal has been generalized toreferto a function that iszerofornegative argument.If the argument is time,this corresponds to conventional usage.In fact,aswe shall see,a function cannot be causal in both time and frequency.",
-      "text": "frequencies, 1 for dc, and 2 for positive frequencies. Performing this operation is referred to as causalizing the spectrum. In this way, the term causal has been generalized to refer to a function that is zero for negative argument. If the argument is time, this corresponds to conventional usage. In fact, as we shall see, a function cannot be causal in both time and frequency."
+      "orig": "",
+      "text": ""
     },
     {
       "self_ref": "#/texts/79",
@@ -2895,8 +2871,8 @@
           ]
         }
       ],
-      "orig": "Ifwe remove the negative-frequency components,we get a transform pair as in Fig.9,shown in both linear andlogarithmicphasemagnitude(ETC) displays.This",
-      "text": "If we remove the negative-frequency components, we get a transform pair as in Fig. 9, shown in both linear and logarithmic phase-magnitude (ETC) displays. This"
+      "orig": "If we remove the negative-frequency components, we get a transform pair as in Fig. 9, shown in both linear and logarithmic phase-magnitude (ETC) displays. This function is given by",
+      "text": "If we remove the negative-frequency components, we get a transform pair as in Fig. 9, shown in both linear and logarithmic phase-magnitude (ETC) displays. This function is given by"
     },
     {
       "self_ref": "#/texts/84",
@@ -3138,8 +3114,8 @@
           ]
         }
       ],
-      "orig": "function is given by",
-      "text": "function is given by"
+      "orig": "",
+      "text": ""
     },
     {
       "self_ref": "#/texts/93",
@@ -3354,8 +3330,8 @@
           ]
         }
       ],
-      "orig": "We see immediately that theimaginary part of△(t),",
-      "text": "We see immediately that the imaginary part of △(t),"
+      "orig": "We see immediately that the imaginary part of △(t), sometimes referred to as a doublet or d(t), is not causal, and hence the magnitude of △(t) [the ETC of δ(t)] on the upper left hand of Fig. 11 must also be noncausal. In Appendix I there is a further discussion of why d(t) does not vanish for nonzero argument. For the moment, as the magnitude of △(t) represents the ETC of an ideal system, we may conclude that the ETC of any loudstrength in the continuous and discrete domains. Although the evidence for this is plentiful [2], [4]-[6], it appears only in fragments, in widely scattered texts, usually addressing very different topics. Further, there is some confusion about the necessity of this effect. Perhaps the resolution of our instruments is too low, or maybe a more sophisticated windowing would make our ETC start at t=0. The foregoing analysis shows that this is not so in continuous domains. The following addresses the same issue in the discrete domains.",
+      "text": "We see immediately that the imaginary part of △(t), sometimes referred to as a doublet or d(t), is not causal, and hence the magnitude of △(t) [the ETC of δ(t)] on the upper left hand of Fig. 11 must also be noncausal. In Appendix I there is a further discussion of why d(t) does not vanish for nonzero argument. For the moment, as the magnitude of △(t) represents the ETC of an ideal system, we may conclude that the ETC of any loudstrength in the continuous and discrete domains. Although the evidence for this is plentiful [2], [4]-[6], it appears only in fragments, in widely scattered texts, usually addressing very different topics. Further, there is some confusion about the necessity of this effect. Perhaps the resolution of our instruments is too low, or maybe a more sophisticated windowing would make our ETC start at t=0. The foregoing analysis shows that this is not so in continuous domains. The following addresses the same issue in the discrete domains."
     },
     {
       "self_ref": "#/texts/101",
@@ -3408,8 +3384,8 @@
           ]
         }
       ],
-      "orig": "sometimesreferred to asa doublet ord(t),is notcausal, andhence the magnitude of△（t)[the ETCof8()] on the upper left handof Fig.ll must also be noncausal. InAppendixI thereisafurther discussionofwhyd(t) does not vanishfornonzero argument.For the moment, as the magnitudeof△(t)represents the ETCofanideal system,we may conclude that the ETCof any loudstrength in the continuous and discrete domains.Although the evidence for this is plentiful [2],[4]-[6], it appears onlyin fragments,in widely scattered texts, usually addressingvery different topics.Further,there is some confusion about thenecessity of this effect. Perhaps theresolutionofour instruments is toolow, ormaybeamore sophisticatedwindowingwouldmake ourETC start at t=O.The foregoing analysis shows that this is not so in continuous domains.The following addresses the same issue in the discrete domains.",
-      "text": "sometimes referred to as a doublet or d(t), is not causal, and hence the magnitude of △(t) [the ETC of δ(t)] on the upper left hand of Fig. 11 must also be noncausal. In Appendix I there is a further discussion of why d(t) does not vanish for nonzero argument. For the moment, as the magnitude of △(t) represents the ETC of an ideal system, we may conclude that the ETC of any loudstrength in the continuous and discrete domains. Although the evidence for this is plentiful [2], [4]-[6], it appears only in fragments, in widely scattered texts, usually addressing very different topics. Further, there is some confusion about the necessity of this effect. Perhaps the resolution of our instruments is too low, or maybe a more sophisticated windowing would make our ETC start at t=0. The foregoing analysis shows that this is not so in continuous domains. The following addresses the same issue in the discrete domains."
+      "orig": "",
+      "text": ""
     },
     {
       "self_ref": "#/texts/103",
@@ -4732,8 +4708,8 @@
           ]
         }
       ],
-      "orig": "Now let us compare Eqs.(5a) and (7a).We see that in this\"intermediate\"domain ofquantized time and continuous frequency the analyticimpulse has exactly thesameformasthecompletelycontinuousimpulse beforelimiting.One onlyneedwriteaTwheretwould normallyappear.Fig.13isan overlayofFigs.9and 12and shows even more clearly what Eq.（7b) tends to obscure:[]is justa sampledversionof the analytic sincfunction.However,we see thatEq.(7b)isreminiscentofEq.(6).Thesuddenappearanceof thefactor 2in the imaginary part can beexplained by noting that d[T]alternatesbetweenOand2/π,thusgivinganav-",
-      "text": "Now let us compare Eqs. (5a) and (7a). We see that in this \"intermediate\" domain of quantized time and continuous frequency the analytic impulse has exactly the same form as the completely continuous impulse before limiting. One only need write a T where t would normally appear. Fig. 13 is an overlay of Figs. 9 and 12 and shows even more clearly what Eq. (7b) tends to obscure: $\\Delta_\\infin[\\tau]$ is just a sampled version of the analytic sinc function. However, we see that Eq. (7b) is reminiscent of Eq. (6). The sudden appearance of the factor 2 in the imaginary part can be explained by noting that $d_\\infin [\\tau]$ alternates between 0 and 2/π, thus giving an av-"
+      "orig": "Now let us compare Eqs. (5a) and (7a). We see that in this \"intermediate\" domain of quantized time and continuous frequency the analytic impulse has exactly the same form as the completely continuous impulse before limiting. One only need write a T where t would normally appear. Fig. 13 is an overlay of Figs. 9 and 12 and shows even more clearly what Eq. (7b) tends to obscure: $\\Delta_\\infin[\\tau]$ is just a sampled version of the analytic sinc function. However, we see that Eq. (7b) is reminiscent of Eq. (6). The sudden appearance of the factor 2 in the imaginary part can be explained by noting that $d_\\infin [\\tau]$ alternates between 0 and 2/π, thus giving an average value of 1/π (see also Appendix I).",
+      "text": "Now let us compare Eqs. (5a) and (7a). We see that in this \"intermediate\" domain of quantized time and continuous frequency the analytic impulse has exactly the same form as the completely continuous impulse before limiting. One only need write a T where t would normally appear. Fig. 13 is an overlay of Figs. 9 and 12 and shows even more clearly what Eq. (7b) tends to obscure: $\\Delta_\\infin[\\tau]$ is just a sampled version of the analytic sinc function. However, we see that Eq. (7b) is reminiscent of Eq. (6). The sudden appearance of the factor 2 in the imaginary part can be explained by noting that $d_\\infin [\\tau]$ alternates between 0 and 2/π, thus giving an average value of 1/π (see also Appendix I)."
     },
     {
       "self_ref": "#/texts/152",
@@ -5785,8 +5761,8 @@
           ]
         }
       ],
-      "orig": "erage value of 1/π (see also Appendix I).",
-      "text": "erage value of 1/π (see also Appendix I)."
+      "orig": "",
+      "text": ""
     },
     {
       "self_ref": "#/texts/191",
@@ -6164,8 +6140,8 @@
           ]
         }
       ],
-      "orig": "haved[]=2/π=0.6366..,which differsbyless than 0.1%.Because of this,Fig. 14 and the upper left of Fig.12 may serve asETCs for the analytic impulse in theDFT domains for large N.Any measurement technique that yields information about signal and spectrum thatisrestricted to discrete samples,and this includesbothFFT(aparticularlyefficientway of doing a similarlylimitedresolution.",
-      "text": "have $d_\\infin[\\tau]=2/\\pi=0. 6366..$, which differs by less than 0. 1%. Because of this, Fig. 14 and the upper left of Fig. 12 may serve as ETCs for the analytic impulse in the DFT domains for large N. Any measurement technique that yields information about signal and spectrum that is restricted to discrete samples, and this includes both FFT (a particularly efficient way of doing a similarly limited resolution."
+      "orig": "",
+      "text": ""
     },
     {
       "self_ref": "#/texts/205",
@@ -6245,8 +6221,8 @@
           ]
         }
       ],
-      "orig": "which is shown in Fig.15.This looks very different from Eq.(7).The difference in form between Eqs.(7) and (8) was one initial stimulus to my investigations: However,these two cquations arenumerically almost identical.For example,in the 64-point DFT domain, thefirstnonzerovalueofd64[T]iscot（π/64)/32=0.6361 ...In the infinite-point z-transform time domain we",
-      "text": "which is shown in Fig. 15. This looks very different from Eq. (7). The difference in form between Eqs. (7) and (8) was one initial stimulus to my investigations: However, these two equations are numerically almost identical. For example, in the 64-point DFT domain, the first nonzero value of d64[T] is cot(π/64)/32=0.6361 ... In the infinite-point z-transform time domain we"
+      "orig": "which is shown in Fig. 15. This looks very different from Eq. (7). The difference in form between Eqs. (7) and (8) was one initial stimulus to my investigations: However, these two equations are numerically almost identical. For example, in the 64-point DFT domain, the first nonzero value of d64[T] is cot(π/64)/32=0.6361 ... In the infinite-point z-transform time domain we have $d_\\infin[\\tau]=2/\\pi=0. 6366..$, which differs by less than 0. 1%. Because of this, Fig. 14 and the upper left of Fig. 12 may serve as ETCs for the analytic impulse in the DFT domains for large N. Any measurement technique that yields information about signal and spectrum that is restricted to discrete samples, and this includes both FFT (a particularly efficient way of doing a similarly limited resolution.",
+      "text": "which is shown in Fig. 15. This looks very different from Eq. (7). The difference in form between Eqs. (7) and (8) was one initial stimulus to my investigations: However, these two equations are numerically almost identical. For example, in the 64-point DFT domain, the first nonzero value of d64[T] is cot(π/64)/32=0.6361 ... In the infinite-point z-transform time domain we have $d_\\infin[\\tau]=2/\\pi=0. 6366..$, which differs by less than 0. 1%. Because of this, Fig. 14 and the upper left of Fig. 12 may serve as ETCs for the analytic impulse in the DFT domains for large N. Any measurement technique that yields information about signal and spectrum that is restricted to discrete samples, and this includes both FFT (a particularly efficient way of doing a similarly limited resolution."
     },
     {
       "self_ref": "#/texts/208",
