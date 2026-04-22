@@ -25,6 +25,9 @@ INLINE_DOLLAR_FORMULA_RE = re.compile(
     r"(?<!\\)\$(?P<tex>[^$\n]+?)(?<!\\)\$"
 )
 HTML_TAG_RE = re.compile(r"(<[^>]+>)")
+OUTPUT_TEXT_BLOCKLIST = {
+    "Smoothed energy-time",
+}
 READING_WIDTH_CH = 72
 KATEX_ASSET_DIR = "katex"
 HTML_HEAD_TEMPLATE = """\
@@ -170,6 +173,22 @@ def inline_dollar_math_to_katex(html: str) -> str:
     return "".join(rendered_parts)
 
 
+def remove_blocklisted_markdown(markdown: str) -> str:
+    lines = [
+        line
+        for line in markdown.splitlines()
+        if line.strip() not in OUTPUT_TEXT_BLOCKLIST
+    ]
+    return "\n".join(lines)
+
+
+def remove_blocklisted_html(html: str) -> str:
+    for text in OUTPUT_TEXT_BLOCKLIST:
+        escaped = re.escape(html_lib.escape(text))
+        html = re.sub(rf"\n?<p>\s*{escaped}\s*</p>", "", html)
+    return html
+
+
 def sorted_source_images(source_image_dir: Path) -> list[Path]:
     def sort_key(path: Path) -> tuple[str, int | str]:
         match = re.search(r"(\d+)$", path.stem)
@@ -300,6 +319,7 @@ def main() -> None:
         image_mode=ImageRefMode.REFERENCED if image_refs else ImageRefMode.PLACEHOLDER,
         page_break_placeholder=None,
     )
+    markdown = remove_blocklisted_markdown(markdown)
     katex_stylesheet = ""
     if args.html_formulas == "katex":
         katex_stylesheet = (
@@ -317,6 +337,7 @@ def main() -> None:
         formula_to_mathml=True,
         html_head=html_head,
     )
+    html = remove_blocklisted_html(html)
     html = html.replace("%5C", "/")
     if args.html_formulas == "katex":
         html = mathml_to_katex(html)

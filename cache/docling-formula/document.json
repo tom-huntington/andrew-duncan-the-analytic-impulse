@@ -94,9 +94,6 @@
         "$ref": "#/pictures/1"
       },
       {
-        "$ref": "#/texts/34"
-      },
-      {
         "$ref": "#/texts/36"
       },
       {
@@ -1563,33 +1560,6 @@
       ],
       "orig": "55",
       "text": "55"
-    },
-    {
-      "self_ref": "#/texts/34",
-      "parent": {
-        "$ref": "#/body"
-      },
-      "children": [],
-      "content_layer": "body",
-      "label": "text",
-      "prov": [
-        {
-          "page_no": 2,
-          "bbox": {
-            "l": 84.77543131510417,
-            "t": 366.27669270833337,
-            "r": 188.4498494466146,
-            "b": 349.90071614583337,
-            "coord_origin": "BOTTOMLEFT"
-          },
-          "charspan": [
-            0,
-            19
-          ]
-        }
-      ],
-      "orig": "Snoothedenergy-tine",
-      "text": "Smoothed energy-time"
     },
     {
       "self_ref": "#/texts/35",
