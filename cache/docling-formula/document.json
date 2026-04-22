@@ -352,9 +352,6 @@
         "$ref": "#/pictures/14"
       },
       {
-        "$ref": "#/texts/232"
-      },
-      {
         "$ref": "#/texts/233"
       },
       {
@@ -362,6 +359,9 @@
       },
       {
         "$ref": "#/texts/235"
+      },
+      {
+        "$ref": "#/texts/232"
       },
       {
         "$ref": "#/texts/236"
@@ -388,6 +388,18 @@
         "$ref": "#/texts/255"
       },
       {
+        "$ref": "#/texts/262"
+      },
+      {
+        "$ref": "#/texts/263"
+      },
+      {
+        "$ref": "#/texts/264"
+      },
+      {
+        "$ref": "#/texts/265"
+      },
+      {
         "$ref": "#/pictures/16"
       },
       {
@@ -401,18 +413,6 @@
       },
       {
         "$ref": "#/texts/261"
-      },
-      {
-        "$ref": "#/texts/262"
-      },
-      {
-        "$ref": "#/texts/263"
-      },
-      {
-        "$ref": "#/texts/264"
-      },
-      {
-        "$ref": "#/texts/265"
       },
       {
         "$ref": "#/texts/266"
@@ -7768,8 +7768,8 @@
           ]
         }
       ],
-      "orig": "The art ofwindowing consists of picking a window",
-      "text": "The art of windowing consists of picking a window"
+      "orig": "The art ofwindowing consists of picking a window thatbestembodies the desiredtradeoffsbetween smoothness andresolution.TheHannwindow shown isoneofthemostelementaryof these.Otherwindows of interest include the Hann squared,the Blackmun, and the Kaiser.For futher discussion,see,for example, [6].",
+      "text": "The art of windowing consists of picking a window that best embodies the desired tradeoffs between smoothness and resolution. The Hann window shown is one of the most elementary of these. Other windows of interest include the Hann squared, the Blackmun, and the Kaiser. For futher discussion, see, for example, [6]."
     },
     {
       "self_ref": "#/texts/262",
@@ -7890,8 +7890,8 @@
           ]
         }
       ],
-      "orig": "Tofind thesmoothedenvelopeofameasuredimpulse response,wemay usean argument similar to the one thatbestembodies the desiredtradeoffsbetween smoothness andresolution.TheHannwindow shown isoneofthemostelementaryof these.Otherwindows of interest include the Hann squared,the Blackmun, and the Kaiser.For futher discussion,see,for example, [6].",
-      "text": "To find the smoothed envelope of a measured impulse response, we may use an argument similar to the one that best embodies the desired tradeoffs between smoothness and resolution. The Hann window shown is one of the most elementary of these. Other windows of interest include the Hann squared, the Blackmun, and the Kaiser. For futher discussion, see, for example, [6]."
+      "orig": "Tofind thesmoothedenvelopeofameasuredimpulse response,wemay usean argument similar to the one",
+      "text": "To find the smoothed envelope of a measured impulse response, we may use an argument similar to the one"
     },
     {
       "self_ref": "#/texts/266",
