@@ -181,7 +181,28 @@ By windowing we mean the multiplication in the time or frequency domain of a mea
 
 We first investigate the effect of windowing on the analytic impulse itself. We will later see that the windowed impulse or its spectrum may be used to find a windowed ETC for physical data. To window x[], we multiply its spectrum by a cosine-squared shape. The value of the window is 0 at the two edges of[]'s spectrum and I at the center. The results of this windowing are shown in Fig. 17. The algebraic expression for this smoothed analytic impulse is
 
-$$\tilde{\Delta}_x[\tau] = \left\{ \begin{array}{ll} \begin{array}{ll} \frac{1}{2}, & \tau = 0 \\ -\frac{1}{4}, & \tau = \pm 2 \\ 0, & \text{elsewhere} \end{array} & \left.\begin{array}{l} \\ \\ \end{array}\right\} \text{real part} \\[1.5em] \begin{array}{ll} 0, & \tau \text{ even} \\ \frac{1}{\pi}\frac{-4}{\tau(\tau+2)(\tau-2)}, & \tau \text{ odd} \end{array} & \left.\begin{array}{l} \\ \end{array}\right\} \text{imaginary part} \end{array} \right.$$
+$$
+\tilde{\Delta}_x[\tau] =
+\begin{cases}
+\left.
+\begin{array}{ll}
+\frac{1}{2}, & \tau = 0 \\
+-\frac{1}{4}, & \tau = \pm 2 \\
+0, & \text{elsewhere}
+\end{array}
+\right\rbrace
+& \text{real part}
+\\
+\\
+\left.
+\begin{array}{ll}
+0, & \tau \text{ even} \\
+\frac{1}{\pi}\frac{-4}{\tau(\tau+2)(\tau-2)}, & \tau \text{ odd}
+\end{array}
+\right\rbrace
+& \text{imaginary part}
+\end{cases}
+$$
 
 The real part of the impulse has become more spread out, but the imaginary part is more localized, and as a result the magnitude peak has narrower skirts, but is more broad at the top. Fig. 18 shows a wide view of the magnitude, over the same range as Fig. 14, and Fig. 19 gives a still wider view.
 
