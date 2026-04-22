@@ -172,19 +172,7 @@
         "$ref": "#/pictures/6"
       },
       {
-        "$ref": "#/texts/82"
-      },
-      {
         "$ref": "#/texts/83"
-      },
-      {
-        "$ref": "#/texts/84"
-      },
-      {
-        "$ref": "#/texts/85"
-      },
-      {
-        "$ref": "#/texts/86"
       },
       {
         "$ref": "#/texts/87"
@@ -205,22 +193,10 @@
         "$ref": "#/texts/92"
       },
       {
-        "$ref": "#/texts/93"
-      },
-      {
         "$ref": "#/pictures/7"
       },
       {
-        "$ref": "#/texts/100"
-      },
-      {
         "$ref": "#/texts/101"
-      },
-      {
-        "$ref": "#/texts/102"
-      },
-      {
-        "$ref": "#/texts/103"
       },
       {
         "$ref": "#/texts/104"
@@ -819,7 +795,7 @@
           ]
         }
       ],
-      "orig": "A complex analytic function is to its real part as a solidobjcct is to its shadow.The analytic impulse \u25b3(t)isa complex\"function\"whose real part is the familiar Dirac symbol δ(t).This impulse finds application in energy-time calculations.The nature of thisimpulse and its application to finding energy-time curves are examined in the continuous,z-transform,and DFT domains.A simple window is also discussed which leadstoa smoother impulse\u25b3(1).",
+      "orig": "A complex analytic function is to its real part as a solidobjcct is to its shadow.The analytic impulse △(t)isa complex\"function\"whose real part is the familiar Dirac symbol δ(t).This impulse finds application in energy-time calculations.The nature of thisimpulse and its application to finding energy-time curves are examined in the continuous,z-transform,and DFT domains.A simple window is also discussed which leadstoa smoother impulse△(1).",
       "text": "A complex analytic function is to its real part as a solid object is to its shadow. The analytic impulse △(t) is a complex \"function\" whose real part is the familiar Dirac symbol δ(t). This impulse finds application in energy-time calculations. The nature of this impulse and its application to finding energy-time curves are examined in the continuous, z-transform, and DFT domains. A simple window is also discussed which leads to a smoother impulse $\\tilde{\\Delta}(t)$."
     },
     {
@@ -874,7 +850,7 @@
           ]
         }
       ],
-      "orig": "The analytic impulse \u25b3(t) is the complex-valued extensionof thereal-valued function8(t)[1].Itsreal part is that same delta; its imaginary part will be examined further. This function finds one application in audio in the calculation of the energy-time curve (ETC) [2], [3]of a system.To summarize this idea briefly,the ETC is the envelope (as opposed to the magnitude) of the impulseresponse.To find thatenvelope,we combine the magnitude of the impulse response in an rms fashion with the magnitude ofits Hilbert transform.The complex(or quadrature) sum of the impulse response with its Hilbert transform is called the analytic impulseresponse(AlR) of the system, and the ETC is the magnitudeof theAIR.",
+      "orig": "The analytic impulse △(t) is the complex-valued extensionof thereal-valued function8(t)[1].Itsreal part is that same delta; its imaginary part will be examined further. This function finds one application in audio in the calculation of the energy-time curve (ETC) [2], [3]of a system.To summarize this idea briefly,the ETC is the envelope (as opposed to the magnitude) of the impulseresponse.To find thatenvelope,we combine the magnitude of the impulse response in an rms fashion with the magnitude ofits Hilbert transform.The complex(or quadrature) sum of the impulse response with its Hilbert transform is called the analytic impulseresponse(AlR) of the system, and the ETC is the magnitudeof theAIR.",
       "text": "The analytic impulse △(t) is the complex-valued extension of the real-valued function δ(t) [1]. Its real part is that same delta; its imaginary part will be examined further. This function finds one application in audio in the calculation of the energy-time curve (ETC) [2], [3] of a system. To summarize this idea briefly, the ETC is the envelope (as opposed to the magnitude) of the impulse response. To find that envelope, we combine the magnitude of the impulse response in an rms fashion with the magnitude of its Hilbert transform. The complex (or quadrature) sum of the impulse response with its Hilbert transform is called the analytic impulse response (AIR) of the system, and the ETC is the magnitude of the AIR."
     },
     {
@@ -1037,7 +1013,7 @@
           ]
         }
       ],
-      "orig": "Here we describe the mechanism of finding theETC and discuss theutility of\u25b3(t)in carryingout theprocedure.In the following sections we justify the procedure and investigate thenature of\u25b3(t) inthedifferent domains. To find the AIR of a system, given its impulse response, we use (r) in one of two equivalent ways:",
+      "orig": "Here we describe the mechanism of finding theETC and discuss theutility of△(t)in carryingout theprocedure.In the following sections we justify the procedure and investigate thenature of△(t) inthedifferent domains. To find the AIR of a system, given its impulse response, we use (r) in one of two equivalent ways:",
       "text": "Here we describe the mechanism of finding the ETC and discuss the utility of △(t) in carrying out the procedure. In the following sections we justify the procedure and investigate the nature of △(t) in the different domains. To find the AIR of a system, given its impulse response, we use (r) in one of two equivalent ways:"
     },
     {
@@ -1047,7 +1023,7 @@
       },
       "children": [],
       "content_layer": "body",
-      "label": "text",
+      "label": "list_item",
       "prov": [
         {
           "page_no": 1,
@@ -1064,7 +1040,7 @@
           ]
         }
       ],
-      "orig": "1) We multiply the system's frequency response by the spectrum of \u25b3(t) and then perform an inverse transform (Fourier,2,or DFT),which gives us the AIR in",
+      "orig": "1) We multiply the system's frequency response by the spectrum of △(t) and then perform an inverse transform (Fourier,2,or DFT),which gives us the AIR in",
       "text": "1) We multiply the system's frequency response by the spectrum of △(t) and then perform an inverse transform (Fourier, 2, or DFT), which gives us the AIR in"
     },
     {
@@ -1307,8 +1283,8 @@
           ]
         }
       ],
-      "orig": "2)Weconvolvethe system'simpulse responsewith \u25b3(t),which yields the AIR.",
-      "text": "2) We convolve the system's impulse response with \u25b3(t), which yields the AIR.",
+      "orig": "2)Weconvolvethe system'simpulse responsewith △(t),which yields the AIR.",
+      "text": "2) We convolve the system's impulse response with △(t), which yields the AIR.",
       "enumerated": false,
       "marker": ""
     },
@@ -1363,7 +1339,7 @@
           ]
         }
       ],
-      "orig": "AIR(1)=g-1{{\u25b3\uff08t)}H(f)} (1a)",
+      "orig": "AIR(1)=g-1{{△（t)}H(f)} (1a)",
       "text": "A I R ( t ) = \\mathcal { F } ^ { - 1 } \\{ \\mathcal { F } \\{ \\Delta ( t ) \\} \\, H ( f ) \\} \\tag{ 1 a }"
     },
     {
@@ -1390,7 +1366,7 @@
           ]
         }
       ],
-      "orig": "=\u25b3\uff08t)*h\uff081) (1b)",
+      "orig": "=△（t)*h（1) (1b)",
       "text": "= \\Delta ( t ) \\ast h ( t ) \\ ."
     },
     {
@@ -1417,7 +1393,7 @@
           ]
         }
       ],
-      "orig": "The term AIRcanbeparsedin two differentways. Forlinear systems the two interpretationsareidentical. We introduced the AIRabove as the analytic\"impulse response,\"a complex function whose real part is the impulse response.This interpretation follows (roughly) alyticimpulse\"response,the(complex) response of a system to a complex impulse,namely,\u25b3(t).This interpretation corresponds to Eq.(1b).In this light,\u25b3(t) appears as the AIR of an ideal system. This is to say, the function\u25b3(t)plays a dual role.From oneperspective it is the toolwe use to calculate theAIRforagiven system.But at the same time,we may regard it as the data itself, the response of a system with everywhereflat frequency response.",
+      "orig": "The term AIRcanbeparsedin two differentways. Forlinear systems the two interpretationsareidentical. We introduced the AIRabove as the analytic\"impulse response,\"a complex function whose real part is the impulse response.This interpretation follows (roughly) alyticimpulse\"response,the(complex) response of a system to a complex impulse,namely,△(t).This interpretation corresponds to Eq.(1b).In this light,△(t) appears as the AIR of an ideal system. This is to say, the function△(t)plays a dual role.From oneperspective it is the toolwe use to calculate theAIRforagiven system.But at the same time,we may regard it as the data itself, the response of a system with everywhereflat frequency response.",
       "text": "The term AIR can be parsed in two different ways. For linear systems the two interpretations are identical. We introduced the AIR above as the analytic \"impulse response, \" a complex function whose real part is the impulse response. This interpretation follows (roughly) analytic impulse\" response, the (complex) response of a system to a complex impulse, namely, △(t). This interpretation corresponds to Eq. (1b). In this light, △(t) appears as the AIR of an ideal system. This is to say, the function △(t) plays a dual role. From one perspective it is the tool we use to calculate the AIR for a given system. But at the same time, we may regard it as the data itself, the response of a system with everywhere flat frequency response."
     },
     {
@@ -1687,7 +1663,7 @@
           ]
         }
       ],
-      "orig": "and its imaginarypart turns out to be theHilbert transform of the impulse response.TheETC,a realnonnegative function of time,is the magnitudeof theAIR. Forexample,theETCof an ideal system will be the magnitude of \u25b3(t).For this reason aninvestigation of the nature and properties of\u25b3\uff08t)proves to be very useful.We start with the purely real predecessors of #(t).",
+      "orig": "and its imaginarypart turns out to be theHilbert transform of the impulse response.TheETC,a realnonnegative function of time,is the magnitudeof theAIR. Forexample,theETCof an ideal system will be the magnitude of △(t).For this reason aninvestigation of the nature and properties of△（t)proves to be very useful.We start with the purely real predecessors of #(t).",
       "text": "and its imaginary part turns out to be the Hilbert transform of the impulse response. The ETC, a real nonnegative function of time, is the magnitude of the AIR. For example, the ETC of an ideal system will be the magnitude of △(t). For this reason an investigation of the nature and properties of △(t) proves to be very useful. We start with the purely real predecessors of △(t)."
     },
     {
@@ -1773,60 +1749,6 @@
       "text": "Fig. 3. Dirac delta function and its spectrum."
     },
     {
-      "self_ref": "#/texts/40",
-      "parent": {
-        "$ref": "#/pictures/2"
-      },
-      "children": [],
-      "content_layer": "body",
-      "label": "text",
-      "prov": [
-        {
-          "page_no": 2,
-          "bbox": {
-            "l": 471.9345703125,
-            "t": 265.29134114583337,
-            "r": 497.313232421875,
-            "b": 251.64469401041663,
-            "coord_origin": "BOTTOMLEFT"
-          },
-          "charspan": [
-            0,
-            4
-          ]
-        }
-      ],
-      "orig": "REAL",
-      "text": "REAL"
-    },
-    {
-      "self_ref": "#/texts/41",
-      "parent": {
-        "$ref": "#/pictures/2"
-      },
-      "children": [],
-      "content_layer": "body",
-      "label": "text",
-      "prov": [
-        {
-          "page_no": 2,
-          "bbox": {
-            "l": 77.21584065755208,
-            "t": 251.64469401041663,
-            "r": 101.51453653971355,
-            "b": 240.18147786458337,
-            "coord_origin": "BOTTOMLEFT"
-          },
-          "charspan": [
-            0,
-            4
-          ]
-        }
-      ],
-      "orig": "REAL",
-      "text": "REAL"
-    },
-    {
       "self_ref": "#/texts/42",
       "parent": {
         "$ref": "#/pictures/2"
@@ -1852,33 +1774,6 @@
       ],
       "orig": "0",
       "text": "0"
-    },
-    {
-      "self_ref": "#/texts/43",
-      "parent": {
-        "$ref": "#/pictures/2"
-      },
-      "children": [],
-      "content_layer": "body",
-      "label": "text",
-      "prov": [
-        {
-          "page_no": 2,
-          "bbox": {
-            "l": 355.8408203125,
-            "t": 171.40226236979163,
-            "r": 407.6780598958333,
-            "b": 150.65926106770837,
-            "coord_origin": "BOTTOMLEFT"
-          },
-          "charspan": [
-            0,
-            5
-          ]
-        }
-      ],
-      "orig": "<-->>",
-      "text": "<-->>"
     },
     {
       "self_ref": "#/texts/44",
@@ -2175,7 +2070,7 @@
           ]
         }
       ],
-      "orig": "ejur =cos\uff08ot) +j \u00b7 sin\uff08@t). (2)",
+      "orig": "ejur =cos（ot) +j · sin（@t). (2)",
       "text": "e ^ { j \\omega t } = \\cos ( \\omega t ) \\, + \\, j \\, \\sin ( \\omega t ) \\, ."
     },
     {
@@ -2231,33 +2126,6 @@
       ],
       "orig": "Fig.4.Discrete-time infinite-sample delta function 8[].",
       "text": "Fig. 4. Discrete-time infinite-sample delta function $\\delta_\\infin [t]$."
-    },
-    {
-      "self_ref": "#/texts/57",
-      "parent": {
-        "$ref": "#/pictures/3"
-      },
-      "children": [],
-      "content_layer": "body",
-      "label": "text",
-      "prov": [
-        {
-          "page_no": 3,
-          "bbox": {
-            "l": 92.74722290039062,
-            "t": 744.907246907552,
-            "r": 114.727783203125,
-            "b": 735.2540283203125,
-            "coord_origin": "BOTTOMLEFT"
-          },
-          "charspan": [
-            0,
-            4
-          ]
-        }
-      ],
-      "orig": "REAL",
-      "text": "REAL"
     },
     {
       "self_ref": "#/texts/58",
@@ -2337,7 +2205,7 @@
           ]
         }
       ],
-      "orig": "da\uff08r)",
+      "orig": "da（r)",
       "text": "da（r)"
     },
     {
@@ -2420,33 +2288,6 @@
       ],
       "orig": "Fig.5.Discrete-timefinite-sample delta function8[T]for 64-pointDFTinBracewellringformat.",
       "text": "Fig. 5. Discrete-time finite-sample delta function 8[T] for 64-point DFT in Bracewell ring format."
-    },
-    {
-      "self_ref": "#/texts/64",
-      "parent": {
-        "$ref": "#/pictures/4"
-      },
-      "children": [],
-      "content_layer": "body",
-      "label": "text",
-      "prov": [
-        {
-          "page_no": 3,
-          "bbox": {
-            "l": 423.5277913411458,
-            "t": 763.6774088541667,
-            "r": 438.5388997395833,
-            "b": 755.633056640625,
-            "coord_origin": "BOTTOMLEFT"
-          },
-          "charspan": [
-            0,
-            4
-          ]
-        }
-      ],
-      "orig": "REAL",
-      "text": "REAL"
     },
     {
       "self_ref": "#/texts/65",
@@ -2769,7 +2610,7 @@
           ]
         }
       ],
-      "orig": "ejot + e-jur cos\uff08@t)= (3) 2",
+      "orig": "ejot + e-jur cos（@t)= (3) 2",
       "text": "\\cos ( \\omega t ) = \\frac { e ^ { j \\omega t } + e ^ { - j \\omega t } } { 2 }"
     },
     {
@@ -2796,7 +2637,7 @@
           ]
         }
       ],
-      "orig": "which is an inversion ofEq.2.To get the complex extension of cos(wt) we express it in its exponential form, suppress thenegative frequency termej,and double the positive frequency part,as shown in Fig. 7.This complex-valuedfunction whosereal part is the original function of time is called the analytic signal, although this is something ofa misnomer,as noted below.Any real function of timewill have a spectrum that is two-sided and symmetric. To get the analytic signal,we go into the frequency domain,remove the negative-frequency components,and double theresult (except at the dcpoint).This corresponds to performing the operation in Eq.(la),where {\u25b3(t)},the spectrum of\u25b3(t),is a function that has a value of 0 fornegative",
+      "orig": "which is an inversion ofEq.2.To get the complex extension of cos(wt) we express it in its exponential form, suppress thenegative frequency termej,and double the positive frequency part,as shown in Fig. 7.This complex-valuedfunction whosereal part is the original function of time is called the analytic signal, although this is something ofa misnomer,as noted below.Any real function of timewill have a spectrum that is two-sided and symmetric. To get the analytic signal,we go into the frequency domain,remove the negative-frequency components,and double theresult (except at the dcpoint).This corresponds to performing the operation in Eq.(la),where {△(t)},the spectrum of△(t),is a function that has a value of 0 fornegative",
       "text": "which is an inversion of Eq. 2. To get the complex extension of cos(wt) we express it in its exponential form, suppress the negative frequency term ej, and double the positive frequency part, as shown in Fig. 7. This complex-valued function whose real part is the original function of time is called the analytic signal, although this is something of a misnomer, as noted below. Any real function of time will have a spectrum that is two-sided and symmetric. To get the analytic signal, we go into the frequency domain, remove the negative-frequency components, and double the result (except at the dc point). This corresponds to performing the operation in Eq. (la), where {△(t)}, the spectrum of △(t), is a function that has a value of O for negative"
     },
     {
@@ -2908,33 +2749,6 @@
       "text": "f=o"
     },
     {
-      "self_ref": "#/texts/82",
-      "parent": {
-        "$ref": "#/body"
-      },
-      "children": [],
-      "content_layer": "body",
-      "label": "text",
-      "prov": [
-        {
-          "page_no": 4,
-          "bbox": {
-            "l": 190.90043131510416,
-            "t": 357.8271484375,
-            "r": 214.55668131510416,
-            "b": 344.94759114583337,
-            "coord_origin": "BOTTOMLEFT"
-          },
-          "charspan": [
-            0,
-            3
-          ]
-        }
-      ],
-      "orig": "1Hz",
-      "text": "1 Hz"
-    },
-    {
       "self_ref": "#/texts/83",
       "parent": {
         "$ref": "#/body"
@@ -2958,89 +2772,8 @@
           ]
         }
       ],
-      "orig": "Fig. 7. Spectra of cos(2\u03c0t)and ej",
-      "text": "Fig. 7. Spectra of cos(2\u03c0t) and ej"
-    },
-    {
-      "self_ref": "#/texts/84",
-      "parent": {
-        "$ref": "#/body"
-      },
-      "children": [],
-      "content_layer": "body",
-      "label": "text",
-      "prov": [
-        {
-          "page_no": 4,
-          "bbox": {
-            "l": 63.81685892740885,
-            "t": 248.071044921875,
-            "r": 88.02325439453125,
-            "b": 236.3115234375,
-            "coord_origin": "BOTTOMLEFT"
-          },
-          "charspan": [
-            0,
-            4
-          ]
-        }
-      ],
-      "orig": "REAL",
-      "text": "REAL"
-    },
-    {
-      "self_ref": "#/texts/85",
-      "parent": {
-        "$ref": "#/body"
-      },
-      "children": [],
-      "content_layer": "body",
-      "label": "text",
-      "prov": [
-        {
-          "page_no": 4,
-          "bbox": {
-            "l": 64.36700439453125,
-            "t": 158.47428385416663,
-            "r": 113.88008626302083,
-            "b": 146.15470377604163,
-            "coord_origin": "BOTTOMLEFT"
-          },
-          "charspan": [
-            0,
-            9
-          ]
-        }
-      ],
-      "orig": "TMAGIHARY",
-      "text": "TMAGIHARY"
-    },
-    {
-      "self_ref": "#/texts/86",
-      "parent": {
-        "$ref": "#/body"
-      },
-      "children": [],
-      "content_layer": "body",
-      "label": "text",
-      "prov": [
-        {
-          "page_no": 4,
-          "bbox": {
-            "l": 46.7623545328776,
-            "t": 77.27726236979174,
-            "r": 86.37282307942708,
-            "b": 63.83772786458326,
-            "coord_origin": "BOTTOMLEFT"
-          },
-          "charspan": [
-            0,
-            7
-          ]
-        }
-      ],
-      "orig": "SINC(t)",
-      "text": "SINC(t)"
+      "orig": "Fig. 7. Spectra of cos(2πt)and ej",
+      "text": "Fig. 7. Spectra of cos(2πt) and ej"
     },
     {
       "self_ref": "#/texts/87",
@@ -3148,7 +2881,7 @@
           ]
         }
       ],
-      "orig": "In the continuous domains we may say,in light of the foregoing, that if the real impulse 8\uff08r) is a signal with a flat spectrum of 1,then the analytic impulse (t)is asignalwith a spectrum thatiszero for negative frequencies,1 for dc,and2 forpositive frequencies. This is correct,but it will be more illuminating to approach this limit slowly.Fig.8shows a signal that has positive and negativefrequency content only up to Hz (that is,a bandwidth of 1 Hz and a unit area).The algebraicexpression of thissignal is",
+      "orig": "In the continuous domains we may say,in light of the foregoing, that if the real impulse 8（r) is a signal with a flat spectrum of 1,then the analytic impulse (t)is asignalwith a spectrum thatiszero for negative frequencies,1 for dc,and2 forpositive frequencies. This is correct,but it will be more illuminating to approach this limit slowly.Fig.8shows a signal that has positive and negativefrequency content only up to Hz (that is,a bandwidth of 1 Hz and a unit area).The algebraicexpression of thissignal is",
       "text": "In the continuous domains we may say, in light of the foregoing, that if the real impulse δ(t) is a signal with a flat spectrum of 1, then the analytic impulse Δ(t) is a signal with a spectrum that is zero for negative frequencies, 1 for dc, and 2 for positive frequencies. This is correct, but it will be more illuminating to approach this limit slowly. Fig. 8 shows a signal that has positive and negative frequency content only up to Hz (that is, a bandwidth of 1 Hz and a unit area). The algebraic expression of this signal is"
     },
     {
@@ -3175,7 +2908,7 @@
           ]
         }
       ],
-      "orig": "sin(\u03c0I) f(1\uff09= =sinc(t). (4) 11L",
+      "orig": "sin(πI) f(1）= =sinc(t). (4) 11L",
       "text": "f ( t ) = \\frac { \\sin ( \\pi t ) } { \\pi t } \\, = \\, \\sin ( t ) \\, ."
     },
     {
@@ -3206,33 +2939,6 @@
       "text": "If we remove the negative-frequency components, we get a transform pair as in Fig. 9, shown in both linear and logarithmic phase-magnitude (ETC) displays. This"
     },
     {
-      "self_ref": "#/texts/93",
-      "parent": {
-        "$ref": "#/body"
-      },
-      "children": [],
-      "content_layer": "body",
-      "label": "text",
-      "prov": [
-        {
-          "page_no": 4,
-          "bbox": {
-            "l": 346.591552734375,
-            "t": 138.875,
-            "r": 396.1046549479167,
-            "b": 120.95564778645837,
-            "coord_origin": "BOTTOMLEFT"
-          },
-          "charspan": [
-            0,
-            5
-          ]
-        }
-      ],
-      "orig": "<-->>",
-      "text": "<-->>"
-    },
-    {
       "self_ref": "#/texts/94",
       "parent": {
         "$ref": "#/pictures/7"
@@ -3258,33 +2964,6 @@
       ],
       "orig": "1",
       "text": "1"
-    },
-    {
-      "self_ref": "#/texts/95",
-      "parent": {
-        "$ref": "#/pictures/7"
-      },
-      "children": [],
-      "content_layer": "body",
-      "label": "text",
-      "prov": [
-        {
-          "page_no": 4,
-          "bbox": {
-            "l": 614.5123697916666,
-            "t": 249.19099934895837,
-            "r": 638.1686197916666,
-            "b": 236.87150065104163,
-            "coord_origin": "BOTTOMLEFT"
-          },
-          "charspan": [
-            0,
-            4
-          ]
-        }
-      ],
-      "orig": "REAL",
-      "text": "REAL"
     },
     {
       "self_ref": "#/texts/96",
@@ -3368,60 +3047,6 @@
       "text": "fuo"
     },
     {
-      "self_ref": "#/texts/99",
-      "parent": {
-        "$ref": "#/pictures/7"
-      },
-      "children": [],
-      "content_layer": "body",
-      "label": "text",
-      "prov": [
-        {
-          "page_no": 4,
-          "bbox": {
-            "l": 613.9621988932291,
-            "t": 89.03678385416663,
-            "r": 638.1686197916666,
-            "b": 76.71720377604174,
-            "coord_origin": "BOTTOMLEFT"
-          },
-          "charspan": [
-            0,
-            3
-          ]
-        }
-      ],
-      "orig": "1Hz",
-      "text": "1 Hz"
-    },
-    {
-      "self_ref": "#/texts/100",
-      "parent": {
-        "$ref": "#/body"
-      },
-      "children": [],
-      "content_layer": "body",
-      "label": "text",
-      "prov": [
-        {
-          "page_no": 4,
-          "bbox": {
-            "l": 437.9156901041667,
-            "t": 76.71720377604174,
-            "r": 548.4949137369791,
-            "b": 63.83772786458326,
-            "coord_origin": "BOTTOMLEFT"
-          },
-          "charspan": [
-            0,
-            20
-          ]
-        }
-      ],
-      "orig": "1Hz WIDE EVEN VINDOW",
-      "text": "1 Hz WIDE EVEN WINDOW"
-    },
-    {
       "self_ref": "#/texts/101",
       "parent": {
         "$ref": "#/body"
@@ -3447,60 +3072,6 @@
       ],
       "orig": "Fig.8.Sinc(t) and its spectrum.",
       "text": "Fig. 8. Sinc(t) and its spectrum."
-    },
-    {
-      "self_ref": "#/texts/102",
-      "parent": {
-        "$ref": "#/body"
-      },
-      "children": [],
-      "content_layer": "body",
-      "label": "text",
-      "prov": [
-        {
-          "page_no": 4,
-          "bbox": {
-            "l": 117.1809590657552,
-            "t": 87.35685221354163,
-            "r": 134.78561401367188,
-            "b": 77.27726236979174,
-            "coord_origin": "BOTTOMLEFT"
-          },
-          "charspan": [
-            0,
-            3
-          ]
-        }
-      ],
-      "orig": "t=O",
-      "text": "t=0"
-    },
-    {
-      "self_ref": "#/texts/103",
-      "parent": {
-        "$ref": "#/body"
-      },
-      "children": [],
-      "content_layer": "body",
-      "label": "text",
-      "prov": [
-        {
-          "page_no": 4,
-          "bbox": {
-            "l": 250.3161417643229,
-            "t": 87.91682942708337,
-            "r": 272.87209065755206,
-            "b": 77.83723958333326,
-            "coord_origin": "BOTTOMLEFT"
-          },
-          "charspan": [
-            0,
-            3
-          ]
-        }
-      ],
-      "orig": "10s",
-      "text": "10s"
     },
     {
       "self_ref": "#/texts/104",
@@ -3634,7 +3205,7 @@
           ]
         }
       ],
-      "orig": "sin(t) 1cOS(TTt) f\uff08t)= TI 1 ejmi =sinc\uff08t)+j\u00b7cosinc\uff08t\uff09=asinc\uff08t\uff09.(",
+      "orig": "sin(t) 1cOS(TTt) f（t)= TI 1 ejmi =sinc（t)+j·cosinc（t）=asinc（t）.(",
       "text": "\\begin{aligned} f ( t ) & = \\frac { \\sin ( \\pi t ) } { \\pi t } + j \\, \\frac { 1 - \\cos ( \\pi t ) } { \\pi t } \\\\ & = \\left [ \\frac { e ^ { j t } - 1 } { \\pi t } \\right ] ^ { * } \\\\ & = \\sin ( t ) + j \\cdot \\cos ( t ) = \\, \\text {asinc} ( t ) \\, . \\quad ( 5 a ) \\end{aligned}"
     },
     {
@@ -3715,7 +3286,7 @@
           ]
         }
       ],
-      "orig": "asinc\uff08t\uff09=sinc\uff08t\uff09+j\u00b7sinc\uff08t/2)sin\uff08\u03c01/2) (5b)",
+      "orig": "asinc（t）=sinc（t）+j·sinc（t/2)sin（π1/2) (5b)",
       "text": "\\text {asc} ( t ) \\, = \\, \\text {inc} ( t ) \\, + \\, j \\, \\cdot \\, \\text {inc} ( t / 2 ) \\, \\sin ( \\pi t / 2 ) \\tag{5b}"
     },
     {
@@ -3796,7 +3367,7 @@
           ]
         }
       ],
-      "orig": "1 \u25b3\uff08t)=8\uff08t)+j11L (6) =8\uff081)+j\u00b7d\uff081).",
+      "orig": "1 △（t)=8（t)+j11L (6) =8（1)+j·d（1).",
       "text": "\\begin{aligned} \\Delta ( t ) & = \\delta ( t ) + j \\, \\frac { 1 } { \\pi t } \\\\ & = \\delta ( t ) + j \\cdot d ( t ) \\end{aligned}"
     },
     {
@@ -3823,7 +3394,7 @@
           ]
         }
       ],
-      "orig": "We see immediately that theimaginary part of\u25b3(t),",
+      "orig": "We see immediately that theimaginary part of△(t),",
       "text": "We see immediately that the imaginary part of △(t),"
     },
     {
@@ -3877,7 +3448,7 @@
           ]
         }
       ],
-      "orig": "sometimesreferred to asa doublet ord(t),is notcausal, andhence the magnitude of\u25b3\uff08t)[the ETCof8()] on the upper left handof Fig.ll must also be noncausal. InAppendixI thereisafurther discussionofwhyd(t) does not vanishfornonzero argument.For the moment, as the magnitudeof\u25b3(t)represents the ETCofanideal system,we may conclude that the ETCof any loudstrength in the continuous and discrete domains.Although the evidence for this is plentiful [2],[4]-[6], it appears onlyin fragments,in widely scattered texts, usually addressingvery different topics.Further,there is some confusion about thenecessity of this effect. Perhaps theresolutionofour instruments is toolow, ormaybeamore sophisticatedwindowingwouldmake ourETC start at t=O.The foregoing analysis shows that this is not so in continuous domains.The following addresses the same issue in the discrete domains.",
+      "orig": "sometimesreferred to asa doublet ord(t),is notcausal, andhence the magnitude of△（t)[the ETCof8()] on the upper left handof Fig.ll must also be noncausal. InAppendixI thereisafurther discussionofwhyd(t) does not vanishfornonzero argument.For the moment, as the magnitudeof△(t)represents the ETCofanideal system,we may conclude that the ETCof any loudstrength in the continuous and discrete domains.Although the evidence for this is plentiful [2],[4]-[6], it appears onlyin fragments,in widely scattered texts, usually addressingvery different topics.Further,there is some confusion about thenecessity of this effect. Perhaps theresolutionofour instruments is toolow, ormaybeamore sophisticatedwindowingwouldmake ourETC start at t=O.The foregoing analysis shows that this is not so in continuous domains.The following addresses the same issue in the discrete domains.",
       "text": "sometimes referred to as a doublet or d(t), is not causal, and hence the magnitude of △(t) [the ETC of δ(t)] on the upper left hand of Fig. 11 must also be noncausal. In Appendix I there is a further discussion of why d(t) does not vanish for nonzero argument. For the moment, as the magnitude of △(t) represents the ETC of an ideal system, we may conclude that the ETC of any loudstrength in the continuous and discrete domains. Although the evidence for this is plentiful [2], [4]-[6], it appears only in fragments, in widely scattered texts, usually addressing very different topics. Further, there is some confusion about the necessity of this effect. Perhaps the resolution of our instruments is too low, or maybe a more sophisticated windowing would make our ETC start at t=0. The foregoing analysis shows that this is not so in continuous domains. The following addresses the same issue in the discrete domains."
     },
     {
@@ -4152,87 +3723,6 @@
       "text": "-10"
     },
     {
-      "self_ref": "#/texts/128",
-      "parent": {
-        "$ref": "#/pictures/8"
-      },
-      "children": [],
-      "content_layer": "body",
-      "label": "text",
-      "prov": [
-        {
-          "page_no": 5,
-          "bbox": {
-            "l": 464.7272542317708,
-            "t": 346.399169921875,
-            "r": 488.7272542317708,
-            "b": 333.28629557291663,
-            "coord_origin": "BOTTOMLEFT"
-          },
-          "charspan": [
-            0,
-            4
-          ]
-        }
-      ],
-      "orig": "REAL",
-      "text": "REAL"
-    },
-    {
-      "self_ref": "#/texts/129",
-      "parent": {
-        "$ref": "#/pictures/8"
-      },
-      "children": [],
-      "content_layer": "body",
-      "label": "text",
-      "prov": [
-        {
-          "page_no": 5,
-          "bbox": {
-            "l": 143.45454915364584,
-            "t": 320.17333984375,
-            "r": 161.45454915364584,
-            "b": 310.33870442708337,
-            "coord_origin": "BOTTOMLEFT"
-          },
-          "charspan": [
-            0,
-            3
-          ]
-        }
-      ],
-      "orig": "t=0",
-      "text": "t=0"
-    },
-    {
-      "self_ref": "#/texts/130",
-      "parent": {
-        "$ref": "#/pictures/8"
-      },
-      "children": [],
-      "content_layer": "body",
-      "label": "text",
-      "prov": [
-        {
-          "page_no": 5,
-          "bbox": {
-            "l": 276.5454508463542,
-            "t": 320.17333984375,
-            "r": 300.5454508463542,
-            "b": 308.15323893229163,
-            "coord_origin": "BOTTOMLEFT"
-          },
-          "charspan": [
-            0,
-            3
-          ]
-        }
-      ],
-      "orig": "10s",
-      "text": "10s"
-    },
-    {
       "self_ref": "#/texts/131",
       "parent": {
         "$ref": "#/pictures/8"
@@ -4258,60 +3748,6 @@
       ],
       "orig": "ERERGY-TIHEOFANALYTICSINC(>",
       "text": "ENERGY-TIME OF ANALYTIC SINC(>"
-    },
-    {
-      "self_ref": "#/texts/132",
-      "parent": {
-        "$ref": "#/pictures/8"
-      },
-      "children": [],
-      "content_layer": "body",
-      "label": "text",
-      "prov": [
-        {
-          "page_no": 5,
-          "bbox": {
-            "l": 364.9090983072917,
-            "t": 285.751953125,
-            "r": 415.0909016927083,
-            "b": 266.62898763020837,
-            "coord_origin": "BOTTOMLEFT"
-          },
-          "charspan": [
-            0,
-            5
-          ]
-        }
-      ],
-      "orig": "<-->>",
-      "text": "<-->>"
-    },
-    {
-      "self_ref": "#/texts/133",
-      "parent": {
-        "$ref": "#/pictures/8"
-      },
-      "children": [],
-      "content_layer": "body",
-      "label": "text",
-      "prov": [
-        {
-          "page_no": 5,
-          "bbox": {
-            "l": 85.63636271158855,
-            "t": 258.43343098958337,
-            "r": 108.54545084635417,
-            "b": 248.59879557291663,
-            "coord_origin": "BOTTOMLEFT"
-          },
-          "charspan": [
-            0,
-            4
-          ]
-        }
-      ],
-      "orig": "REAL",
-      "text": "REAL"
     },
     {
       "self_ref": "#/texts/134",
@@ -4366,33 +3802,6 @@
       ],
       "orig": "44",
       "text": "44"
-    },
-    {
-      "self_ref": "#/texts/136",
-      "parent": {
-        "$ref": "#/pictures/8"
-      },
-      "children": [],
-      "content_layer": "body",
-      "label": "text",
-      "prov": [
-        {
-          "page_no": 5,
-          "bbox": {
-            "l": 625.6363525390625,
-            "t": 185.76611328125,
-            "r": 650.1818033854166,
-            "b": 173.74593098958337,
-            "coord_origin": "BOTTOMLEFT"
-          },
-          "charspan": [
-            0,
-            3
-          ]
-        }
-      ],
-      "orig": "1Hz",
-      "text": "1 Hz"
     },
     {
       "self_ref": "#/texts/137",
@@ -4472,7 +3881,7 @@
           ]
         }
       ],
-      "orig": "10\u2264",
+      "orig": "10≤",
       "text": "10≤"
     },
     {
@@ -4499,7 +3908,7 @@
           ]
         }
       ],
-      "orig": "AALYTIC SIHC(L)\uff08conjugate)",
+      "orig": "AALYTIC SIHC(L)（conjugate)",
       "text": "AALYTIC SIHC(L)（conjugate)"
     },
     {
@@ -4989,33 +4398,6 @@
       "text": "10"
     },
     {
-      "self_ref": "#/texts/159",
-      "parent": {
-        "$ref": "#/pictures/10"
-      },
-      "children": [],
-      "content_layer": "body",
-      "label": "text",
-      "prov": [
-        {
-          "page_no": 6,
-          "bbox": {
-            "l": 458.7645263671875,
-            "t": 338.59171549479163,
-            "r": 484.5871988932292,
-            "b": 326.538330078125,
-            "coord_origin": "BOTTOMLEFT"
-          },
-          "charspan": [
-            0,
-            4
-          ]
-        }
-      ],
-      "orig": "FEAL",
-      "text": "REAL"
-    },
-    {
       "self_ref": "#/texts/160",
       "parent": {
         "$ref": "#/pictures/10"
@@ -5039,35 +4421,8 @@
           ]
         }
       ],
-      "orig": "HOPHASEOF\u25b3\uff08L\uff09",
+      "orig": "HOPHASEOF△（L）",
       "text": "HOPHASEOF △（L）"
-    },
-    {
-      "self_ref": "#/texts/161",
-      "parent": {
-        "$ref": "#/pictures/10"
-      },
-      "children": [],
-      "content_layer": "body",
-      "label": "text",
-      "prov": [
-        {
-          "page_no": 6,
-          "bbox": {
-            "l": 86.80813598632812,
-            "t": 243.26009114583337,
-            "r": 112.63081868489583,
-            "b": 229.56298828125,
-            "coord_origin": "BOTTOMLEFT"
-          },
-          "charspan": [
-            0,
-            4
-          ]
-        }
-      ],
-      "orig": "REAL",
-      "text": "REAL"
     },
     {
       "self_ref": "#/texts/162",
@@ -5205,33 +4560,6 @@
       "text": "IMAG: NARY"
     },
     {
-      "self_ref": "#/texts/167",
-      "parent": {
-        "$ref": "#/pictures/10"
-      },
-      "children": [],
-      "content_layer": "body",
-      "label": "text",
-      "prov": [
-        {
-          "page_no": 6,
-          "bbox": {
-            "l": 146.69477335611978,
-            "t": 83.82609049479163,
-            "r": 166.47383626302084,
-            "b": 70.67692057291663,
-            "coord_origin": "BOTTOMLEFT"
-          },
-          "charspan": [
-            0,
-            3
-          ]
-        }
-      ],
-      "orig": "t=0",
-      "text": "t=0"
-    },
-    {
       "self_ref": "#/texts/168",
       "parent": {
         "$ref": "#/pictures/10"
@@ -5255,7 +4583,7 @@
           ]
         }
       ],
-      "orig": "-\uff09+j.1/",
+      "orig": "-）+j.1/",
       "text": "-）+j. 1/"
     },
     {
@@ -5363,7 +4691,7 @@
           ]
         }
       ],
-      "orig": "sin(TT) 1-COS\uff08TT) \u25b3[] +j LLL TTT eJt (7a) LLL",
+      "orig": "sin(TT) 1-COS（TT) △[] +j LLL TTT eJt (7a) LLL",
       "text": "\\begin{aligned} \\Delta _ { \\alpha } [ \\tau ] & = \\frac { \\sin ( \\pi \\tau ) } { \\pi \\tau } + j \\, \\frac { 1 \\, - \\, \\cos ( \\pi \\tau ) } { \\pi \\tau } \\\\ & = \\left [ \\frac { e ^ { j \\pi \\, \\pi } - 1 } { \\pi \\tau } \\right ] ^ { * } \\end{aligned}"
     },
     {
@@ -5417,7 +4745,7 @@
           ]
         }
       ],
-      "orig": "T=0 [\u03c0]= 2 PPOL (7b) LLL 0, Teven,\u22600",
+      "orig": "T=0 [π]= 2 PPOL (7b) LLL 0, Teven,≠0",
       "text": "A _ { \\mathbb { Z } } [ \\tau ] \\equiv \\begin{cases} 1 , & \\tau = 0 \\\\ j \\frac { 2 } { \\pi \\tau } , & \\tau \\text { odd} \\\\ 0 , & \\tau \\text { even, } \\neq 0 \\end{cases}"
     },
     {
@@ -5444,7 +4772,7 @@
           ]
         }
       ],
-      "orig": "Now let us compare Eqs.(5a) and (7a).We see that in this\"intermediate\"domain ofquantized time and continuous frequency the analyticimpulse has exactly thesameformasthecompletelycontinuousimpulse beforelimiting.One onlyneedwriteaTwheretwould normallyappear.Fig.13isan overlayofFigs.9and 12and shows even more clearly what Eq.\uff087b) tends to obscure:[]is justa sampledversionof the analytic sincfunction.However,we see thatEq.(7b)isreminiscentofEq.(6).Thesuddenappearanceof thefactor 2in the imaginary part can beexplained by noting that d[T]alternatesbetweenOand2/\u03c0,thusgivinganav-",
+      "orig": "Now let us compare Eqs.(5a) and (7a).We see that in this\"intermediate\"domain ofquantized time and continuous frequency the analyticimpulse has exactly thesameformasthecompletelycontinuousimpulse beforelimiting.One onlyneedwriteaTwheretwould normallyappear.Fig.13isan overlayofFigs.9and 12and shows even more clearly what Eq.（7b) tends to obscure:[]is justa sampledversionof the analytic sincfunction.However,we see thatEq.(7b)isreminiscentofEq.(6).Thesuddenappearanceof thefactor 2in the imaginary part can beexplained by noting that d[T]alternatesbetweenOand2/π,thusgivinganav-",
       "text": "Now let us compare Eqs. (5a) and (7a). We see that in this \"intermediate\" domain of quantized time and continuous frequency the analytic impulse has exactly the same form as the completely continuous impulse before limiting. One only need write a T where t would normally appear. Fig. 13 is an overlay of Figs. 9 and 12 and shows even more clearly what Eq. (7b) tends to obscure: $\\Delta_\\infin[\\tau]$ is just a sampled version of the analytic sinc function. However, we see that Eq. (7b) is reminiscent of Eq. (6). The sudden appearance of the factor 2 in the imaginary part can be explained by noting that $d_\\infin [\\tau]$ alternates between 0 and 2/π, thus giving an av-"
     },
     {
@@ -5772,33 +5100,6 @@
       "text": "Fig. 13. Overlay of Figs. 9 and 12."
     },
     {
-      "self_ref": "#/texts/188",
-      "parent": {
-        "$ref": "#/pictures/12"
-      },
-      "children": [],
-      "content_layer": "body",
-      "label": "text",
-      "prov": [
-        {
-          "page_no": 7,
-          "bbox": {
-            "l": 446.727783203125,
-            "t": 755.5796508789062,
-            "r": 467.41943359375,
-            "b": 745.8719889322917,
-            "coord_origin": "BOTTOMLEFT"
-          },
-          "charspan": [
-            0,
-            4
-          ]
-        }
-      ],
-      "orig": "REAL",
-      "text": "REAL"
-    },
-    {
       "self_ref": "#/texts/189",
       "parent": {
         "$ref": "#/pictures/12"
@@ -5957,7 +5258,7 @@
           ]
         }
       ],
-      "orig": "Fig.12.Discrete-time infinite-sample analytic impulse \u25b3x[],its ETC,and its z transform evaluated on unit circle.",
+      "orig": "Fig.12.Discrete-time infinite-sample analytic impulse △x[],its ETC,and its z transform evaluated on unit circle.",
       "text": "Fig. 12. Discrete-time infinite-sample analytic impulse $\\Delta_\\infin [\\tau]$, its ETC, and its z transform evaluated on unit circle."
     },
     {
@@ -6067,33 +5368,6 @@
       ],
       "orig": "-20",
       "text": "-20"
-    },
-    {
-      "self_ref": "#/texts/199",
-      "parent": {
-        "$ref": "#/pictures/13"
-      },
-      "children": [],
-      "content_layer": "body",
-      "label": "text",
-      "prov": [
-        {
-          "page_no": 7,
-          "bbox": {
-            "l": 420.1999918619792,
-            "t": 391.5423583984375,
-            "r": 439.83056640625,
-            "b": 382.3740234375,
-            "coord_origin": "BOTTOMLEFT"
-          },
-          "charspan": [
-            0,
-            4
-          ]
-        }
-      ],
-      "orig": "REAL",
-      "text": "REAL"
     },
     {
       "self_ref": "#/texts/200",
@@ -6254,35 +5528,8 @@
           ]
         }
       ],
-      "orig": "[z=eJ\u03c0",
+      "orig": "[z=eJπ",
       "text": "[z=eJπ"
-    },
-    {
-      "self_ref": "#/texts/206",
-      "parent": {
-        "$ref": "#/pictures/13"
-      },
-      "children": [],
-      "content_layer": "body",
-      "label": "text",
-      "prov": [
-        {
-          "page_no": 7,
-          "bbox": {
-            "l": 356.5333251953125,
-            "t": 295.00504557291663,
-            "r": 405.3444417317708,
-            "b": 279.90421549479163,
-            "coord_origin": "BOTTOMLEFT"
-          },
-          "charspan": [
-            0,
-            5
-          ]
-        }
-      ],
-      "orig": "<-->>",
-      "text": "<-->>"
     },
     {
       "self_ref": "#/texts/207",
@@ -6310,33 +5557,6 @@
       ],
       "orig": "IHNGINARY",
       "text": "IMAGINARY"
-    },
-    {
-      "self_ref": "#/texts/208",
-      "parent": {
-        "$ref": "#/pictures/13"
-      },
-      "children": [],
-      "content_layer": "body",
-      "label": "text",
-      "prov": [
-        {
-          "page_no": 7,
-          "bbox": {
-            "l": 74.2777811686198,
-            "t": 266.42138671875,
-            "r": 97.62222290039062,
-            "b": 256.71370442708337,
-            "coord_origin": "BOTTOMLEFT"
-          },
-          "charspan": [
-            0,
-            4
-          ]
-        }
-      ],
-      "orig": "REAL",
-      "text": "REAL"
     },
     {
       "self_ref": "#/texts/209",
@@ -6416,7 +5636,7 @@
           ]
         }
       ],
-      "orig": "[]=\uff08]+J.d\uff08]",
+      "orig": "[]=（]+J.d（]",
       "text": "[]=（]+J. d（]"
     },
     {
@@ -6605,7 +5825,7 @@
           ]
         }
       ],
-      "orig": "erage value of 1/\u03c0 (see also Appendix I).",
+      "orig": "erage value of 1/π (see also Appendix I).",
       "text": "erage value of 1/π (see also Appendix I)."
     },
     {
@@ -6984,7 +6204,7 @@
           ]
         }
       ],
-      "orig": "haved[]=2/\u03c0=0.6366..,which differsbyless than 0.1%.Because of this,Fig. 14 and the upper left of Fig.12 may serve asETCs for the analytic impulse in theDFT domains for large N.Any measurement technique that yields information about signal and spectrum thatisrestricted to discrete samples,and this includesbothFFT(aparticularlyefficientway of doing a similarlylimitedresolution.",
+      "orig": "haved[]=2/π=0.6366..,which differsbyless than 0.1%.Because of this,Fig. 14 and the upper left of Fig.12 may serve asETCs for the analytic impulse in theDFT domains for large N.Any measurement technique that yields information about signal and spectrum thatisrestricted to discrete samples,and this includesbothFFT(aparticularlyefficientway of doing a similarlylimitedresolution.",
       "text": "have $d_\\infin[\\tau]=2/\\pi=0. 6366..$, which differs by less than 0. 1%. Because of this, Fig. 14 and the upper left of Fig. 12 may serve as ETCs for the analytic impulse in the DFT domains for large N. Any measurement technique that yields information about signal and spectrum that is restricted to discrete samples, and this includes both FFT (a particularly efficient way of doing a similarly limited resolution."
     },
     {
@@ -7011,7 +6231,7 @@
           ]
         }
       ],
-      "orig": "Wecannotnowexpect\u25b3v[t]to have thesame algebraic form as[T].What wasT=\u00b1now corresponds to=\u00b1N/2,the antipodal point.Eqs.\uff087a) and(7b)need tobe modified inorder that theenvelope of\u25b3[]vanishes at this point.In fact,",
+      "orig": "Wecannotnowexpect△v[t]to have thesame algebraic form as[T].What wasT=±now corresponds to=±N/2,the antipodal point.Eqs.（7a) and(7b)need tobe modified inorder that theenvelope of△[]vanishes at this point.In fact,",
       "text": "We cannot now expect $\\Delta_N[t]$ to have the same algebraic form as $\\Delta_\\infin[T]$. What was 𝜏=±∞. now corresponds to 𝜏=±N/2, the antipodal point. Eqs. (7a) and (7b) need to be modified in order that the envelope of △[𝜏] vanishes at this point. In fact,"
     },
     {
@@ -7038,7 +6258,7 @@
           ]
         }
       ],
-      "orig": "\u25b3v[]= 1 2ej2\u03c0TN 1-ejn N 1-ej2\u03c0/N+\uff081-ej=) T=0 2 cot PPOL [5,p.355] (8) N N 0, Teven0",
+      "orig": "△v[]= 1 2ej2πTN 1-ejn N 1-ej2π/N+（1-ej=) T=0 2 cot PPOL [5,p.355] (8) N N 0, Teven0",
       "text": "\\begin{aligned} \\Delta _ { N } [ \\tau ] & = \\frac { 1 } { N } \\left [ 2 e ^ { j 2 \\pi / N } \\frac { 1 - e ^ { j \\pi \\tau } } { 1 - e ^ { j 2 \\pi / N } } + ( 1 - e ^ { j \\pi \\tau } ) \\right ] \\\\ & = \\begin{cases} 1 , & \\tau = 0 \\\\ j \\frac { 2 } { N } \\cot \\left ( \\frac { \\pi \\tau } { N } \\right ) , & \\tau \\text { odd} \\quad [ 5 , p . 3 5 ] \\\\ 0 , & \\tau \\text { even } \\neq 0 \\end{cases} \\end{aligned}"
     },
     {
@@ -7065,7 +6285,7 @@
           ]
         }
       ],
-      "orig": "which is shown in Fig.15.This looks very different from Eq.(7).The difference in form between Eqs.(7) and (8) was one initial stimulus to my investigations: However,these two cquations arenumerically almost identical.For example,in the 64-point DFT domain, thefirstnonzerovalueofd64[T]iscot\uff08\u03c0/64)/32=0.6361 ...In the infinite-point z-transform time domain we",
+      "orig": "which is shown in Fig.15.This looks very different from Eq.(7).The difference in form between Eqs.(7) and (8) was one initial stimulus to my investigations: However,these two cquations arenumerically almost identical.For example,in the 64-point DFT domain, thefirstnonzerovalueofd64[T]iscot（π/64)/32=0.6361 ...In the infinite-point z-transform time domain we",
       "text": "which is shown in Fig. 15. This looks very different from Eq. (7). The difference in form between Eqs. (7) and (8) was one initial stimulus to my investigations: However, these two equations are numerically almost identical. For example, in the 64-point DFT domain, the first nonzero value of d64[T] is cot(π/64)/32=0.6361 ... In the infinite-point z-transform time domain we"
     },
     {
@@ -7149,33 +6369,6 @@
       ],
       "orig": "Fig.15.Discrete-time finite-sample analytic impulse4[],its ETC,and its spectrum for 64-point DFT.",
       "text": "Fig. 15. Discrete-time finite-sample analytic impulse $\\Delta_{64}[\\tau]$, its ETC, and its spectrum for 64-point DFT."
-    },
-    {
-      "self_ref": "#/texts/239",
-      "parent": {
-        "$ref": "#/pictures/15"
-      },
-      "children": [],
-      "content_layer": "body",
-      "label": "text",
-      "prov": [
-        {
-          "page_no": 8,
-          "bbox": {
-            "l": 98.67013549804688,
-            "t": 277.444580078125,
-            "r": 118.84027099609375,
-            "b": 267.555419921875,
-            "coord_origin": "BOTTOMLEFT"
-          },
-          "charspan": [
-            0,
-            4
-          ]
-        }
-      ],
-      "orig": "REAL",
-      "text": "REAL"
     },
     {
       "self_ref": "#/texts/240",
@@ -7313,33 +6506,6 @@
       "text": "32"
     },
     {
-      "self_ref": "#/texts/245",
-      "parent": {
-        "$ref": "#/pictures/15"
-      },
-      "children": [],
-      "content_layer": "body",
-      "label": "text",
-      "prov": [
-        {
-          "page_no": 8,
-          "bbox": {
-            "l": 393.5902506510417,
-            "t": 178.00398763020837,
-            "r": 441.017333984375,
-            "b": 162.62093098958337,
-            "coord_origin": "BOTTOMLEFT"
-          },
-          "charspan": [
-            0,
-            5
-          ]
-        }
-      ],
-      "orig": "<-->>",
-      "text": "<-->>"
-    },
-    {
       "self_ref": "#/texts/246",
       "parent": {
         "$ref": "#/pictures/15"
@@ -7363,7 +6529,7 @@
           ]
         }
       ],
-      "orig": "y-\u00b132",
+      "orig": "y-±32",
       "text": "y-±32"
     },
     {
@@ -7633,8 +6799,8 @@
           ]
         }
       ],
-      "orig": "Fig,16.Hann windowHANN[x]=cos\u00b2\uff08\u03c0x/N)=V[1+ cos(2mx/N])for64-pointDFT.",
-      "text": "Fig. 16. Hann window HANN[x]=cos\u00b2\uff08\u03c0x/N)=½[1+ cos(2mx/N]) for 64-point DFT."
+      "orig": "Fig,16.Hann windowHANN[x]=cos²（πx/N)=V[1+ cos(2mx/N])for64-pointDFT.",
+      "text": "Fig. 16. Hann window HANN[x]=cos²（πx/N)=½[1+ cos(2mx/N]) for 64-point DFT."
     },
     {
       "self_ref": "#/texts/257",
@@ -7714,7 +6880,7 @@
           ]
         }
       ],
-      "orig": "smoothedAIR\uff08t)=-{{\u25b3\uff08\uff09}[W(f\uff09H\uff08f)]} {\uff08H[(\uff09M{)}}= =g{{\u25b3()}H(f)} = \uff08t)*h\uff08t) (10)",
+      "orig": "smoothedAIR（t)=-{{△（）}[W(f）H（f)]} {（H[(）M{)}}= =g{{△()}H(f)} = （t)*h（t) (10)",
       "text": "\\begin{aligned} \\text {smoother AIR} ( t ) & = \\mathbb { F } ^ { - 1 } \\left \\{  \\mathcal { F } \\{ \\Delta ( t ) \\}[ \\, W ( f )  H ( f ) ] \\right \\} \\\\ & = \\mathbb { F } ^ { - 1 } \\left \\{ [ \\mathcal { F } \\{ \\Delta ( t ) \\} \\, W ( f ) ] H ( f ) \\right \\} \\\\ & = \\mathbb { F } ^ { - 1 } \\left \\{ \\mathcal { F } \\{ \\widehat { \\Delta } ( t ) \\} H ( f ) \\right \\} \\\\ & = \\widetilde { \\Delta } ( t ) \\ast h ( t ) \\quad ( 1 0 ) \\end{aligned}"
     },
     {
@@ -7741,7 +6907,7 @@
           ]
         }
       ],
-      "orig": "where W(f) is the window function.Equivalently, smoothing merely involves substituting(t)(or one of its discreterelatives)for\u25b3(t) in the usualequations for finding the AIR.",
+      "orig": "where W(f) is the window function.Equivalently, smoothing merely involves substituting(t)(or one of its discreterelatives)for△(t) in the usualequations for finding the AIR.",
       "text": "where W(f) is the window function. Equivalently, smoothing merely involves substituting (t) (or one of its discrete relatives) for △(t) in the usual equations for finding the AIR."
     },
     {
@@ -7795,7 +6961,7 @@
           ]
         }
       ],
-      "orig": "V2, T=0 -4, T=\u00b12 real part 0, elsewhere [] (9) = 0, Teven imaginary part 1 -4 Ppo \u03c0T(T+2)\uff08T-2)",
+      "orig": "V2, T=0 -4, T=±2 real part 0, elsewhere [] (9) = 0, Teven imaginary part 1 -4 Ppo πT(T+2)（T-2)",
       "text": "\\tilde{\\Delta}_x[\\tau] = \\left\\{ \\begin{array}{ll} \\begin{array}{ll} \\frac{1}{2}, & \\tau = 0 \\\\ -\\frac{1}{4}, & \\tau = \\pm 2 \\\\ 0, & \\text{elsewhere} \\end{array} & \\left.\\begin{array}{l} \\\\ \\\\ \\end{array}\\right\\} \\text{real part} \\\\[1.5em] \\begin{array}{ll} 0, & \\tau \\text{ even} \\\\ \\frac{1}{\\pi}\\frac{-4}{\\tau(\\tau+2)(\\tau-2)}, & \\tau \\text{ odd} \\end{array} & \\left.\\begin{array}{l} \\\\ \\end{array}\\right\\} \\text{imaginary part} \\end{array} \\right."
     },
     {
@@ -8192,33 +7358,6 @@
       "text": "-20"
     },
     {
-      "self_ref": "#/texts/277",
-      "parent": {
-        "$ref": "#/pictures/17"
-      },
-      "children": [],
-      "content_layer": "body",
-      "label": "text",
-      "prov": [
-        {
-          "page_no": 10,
-          "bbox": {
-            "l": 440.3224690755208,
-            "t": 928.4193522135416,
-            "r": 460.1122233072917,
-            "b": 918.0,
-            "coord_origin": "BOTTOMLEFT"
-          },
-          "charspan": [
-            0,
-            4
-          ]
-        }
-      ],
-      "orig": "REAL",
-      "text": "REAL"
-    },
-    {
       "self_ref": "#/texts/278",
       "parent": {
         "$ref": "#/pictures/17"
@@ -8273,33 +7412,6 @@
       "text": "10"
     },
     {
-      "self_ref": "#/texts/280",
-      "parent": {
-        "$ref": "#/pictures/17"
-      },
-      "children": [],
-      "content_layer": "body",
-      "label": "text",
-      "prov": [
-        {
-          "page_no": 10,
-          "bbox": {
-            "l": 369.9588216145833,
-            "t": 835.741943359375,
-            "r": 425.4801025390625,
-            "b": 815.4516194661458,
-            "coord_origin": "BOTTOMLEFT"
-          },
-          "charspan": [
-            0,
-            5
-          ]
-        }
-      ],
-      "orig": "<-->>",
-      "text": "<-->>"
-    },
-    {
       "self_ref": "#/texts/281",
       "parent": {
         "$ref": "#/pictures/17"
@@ -8352,33 +7464,6 @@
       ],
       "orig": "+0.5-",
       "text": "+0.5-"
-    },
-    {
-      "self_ref": "#/texts/283",
-      "parent": {
-        "$ref": "#/pictures/17"
-      },
-      "children": [],
-      "content_layer": "body",
-      "label": "text",
-      "prov": [
-        {
-          "page_no": 10,
-          "bbox": {
-            "l": 105.54545084635417,
-            "t": 777.0645141601562,
-            "r": 128.08381144205728,
-            "b": 767.1935424804688,
-            "coord_origin": "BOTTOMLEFT"
-          },
-          "charspan": [
-            0,
-            4
-          ]
-        }
-      ],
-      "orig": "REAL",
-      "text": "REAL"
     },
     {
       "self_ref": "#/texts/284",
@@ -8863,7 +7948,7 @@
           ]
         }
       ],
-      "orig": "MAONITUOEOFC\uff09",
+      "orig": "MAONITUOEOFC）",
       "text": "MAGNITUDE OF C）"
     },
     {
@@ -8890,8 +7975,8 @@
           ]
         }
       ],
-      "orig": "Fig.19.Magnitudeof\u25b3[T] on 180-dB scale.",
-      "text": "Fig. 19. Magnitude of \u25b3[T] on 180-dB scale."
+      "orig": "Fig.19.Magnitudeof△[T] on 180-dB scale.",
+      "text": "Fig. 19. Magnitude of △[T] on 180-dB scale."
     },
     {
       "self_ref": "#/texts/303",
@@ -9296,7 +8381,7 @@
           ]
         }
       ],
-      "orig": "Of particular interest is the peak at 160 \u03bcs,which shows up clearly in the smoothed function,but not in the unsmoothed one.This corresponds to a path differenceforasoundwaveofroughly5mm,whichis the distanceto the edgeof the(unmounted) tweeter fange,where the acoustic load changes from a halfspace to a full space.An experimenter with access to this ETCmight suspect that the outgoing acoustic impulse is partially refracted at the edge of the flange, reaching themicrophone having traveled50 mmfarther than the direct signal.In an attempt to verify this guess, themeasurementwasrepeatedwith thetweeter mounted at theend of a long tube of sound-absorbent material. Fig.23 shows the smoothed ETC for this measurement, withtherefractiongone.",
+      "orig": "Of particular interest is the peak at 160 μs,which shows up clearly in the smoothed function,but not in the unsmoothed one.This corresponds to a path differenceforasoundwaveofroughly5mm,whichis the distanceto the edgeof the(unmounted) tweeter fange,where the acoustic load changes from a halfspace to a full space.An experimenter with access to this ETCmight suspect that the outgoing acoustic impulse is partially refracted at the edge of the flange, reaching themicrophone having traveled50 mmfarther than the direct signal.In an attempt to verify this guess, themeasurementwasrepeatedwith thetweeter mounted at theend of a long tube of sound-absorbent material. Fig.23 shows the smoothed ETC for this measurement, withtherefractiongone.",
       "text": "Of particular interest is the peak at 160 μs, which shows up clearly in the smoothed function, but not in the unsmoothed one. This corresponds to a path difference for a sound wave of roughly 5 mm, which is the distance to the edge of the (unmounted) tweeter flange, where the acoustic load changes from a half space to a full space. An experimenter with access to this ETC might suspect that the outgoing acoustic impulse is partially refracted at the edge of the flange, reaching the microphone having traveled 50 mm farther than the direct signal. In an attempt to verify this guess, the measurement was repeated with the tweeter mounted at the end of a long tube of sound-absorbent material. Fig. 23 shows the smoothed ETC for this measurement, with the refraction gone."
     },
     {
@@ -9419,7 +8504,7 @@
           ]
         }
       ],
-      "orig": "From 8(t)weexpanded our consideration to thefully complex \u25b3(t),and we investigated theoretically the properties of the envelope of a general or nonideal system'simpulseresponse.\u25b3(t) appears both as a tool forfinding this envelope and as an idealmeasurement itself:a benchmark to becomparedwith expectations or actual measurements.Wehave seen how the mathematical process ofwindowingmaymakevisual interpretation of that envelope easier.Since graphic display is generally the ultimate destiny ofnumerical calculation,windowing appears as a fundamental tool for such processing.",
+      "orig": "From 8(t)weexpanded our consideration to thefully complex △(t),and we investigated theoretically the properties of the envelope of a general or nonideal system'simpulseresponse.△(t) appears both as a tool forfinding this envelope and as an idealmeasurement itself:a benchmark to becomparedwith expectations or actual measurements.Wehave seen how the mathematical process ofwindowingmaymakevisual interpretation of that envelope easier.Since graphic display is generally the ultimate destiny ofnumerical calculation,windowing appears as a fundamental tool for such processing.",
       "text": "From δ(t) we expanded our consideration to the fully complex △(t), and we investigated theoretically the properties of the envelope of a general or nonideal system's impulse response. △(t) appears both as a tool for finding this envelope and as an ideal measurement itself: a benchmark to be compared with expectations or actual measurements. We have seen how the mathematical process of windowing may make visual interpretation of that envelope easier. Since graphic display is generally the ultimate destiny of numerical calculation, windowing appears as a fundamental tool for such processing."
     },
     {
@@ -10018,60 +9103,6 @@
       "text": "Fig. 20. Smoothed discrete-time finite-sample analytic impulse ] and its spectrum for 64-point DFT."
     },
     {
-      "self_ref": "#/texts/344",
-      "parent": {
-        "$ref": "#/pictures/22"
-      },
-      "children": [],
-      "content_layer": "body",
-      "label": "text",
-      "prov": [
-        {
-          "page_no": 11,
-          "bbox": {
-            "l": 40.01162974039713,
-            "t": 259.23787434895837,
-            "r": 58.93605041503906,
-            "b": 248.93343098958337,
-            "coord_origin": "BOTTOMLEFT"
-          },
-          "charspan": [
-            0,
-            4
-          ]
-        }
-      ],
-      "orig": "REAL",
-      "text": "REAL"
-    },
-    {
-      "self_ref": "#/texts/345",
-      "parent": {
-        "$ref": "#/pictures/22"
-      },
-      "children": [],
-      "content_layer": "body",
-      "label": "text",
-      "prov": [
-        {
-          "page_no": 11,
-          "bbox": {
-            "l": 428.2325846354167,
-            "t": 257.06852213541663,
-            "r": 446.0756022135417,
-            "b": 247.306396484375,
-            "coord_origin": "BOTTOMLEFT"
-          },
-          "charspan": [
-            0,
-            4
-          ]
-        }
-      ],
-      "orig": "REAL",
-      "text": "REAL"
-    },
-    {
       "self_ref": "#/texts/346",
       "parent": {
         "$ref": "#/pictures/22"
@@ -10124,33 +9155,6 @@
       ],
       "orig": "64",
       "text": "64"
-    },
-    {
-      "self_ref": "#/texts/348",
-      "parent": {
-        "$ref": "#/pictures/22"
-      },
-      "children": [],
-      "content_layer": "body",
-      "label": "text",
-      "prov": [
-        {
-          "page_no": 11,
-          "bbox": {
-            "l": 341.720947265625,
-            "t": 190.36083984375,
-            "r": 393.0872395833333,
-            "b": 171.37898763020837,
-            "coord_origin": "BOTTOMLEFT"
-          },
-          "charspan": [
-            0,
-            5
-          ]
-        }
-      ],
-      "orig": "<-->>",
-      "text": "<-->>"
     },
     {
       "self_ref": "#/texts/349",
@@ -10615,8 +9619,8 @@
           ]
         }
       ],
-      "orig": "[3] S. P. Lipshitz, T. C. Scott, and J. Vanderkooy, \"Increasing theAudio Measurement Capability of FFT Analyzers by Microcomputer Postprocessing,\" J. Audio Eng.Soc.,vol.33,pp.626-648\uff081985 Sept.).",
-      "text": "S. P. Lipshitz, T. C. Scott, and J. Vanderkooy, \"Increasing the Audio Measurement Capability of FFT Analyzers by Microcomputer Postprocessing,\" J. Audio Eng. Soc., vol. 33, pp. 626-648\uff081985 Sept.).",
+      "orig": "[3] S. P. Lipshitz, T. C. Scott, and J. Vanderkooy, \"Increasing theAudio Measurement Capability of FFT Analyzers by Microcomputer Postprocessing,\" J. Audio Eng.Soc.,vol.33,pp.626-648（1985 Sept.).",
+      "text": "S. P. Lipshitz, T. C. Scott, and J. Vanderkooy, \"Increasing the Audio Measurement Capability of FFT Analyzers by Microcomputer Postprocessing,\" J. Audio Eng. Soc., vol. 33, pp. 626-648（1985 Sept.).",
       "enumerated": true,
       "marker": "[3]"
     },
@@ -11054,7 +10058,7 @@
           ]
         }
       ],
-      "orig": "has localextrema that oscillate between O and (approximately) 2/\u03c0t.As we tend to the limit,the band edge ofthe spectrummoves totheright,and the extrema of the signal move closer together.At the limit,we might feel that the signal becomesinfinitely discontinuous, but a property of the Fourier integral saves us. This is the property that at a discontinuity, the integral converges to the average of theleft-and theright-hand limits.Thus the inverse transform of CAUS(f) has the form given in Eq.5.The real part does converge to zero for10, but the imaginary part converges to the \"average\"value ofl/t.",
+      "orig": "has localextrema that oscillate between O and (approximately) 2/πt.As we tend to the limit,the band edge ofthe spectrummoves totheright,and the extrema of the signal move closer together.At the limit,we might feel that the signal becomesinfinitely discontinuous, but a property of the Fourier integral saves us. This is the property that at a discontinuity, the integral converges to the average of theleft-and theright-hand limits.Thus the inverse transform of CAUS(f) has the form given in Eq.5.The real part does converge to zero for10, but the imaginary part converges to the \"average\"value ofl/t.",
       "text": "has local extrema that oscillate between O and (approximately) 2/πt. As we tend to the limit, the band edge of the spectrum moves to the right, and the extrema of the signal move closer together. At the limit, we might feel that the signal becomes infinitely discontinuous, but a property of the Fourier integral saves us. This is the property that at a discontinuity, the integral converges to the average of the left- and the right-hand limits. Thus the inverse transform of CAUS(f) has the form given in Eq. 5. The real part does converge to zero for t ≠ 0, but the imaginary part converges to the \"average\" value of 1/t."
     },
     {
@@ -11108,7 +10112,7 @@
           ]
         }
       ],
-      "orig": "\u25b3\uff08t)=lim 1 asinc lim I(af) (11) a\u21920C <>>a0",
+      "orig": "△（t)=lim 1 asinc lim I(af) (11) a→0C <>>a0",
       "text": "\\Delta ( t ) = \\lim _ { \\alpha \\to 0 } \\frac { 1 } { \\alpha } \\, \\text {as} \\, \\left ( \\frac { t } { \\alpha } \\right ) \\, \\underset { < \\dots > } { \\mathcal { F } } \\, \\lim _ { \\alpha \\to 0 } \\, \\Pi ( \\alpha f ) \\, , \\quad ( 1 1 )"
     },
     {
@@ -11135,7 +10139,7 @@
           ]
         }
       ],
-      "orig": "In the context of the theory of generalizedfunctions, this is a rigorous definition of the analytic impulse, and its real part does converge to the familiar delta function.If we substitute a = 1/\u03b1,we get [2,eq.35]. This function does not have unit energy.To see this, itismerelynecessary toobserve that theareaunder its spectrum (Fig.1l,right side)is infinite.One may alsocarry out the energy integral in the time domain to convince oneself.How then do we explain [2,eq. 32],which arrives at the opposite conclusion\uff1fA look at [2,eq.30] will reveal that this equation has an additional 1/\u221aa term init.Buta is the term thatgoesto infinity.Thus we have slipped in an additional convergence term.In this case it is correct to say that the function so defined has unit area,but at the expense of introducing a rival impulse function.Heyser [2] seems to suggest that these distinct functions are one and the same.But it iscontradictory for a signal to have equal nonzero energy density at all frequencies and still have bounded total energy.To further the confusion,the comment in[2,fig.A-3] concedes that the envelope of the'doublet goes as l/t,but this is juxtaposedwithapicture of therivalimpulsefunction (the same as myFig.24).",
+      "orig": "In the context of the theory of generalizedfunctions, this is a rigorous definition of the analytic impulse, and its real part does converge to the familiar delta function.If we substitute a = 1/α,we get [2,eq.35]. This function does not have unit energy.To see this, itismerelynecessary toobserve that theareaunder its spectrum (Fig.1l,right side)is infinite.One may alsocarry out the energy integral in the time domain to convince oneself.How then do we explain [2,eq. 32],which arrives at the opposite conclusion？A look at [2,eq.30] will reveal that this equation has an additional 1/√a term init.Buta is the term thatgoesto infinity.Thus we have slipped in an additional convergence term.In this case it is correct to say that the function so defined has unit area,but at the expense of introducing a rival impulse function.Heyser [2] seems to suggest that these distinct functions are one and the same.But it iscontradictory for a signal to have equal nonzero energy density at all frequencies and still have bounded total energy.To further the confusion,the comment in[2,fig.A-3] concedes that the envelope of the'doublet goes as l/t,but this is juxtaposedwithapicture of therivalimpulsefunction (the same as myFig.24).",
       "text": "In the context of the theory of generalized functions, this is a rigorous definition of the analytic impulse, and its real part does converge to the familiar delta function. If we substitute a = 1/α, we get [2, eq. 35]. This function does not have unit energy. To see this, it is merely necessary to observe that the area under its spectrum (Fig. 11, right side) is infinite. One may also carry out the energy integral in the time domain to convince oneself. How then do we explain [2, eq. 32], which arrives at the opposite conclusion? A look at [2, eq. 30] will reveal that this equation has an additional 1/√a term in it. But a is the term that goes to infinity. Thus we have slipped in an additional convergence term. In this case it is correct to say that the function so defined has unit area, but at the expense of introducing a rival impulse function. Heyser [2] seems to suggest that these distinct functions are one and the same. But it is contradictory for a signal to have equal nonzero energy density at all frequencies and still have bounded total energy. To further the confusion, the comment in [2, fig. A-3] concedes that the envelope of the doublet goes as 1/t, but this is juxtaposed with a picture of the rival impulse function (the same as my Fig. 24)."
     },
     {
@@ -11164,33 +10168,6 @@
       ],
       "orig": "Fig.24.Essentially duplicate of [2,fig.A.3].",
       "text": "Fig. 24. Essentially duplicate of [2, fig. A.3]."
-    },
-    {
-      "self_ref": "#/texts/386",
-      "parent": {
-        "$ref": "#/pictures/24"
-      },
-      "children": [],
-      "content_layer": "body",
-      "label": "text",
-      "prov": [
-        {
-          "page_no": 12,
-          "bbox": {
-            "l": 464.6669108072917,
-            "t": 232.695556640625,
-            "r": 488.0909016927083,
-            "b": 219.46175130208337,
-            "coord_origin": "BOTTOMLEFT"
-          },
-          "charspan": [
-            0,
-            4
-          ]
-        }
-      ],
-      "orig": "REAL",
-      "text": "REAL"
     },
     {
       "self_ref": "#/texts/387",
@@ -11406,7 +10383,7 @@
           ]
         }
       ],
-      "orig": "F(f)= [f\uff08t\uff09e-j2mf1 dt, [F(f) ej2=fidf f\uff08t)= (12)",
+      "orig": "F(f)= [f（t）e-j2mf1 dt, [F(f) ej2=fidf f（t)= (12)",
       "text": "\\begin{aligned} F ( f ) & = \\int _ { - \\infty } ^ { \\infty } f ( t ) \\, e ^ { - j 2 \\pi f t } \\, d t \\\\ f ( t ) & = \\int _ { - \\infty } ^ { \\infty } F ( f ) \\, e ^ { j 2 \\pi f t } \\, d f \\quad ( 1 2 ) \\end{aligned}"
     },
     {
@@ -11460,7 +10437,7 @@
           ]
         }
       ],
-      "orig": "F(z)=\u2211f\uff08]-",
+      "orig": "F(z)=∑f（]-",
       "text": "F ( z ) \\, = \\, \\sum _ { z } f [ \\tau ] z ^ { - \\tau } \\, ,"
     },
     {
@@ -11514,7 +10491,7 @@
           ]
         }
       ],
-      "orig": "f[]= 1 \u03a6F\uff082)2-1dz 2j (13)",
+      "orig": "f[]= 1 ΦF（2)2-1dz 2j (13)",
       "text": "f [ \\tau ] = \\frac { 1 } { 2 \\pi j } \\, \\oint \\, F ( z ) z ^ { \\tau - 1 } \\, d z"
     },
     {
@@ -11541,7 +10518,7 @@
           ]
         }
       ],
-      "orig": "N/2-1 F[v]=\u2211f\uff08]e-j\uff082/ -N/2",
+      "orig": "N/2-1 F[v]=∑f（]e-j（2/ -N/2",
       "text": "F [ \\nu ] = \\sum _ { - N / 2 } ^ { N / 2 - 1 } f [ \\tau ] \\, e ^ { - j ( 2 \\pi / N ) \\nu \\tau } \\, ,"
     },
     {
@@ -11568,7 +10545,7 @@
           ]
         }
       ],
-      "orig": "1 N/2-1 f[v\uff09 ej\uff082/N f[]= N -N/2 (14)",
+      "orig": "1 N/2-1 f[v） ej（2/N f[]= N -N/2 (14)",
       "text": "f [ \\tau ] = \\frac { 1 } { N } \\sum _ { - N / 2 } ^ { N / 2 - 1 } f [ \\nu ] \\, e ^ { j ( 2 \\pi / N ) \\tau } \\, ."
     },
     {
@@ -11609,7 +10586,7 @@
           ]
         }
       ],
-      "orig": "Note thatthisconventionfortheDFTmeans thatthe area under a function squared is not the same as the area under its transform squared-a factor Nmust be includedin theParseval-Rayleighformula.Alternate conventionscould have a l/\u221aNon both sides or the 1/Non the other side.Thisconventionmakes the forward transform ofaunit impulseequal toaconstant spectrum of one,analogous to the continuous case.",
+      "orig": "Note thatthisconventionfortheDFTmeans thatthe area under a function squared is not the same as the area under its transform squared-a factor Nmust be includedin theParseval-Rayleighformula.Alternate conventionscould have a l/√Non both sides or the 1/Non the other side.Thisconventionmakes the forward transform ofaunit impulseequal toaconstant spectrum of one,analogous to the continuous case.",
       "text": "Note that this convention for the DFT means that the area under a function squared is not the same as the area under its transform squared-a factor N must be included in the Parseval-Rayleigh formula. Alternate conventions could have a 1/√N on both sides or the 1/N on the other side. This convention makes the forward transform of a unit impulse equal to a constant spectrum of one, analogous to the continuous case."
     },
     {
@@ -11865,16 +10842,7 @@
           "$ref": "#/texts/39"
         },
         {
-          "$ref": "#/texts/40"
-        },
-        {
-          "$ref": "#/texts/41"
-        },
-        {
           "$ref": "#/texts/42"
-        },
-        {
-          "$ref": "#/texts/43"
         },
         {
           "$ref": "#/texts/44"
@@ -11932,9 +10900,6 @@
           "$ref": "#/texts/56"
         },
         {
-          "$ref": "#/texts/57"
-        },
-        {
           "$ref": "#/texts/58"
         },
         {
@@ -11979,9 +10944,6 @@
       "children": [
         {
           "$ref": "#/texts/63"
-        },
-        {
-          "$ref": "#/texts/64"
         },
         {
           "$ref": "#/texts/65"
@@ -12112,9 +11074,6 @@
           "$ref": "#/texts/94"
         },
         {
-          "$ref": "#/texts/95"
-        },
-        {
           "$ref": "#/texts/96"
         },
         {
@@ -12122,9 +11081,6 @@
         },
         {
           "$ref": "#/texts/98"
-        },
-        {
-          "$ref": "#/texts/99"
         }
       ],
       "content_layer": "body",
@@ -12181,31 +11137,13 @@
           "$ref": "#/texts/127"
         },
         {
-          "$ref": "#/texts/128"
-        },
-        {
-          "$ref": "#/texts/129"
-        },
-        {
-          "$ref": "#/texts/130"
-        },
-        {
           "$ref": "#/texts/131"
-        },
-        {
-          "$ref": "#/texts/132"
-        },
-        {
-          "$ref": "#/texts/133"
         },
         {
           "$ref": "#/texts/134"
         },
         {
           "$ref": "#/texts/135"
-        },
-        {
-          "$ref": "#/texts/136"
         },
         {
           "$ref": "#/texts/137"
@@ -12330,13 +11268,7 @@
           "$ref": "#/texts/158"
         },
         {
-          "$ref": "#/texts/159"
-        },
-        {
           "$ref": "#/texts/160"
-        },
-        {
-          "$ref": "#/texts/161"
         },
         {
           "$ref": "#/texts/162"
@@ -12352,9 +11284,6 @@
         },
         {
           "$ref": "#/texts/166"
-        },
-        {
-          "$ref": "#/texts/167"
         },
         {
           "$ref": "#/texts/168"
@@ -12457,9 +11386,6 @@
           "$ref": "#/texts/187"
         },
         {
-          "$ref": "#/texts/188"
-        },
-        {
           "$ref": "#/texts/189"
         },
         {
@@ -12524,9 +11450,6 @@
           "$ref": "#/texts/198"
         },
         {
-          "$ref": "#/texts/199"
-        },
-        {
           "$ref": "#/texts/200"
         },
         {
@@ -12545,13 +11468,7 @@
           "$ref": "#/texts/205"
         },
         {
-          "$ref": "#/texts/206"
-        },
-        {
           "$ref": "#/texts/207"
-        },
-        {
-          "$ref": "#/texts/208"
         },
         {
           "$ref": "#/texts/209"
@@ -12670,9 +11587,6 @@
           "$ref": "#/texts/238"
         },
         {
-          "$ref": "#/texts/239"
-        },
-        {
           "$ref": "#/texts/240"
         },
         {
@@ -12686,9 +11600,6 @@
         },
         {
           "$ref": "#/texts/244"
-        },
-        {
-          "$ref": "#/texts/245"
         },
         {
           "$ref": "#/texts/246"
@@ -12798,25 +11709,16 @@
           "$ref": "#/texts/276"
         },
         {
-          "$ref": "#/texts/277"
-        },
-        {
           "$ref": "#/texts/278"
         },
         {
           "$ref": "#/texts/279"
         },
         {
-          "$ref": "#/texts/280"
-        },
-        {
           "$ref": "#/texts/281"
         },
         {
           "$ref": "#/texts/282"
-        },
-        {
-          "$ref": "#/texts/283"
         },
         {
           "$ref": "#/texts/284"
@@ -13113,19 +12015,10 @@
           "$ref": "#/texts/343"
         },
         {
-          "$ref": "#/texts/344"
-        },
-        {
-          "$ref": "#/texts/345"
-        },
-        {
           "$ref": "#/texts/346"
         },
         {
           "$ref": "#/texts/347"
-        },
-        {
-          "$ref": "#/texts/348"
         },
         {
           "$ref": "#/texts/349"
@@ -13238,9 +12131,6 @@
       "children": [
         {
           "$ref": "#/texts/385"
-        },
-        {
-          "$ref": "#/texts/386"
         },
         {
           "$ref": "#/texts/387"
