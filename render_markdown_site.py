@@ -49,6 +49,9 @@ figcaption {{
 .formula {{
   overflow-x: auto;
 }}
+span.formula > .katex {{
+  font-size: 1em;
+}}
 </style>
 </head>
 <body>
