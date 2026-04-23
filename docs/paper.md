@@ -210,7 +210,7 @@ This window may be applied to real-life data in the DFT domains. Fig. 20 shows t
 
 To find the smoothed envelope of a measured impulse response, we may use an argument similar to the one
 
-Fig. 16. Hann window $\operatorname{HANN}[x]=\cos^2(\pi x/N)=\frac{1}{2}[1+\cos(2mx/N)]$ for $64$-point DFT.
+Fig. 16. Hann window $\text{HANN}[x]=\cos^2(\pi x/N)=\frac{1}{2}[1+\cos(2mx/N)]$ for $64$-point DFT.
 
 ![Image](images/picture_17.jpeg)
 
