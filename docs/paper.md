@@ -29,7 +29,7 @@ Fig. 1. Superposition of two damped sinusoids with different attack times.
 
 If we let h(t) be the system's impulse response and H(f) its frequency response, we have
 
-$$A I R ( t ) = \mathcal { F } ^ { - 1 } \{ \mathcal { F } \{ \Delta ( t ) \} \, H ( f ) \} \tag{1a}$$
+$$\text{AIR}( t ) = \mathcal { F } ^ { - 1 } \{ \mathcal { F } \{ \Delta ( t ) \} \, H ( f ) \} \tag{1a}$$
 
 $$= \Delta ( t ) \ast h ( t ) \ .$$
 
@@ -57,7 +57,7 @@ $$e ^ { j \omega t } = \cos ( \omega t ) \, + \, j \, \sin ( \omega t ) \, .$$
 
 In a way, $e^{j\omega t}$ is the most continuous complex function we can find with cos(ωt) as its real part. Fig. 6 shows the solid figure that results when both parts of the function are plotted against time. The figure's projections show both the real and the imaginary parts as functions of time. The rear projection plane shows the function
 
-Fig. 4. Discrete-time infinite-sample delta function $\delta\_\infin [t]$.
+Fig. 4. Discrete-time infinite-sample delta function $\delta\_\infty [t]$.
 
 ![Image](images/picture_04.jpeg)
 
@@ -131,7 +131,7 @@ Fig. 11. Continuous-time analytic impulse time infinite-sample analytic impulse]
 
 J. Audio Eng. Soc., Vol. 36, No. 5, 1988 May
 
-$\Delta\_\infin[\tau]$. In algebraic form [5, p. 360], [6, p. 71],
+$\Delta\_\infty[\tau]$. In algebraic form [5, p. 360], [6, p. 71],
 
 $$\begin{aligned} \Delta _ { \alpha } [ \tau ] & = \frac { \sin ( \pi \tau ) } { \pi \tau } + j \, \frac { 1 \, - \, \cos ( \pi \tau ) } { \pi \tau } \\ & = \left [ \frac { e ^ { j \pi \, \pi } - 1 } { \pi \tau } \right ] ^ { * } \end{aligned}$$
 
@@ -139,7 +139,7 @@ or, equivalently,
 
 $$A _ { \mathbb { Z } } [ \tau ] \equiv \begin{cases} 1 , & \tau = 0 \\ j \frac { 2 } { \pi \tau } , & \tau \text { odd} \\ 0 , & \tau \text { even, } \neq 0 \end{cases}$$
 
-Now let us compare Eqs. (5a) and (7a). We see that in this "intermediate" domain of quantized time and continuous frequency the analytic impulse has exactly the same form as the completely continuous impulse before limiting. One only need write a T where t would normally appear. Fig. 13 is an overlay of Figs. 9 and 12 and shows even more clearly what Eq. (7b) tends to obscure: $\Delta\_\infin[\tau]$ is just a sampled version of the analytic sinc function. However, we see that Eq. (7b) is reminiscent of Eq. (6). The sudden appearance of the factor 2 in the imaginary part can be explained by noting that $d\_\infin [\tau]$ alternates between 0 and 2/π, thus giving an average value of 1/π (see also Appendix I).
+Now let us compare Eqs. (5a) and (7a). We see that in this "intermediate" domain of quantized time and continuous frequency the analytic impulse has exactly the same form as the completely continuous impulse before limiting. One only need write a T where t would normally appear. Fig. 13 is an overlay of Figs. 9 and 12 and shows even more clearly what Eq. (7b) tends to obscure: $\Delta\_\infty[\tau]$ is just a sampled version of the analytic sinc function. However, we see that Eq. (7b) is reminiscent of Eq. (6). The sudden appearance of the factor 2 in the imaginary part can be explained by noting that $d\_\infty [\tau]$ alternates between 0 and 2/π, thus giving an average value of 1/π (see also Appendix I).
 
 ![Image](images/picture_12.jpeg)
 
@@ -147,7 +147,7 @@ Fig. 13. Overlay of Figs. 9 and 12.
 
 ![Image](images/picture_13.jpeg)
 
-Fig. 12. Discrete-time infinite-sample analytic impulse $\Delta\_\infin [\tau]$, its ETC, and its z transform evaluated on unit circle.
+Fig. 12. Discrete-time infinite-sample analytic impulse $\Delta\_\infty [\tau]$, its ETC, and its z transform evaluated on unit circle.
 
 ![Image](images/picture_14.jpeg)
 
@@ -161,11 +161,11 @@ Fig. 14. Wider view of Fig. 12.
 
 ![Image](images/picture_15.jpeg)
 
-We cannot now expect $\Delta\_N[t]$ to have the same algebraic form as $\Delta\_\infin[T]$. What was 𝜏=±∞. now corresponds to 𝜏=±N/2, the antipodal point. Eqs. (7a) and (7b) need to be modified in order that the envelope of △[𝜏] vanishes at this point. In fact,
+We cannot now expect $\Delta\_N[t]$ to have the same algebraic form as $\Delta\_\infty[T]$. What was 𝜏=±∞. now corresponds to 𝜏=±N/2, the antipodal point. Eqs. (7a) and (7b) need to be modified in order that the envelope of △[𝜏] vanishes at this point. In fact,
 
 $$\begin{aligned} \Delta _ { N } [ \tau ] & = \frac { 1 } { N } \left [ 2 e ^ { j 2 \pi / N } \frac { 1 - e ^ { j \pi \tau } } { 1 - e ^ { j 2 \pi / N } } + ( 1 - e ^ { j \pi \tau } ) \right ] \\ & = \begin{cases} 1 , & \tau = 0 \\ j \frac { 2 } { N } \cot \left ( \frac { \pi \tau } { N } \right ) , & \tau \text { odd} \quad [ 5 , p . 3 5 ] \\ 0 , & \tau \text { even } \neq 0 \end{cases} \end{aligned}$$
 
-which is shown in Fig. 15. This looks very different from Eq. (7). The difference in form between Eqs. (7) and (8) was one initial stimulus to my investigations: However, these two equations are numerically almost identical. For example, in the 64-point DFT domain, the first nonzero value of d64[T] is cot(π/64)/32=0.6361 ... In the infinite-point z-transform time domain we have $d\_\infin[\tau]=2/\pi=0. 6366..$, which differs by less than 0. 1%. Because of this, Fig. 14 and the upper left of Fig. 12 may serve as ETCs for the analytic impulse in the DFT domains for large N. Any measurement technique that yields information about signal and spectrum that is restricted to discrete samples, and this includes both FFT (a particularly efficient way of doing a similarly limited resolution.
+which is shown in Fig. 15. This looks very different from Eq. (7). The difference in form between Eqs. (7) and (8) was one initial stimulus to my investigations: However, these two equations are numerically almost identical. For example, in the 64-point DFT domain, the first nonzero value of d64[T] is cot(π/64)/32=0.6361 ... In the infinite-point z-transform time domain we have $d\_\infty[\tau]=2/\pi=0. 6366..$, which differs by less than 0. 1%. Because of this, Fig. 14 and the upper left of Fig. 12 may serve as ETCs for the analytic impulse in the DFT domains for large N. Any measurement technique that yields information about signal and spectrum that is restricted to discrete samples, and this includes both FFT (a particularly efficient way of doing a similarly limited resolution.
 
 ## 7 WINDOWING
 
