@@ -29,11 +29,14 @@ Fig. 1. Superposition of two damped sinusoids with different attack times.
 
 If we let $h(t)$ be the system's impulse response and $H(f)$ its frequency response, we have
 
-$$\text{AIR}( t ) = \mathcal { F } ^ { - 1 } \{ \mathcal { F } \{ \Delta ( t ) \} \, H ( f ) \} \tag{1a}$$
+$$
+\begin{align}
+\text{AIR}( t ) &= \mathcal { F } ^ { - 1 } \{ \mathcal { F } \{ \Delta ( t ) \} \, H ( f ) \} \tag{1a}\\
+                &= \Delta ( t ) \ast h ( t ) \ . \tag{1b}
+\end{align}
+$$
 
-$$= \Delta ( t ) \ast h ( t ) \ .$$
-
-The term AIR can be parsed in two different ways. For linear systems the two interpretations are identical. We introduced the AIR above as the analytic "impulse response, " a complex function whose real part is the impulse response. This interpretation follows (roughly) analytic impulse" response, the (complex) response of a system to a complex impulse, namely, $\Delta(t)$. This interpretation corresponds to Eq. (1b). In this light, $\Delta(t)$ appears as the AIR of an ideal system. This is to say, the function $\Delta(t)$ plays a dual role. From one perspective it is the tool we use to calculate the AIR for a given system. But at the same time, we may regard it as the data itself, the response of a system with everywhere flat frequency response.
+The term AIR can be parsed in two different ways. For linear systems the two interpretations are identical. We introduced the AIR above as the analytic "impulse response, " a complex function whose real part is the impulse response. This interpretation follows (roughly) from Eq. (1a). We can equally well view it as the "analytic impulse" response, the (complex) response of a system to a complex impulse, namely, $\Delta(t)$. This interpretation corresponds to Eq. (1b). In this light, $\Delta(t)$ appears as the AIR of an ideal system. This is to say, the function $\Delta(t)$ plays a dual role. From one perspective it is the tool we use to calculate the AIR for a given system. But at the same time, we may regard it as the data itself, the response of a system with everywhere flat frequency response.
 
 From the AIR it is a short step to the ETC. The AIR is a complex function of a real variable (time). Its real part is the impulse response of the system in question, and its imaginary part turns out to be the Hilbert transform of the impulse response. The ETC, a real nonnegative function of time, is the magnitude of the AIR. For example, the ETC of an ideal system will be the magnitude of $\Delta(t)$. For this reason an investigation of the nature and properties of $\Delta(t)$ proves to be very useful. We start with the purely real predecessors of $\Delta(t)$.
 
