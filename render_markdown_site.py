@@ -7,6 +7,7 @@ import re
 import shutil
 import subprocess
 from pathlib import Path
+from typing import Iterable
 
 
 READING_WIDTH_CH = 72
@@ -18,6 +19,7 @@ IMAGE_RE = re.compile(r"^!\[(?P<alt>[^\]]*)\]\((?P<src>[^)]+)\)\s*$")
 INLINE_MATH_RE = re.compile(r"(?<!\\)\$(?P<tex>[^$\n]+?)(?<!\\)\$")
 DISPLAY_MATH_RE = re.compile(r"^\$\$(?P<tex>.*)\$\$\s*$")
 DISPLAY_MATH_DELIMITER = "$$"
+KATEX_CACHE: dict[tuple[str, bool], str] = {}
 HTML_HEAD_TEMPLATE = """\
 <!DOCTYPE html>
 <html lang="en">
@@ -100,15 +102,28 @@ def normalize_tex(tex: str) -> str:
 
 
 def render_katex(tex: str, display_mode: bool) -> str:
+    key = (normalize_tex(tex), display_mode)
+    if key not in KATEX_CACHE:
+        render_katex_batch([key])
+    return KATEX_CACHE[key]
+
+
+def render_katex_batch(items: Iterable[tuple[str, bool]]) -> None:
+    pending = [item for item in dict.fromkeys(items) if item not in KATEX_CACHE]
+    if not pending:
+        return
+
     script = """
 const katex = require("katex");
-const input = JSON.parse(process.argv[1]);
-process.stdout.write(katex.renderToString(input.tex, {
+const inputs = JSON.parse(process.argv[1]);
+process.stdout.write(JSON.stringify(inputs.map(input => katex.renderToString(input.tex, {
   displayMode: input.displayMode,
   throwOnError: false
-}));
+}))));
 """
-    payload = json.dumps({"tex": normalize_tex(tex), "displayMode": display_mode})
+    payload = json.dumps(
+        [{"tex": tex, "displayMode": display_mode} for tex, display_mode in pending]
+    )
     try:
         result = subprocess.run(
             ["node", "-e", script, payload],
@@ -130,7 +145,41 @@ process.stdout.write(katex.renderToString(input.tex, {
             ) from exc
         raise RuntimeError(f"KaTeX build-time render failed: {stderr}") from exc
 
-    return result.stdout
+    for key, rendered in zip(pending, json.loads(result.stdout), strict=True):
+        KATEX_CACHE[key] = rendered
+
+
+def collect_math(markdown: str) -> list[tuple[str, bool]]:
+    formulas: list[tuple[str, bool]] = []
+    lines = markdown.splitlines()
+    i = 0
+
+    while i < len(lines):
+        stripped = lines[i].strip()
+        math_match = DISPLAY_MATH_RE.match(stripped)
+        if math_match:
+            formulas.append((normalize_tex(math_match.group("tex")), True))
+            i += 1
+            continue
+
+        if stripped == DISPLAY_MATH_DELIMITER:
+            math_lines: list[str] = []
+            i += 1
+            while i < len(lines) and lines[i].strip() != DISPLAY_MATH_DELIMITER:
+                math_lines.append(lines[i])
+                i += 1
+            if i >= len(lines):
+                raise ValueError("Unclosed display math block")
+            formulas.append((normalize_tex("\n".join(math_lines)), True))
+            i += 1
+            continue
+
+        escaped = html.escape(lines[i])
+        for match in INLINE_MATH_RE.finditer(escaped):
+            formulas.append((normalize_tex(html.unescape(match.group("tex"))), False))
+        i += 1
+
+    return formulas
 
 
 def render_inline(text: str) -> str:
@@ -349,7 +398,9 @@ def render_site(
         '<link rel="stylesheet" '
         f'href="{copy_katex_assets(output_dir)}">'
     )
-    body = render_markdown(markdown_path.read_text(encoding="utf-8"))
+    markdown = markdown_path.read_text(encoding="utf-8")
+    render_katex_batch(collect_math(markdown))
+    body = render_markdown(markdown)
     html_output = (
         HTML_HEAD_TEMPLATE.format(
             title=html.escape(title),
