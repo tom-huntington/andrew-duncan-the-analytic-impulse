@@ -17,6 +17,7 @@ FIGURE_CAPTION_RE = re.compile(r"^Fig\.\s+\d+\.\s+")
 IMAGE_RE = re.compile(r"^!\[(?P<alt>[^\]]*)\]\((?P<src>[^)]+)\)\s*$")
 INLINE_MATH_RE = re.compile(r"(?<!\\)\$(?P<tex>[^$\n]+?)(?<!\\)\$")
 DISPLAY_MATH_RE = re.compile(r"^\$\$(?P<tex>.*)\$\$\s*$")
+DISPLAY_MATH_DELIMITER = "$$"
 HTML_HEAD_TEMPLATE = """\
 <!DOCTYPE html>
 <html lang="en">
@@ -252,6 +253,20 @@ def render_markdown(markdown: str) -> str:
             flush_paragraph()
             flush_list()
             output.append(render_display_math(math_match.group("tex")))
+            i += 1
+            continue
+
+        if stripped == DISPLAY_MATH_DELIMITER:
+            flush_paragraph()
+            flush_list()
+            math_lines: list[str] = []
+            i += 1
+            while i < len(lines) and lines[i].strip() != DISPLAY_MATH_DELIMITER:
+                math_lines.append(lines[i])
+                i += 1
+            if i >= len(lines):
+                raise ValueError("Unclosed display math block")
+            output.append(render_display_math("\n".join(math_lines)))
             i += 1
             continue
 
