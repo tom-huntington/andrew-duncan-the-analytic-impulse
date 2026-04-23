@@ -121,7 +121,7 @@ Fig. 10. Heyser corkscrew of $\text{asinc}(t)$.
 
 ![Image](images/picture_10.jpeg)
 
-Fig. 11. Continuous-time analytic impulse time infinite-sample analytic impulse], its ETC, and its spectrum.
+Fig. 11. Continuous-time analytic impulse time infinite-sample analytic impulse $\Delta_\infty[\tau]$, its ETC, and its spectrum.
 
 ![Image](images/picture_11.jpeg)
 
