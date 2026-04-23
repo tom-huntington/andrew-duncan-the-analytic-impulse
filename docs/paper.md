@@ -10,7 +10,7 @@ A complex analytic function is to its real part as a solid object is to its shad
 
 The analytic impulse $\Delta(t)$ is the complex-valued extension of the real-valued function $\delta(t)$ [1]. Its real part is that same delta; its imaginary part will be examined further. This function finds one application in audio in the calculation of the energy-time curve (ETC) [2], [3] of a system. To summarize this idea briefly, the ETC is the envelope (as opposed to the magnitude) of the impulse response. To find that envelope, we combine the magnitude of the impulse response in an rms fashion with the magnitude of its Hilbert transform. The complex (or quadrature) sum of the impulse response with its Hilbert transform is called the analytic impulse response (AIR) of the system, and the ETC is the magnitude of the AIR.
 
-The motivation for using the ETC derives from the utility of envelopes in eliminating interference effects that appear in the time domain. Fig. 1 shows the impulse response of a simulated system. It is composed of two damped sinusoids, a high-amplitude oscillation that dies away rapidly and a delayed lower amplitude one that lingers. Because of interference it is not easy to discern this visually. Using the techniques described in this paper we find the ETC (Fig. 2). In this graph the information we want is easy to see. However, we note that the energy-time graph is noncausal, that is, it starts to leap up before t=0, in opposition to our intuitive notions about what such a curve should mean. We will see that in finding such a curve there is an inevitable smearing of impulses in the time domain, and that what is happening is that the sharp rise at t=0 is actually "leaking backward."
+The motivation for using the ETC derives from the utility of envelopes in eliminating interference effects that appear in the time domain. Fig. 1 shows the impulse response of a simulated system. It is composed of two damped sinusoids, a high-amplitude oscillation that dies away rapidly and a delayed lower amplitude one that lingers. Because of interference it is not easy to discern this visually. Using the techniques described in this paper we find the ETC (Fig. 2). In this graph the information we want is easy to see. However, we note that the energy-time graph is noncausal, that is, it starts to leap up before $t=0$, in opposition to our intuitive notions about what such a curve should mean. We will see that in finding such a curve there is an inevitable smearing of impulses in the time domain, and that what is happening is that the sharp rise at $t=0$ is actually "leaking backward."
 
 *Presented at the 81st Convention of the Audio Engineering Society, Los Angeles, 1986 November 12-16; revised 1987 December 29.
 
@@ -63,9 +63,9 @@ Fig. 4. Discrete-time infinite-sample delta function $\delta\_\infty [t]$.
 
 plotted on the complex plane, with time as a parameter (a Nyquist diagram). Henning Moller refers to Nyquist diagrams of loudspeaker impedance plots as Heyser spirals, after the graphs that Richard Heyser used in Audio magazine to analyze loudspeaker performance. Following that line, we used to refer to such graphs as shown in Fig. 6 as generalized Heyser spirals, but the term proved too formal and cumbersome and has been shortened to Heyser corkscrew. Similar three-dimensional plots have also been used by Heyser [2].
 
-The magnitude of cos(wt) varies from -1 to +1 and at times it is zero. However, we feel that its envelope is constant. Our intuition is satisfied by defining the envelope to be the magnitude of the full complex function $e^{j \omega t}$. In a Heyser corkscrew this magnitude appears as the radial distance of the central figure to the time axis. From Fig. 6 it is clear that the envelope of $\cos(\omega t)$ is always 1. A plot of this radius as a function of time is the ETC of the function.
+The magnitude of cos(wt) varies from $-1$ to $+1$ and at times it is zero. However, we feel that its envelope is constant. Our intuition is satisfied by defining the envelope to be the magnitude of the full complex function $e^{j \omega t}$. In a Heyser corkscrew this magnitude appears as the radial distance of the central figure to the time axis. From Fig. 6 it is clear that the envelope of $\cos(\omega t)$ is always $1$. A plot of this radius as a function of time is the ETC of the function.
 
-Fig. 5. Discrete-time finite-sample delta function $\delta\_{64}[\tau]$ for 64-point DFT in Bracewell ring format.
+Fig. 5. Discrete-time finite-sample delta function $\delta\_{64}[\tau]$ for $64$-point DFT in Bracewell ring format.
 
 ![Image](images/picture_05.jpeg)
 
@@ -77,7 +77,7 @@ The connection between the real and imaginary parts is called the Hilbert transf
 
 $$\cos ( \omega t ) = \frac { e ^ { j \omega t } + e ^ { - j \omega t } } { 2 }$$
 
-which is an inversion of Eq. 2. To get the complex extension of cos(wt) we express it in its exponential form, suppress the negative frequency term ej, and double the positive frequency part, as shown in Fig. 7. This complex-valued function whose real part is the original function of time is called the analytic signal, although this is something of a misnomer, as noted below. Any real function of time will have a spectrum that is two-sided and symmetric. To get the analytic signal, we go into the frequency domain, remove the negative-frequency components, and double the result (except at the dc point). This corresponds to performing the operation in Eq. (la), where {$\Delta(t)$}, the spectrum of $\Delta(t)$, is a function that has a value of O for negative frequencies, 1 for dc, and 2 for positive frequencies. Performing this operation is referred to as causalizing the spectrum. In this way, the term causal has been generalized to refer to a function that is zero for negative argument. If the argument is time, this corresponds to conventional usage. In fact, as we shall see, a function cannot be causal in both time and frequency.
+which is an inversion of Eq. 2. To get the complex extension of cos(wt) we express it in its exponential form, suppress the negative frequency term ej, and double the positive frequency part, as shown in Fig. 7. This complex-valued function whose real part is the original function of time is called the analytic signal, although this is something of a misnomer, as noted below. Any real function of time will have a spectrum that is two-sided and symmetric. To get the analytic signal, we go into the frequency domain, remove the negative-frequency components, and double the result (except at the dc point). This corresponds to performing the operation in Eq. (la), where {$\Delta(t)$}, the spectrum of $\Delta(t)$, is a function that has a value of O for negative frequencies, $1$ for dc, and $2$ for positive frequencies. Performing this operation is referred to as causalizing the spectrum. In this way, the term causal has been generalized to refer to a function that is zero for negative argument. If the argument is time, this corresponds to conventional usage. In fact, as we shall see, a function cannot be causal in both time and frequency.
 
 Fig. 7. Spectra of $\cos(2\pi t)$ and ej
 
@@ -87,7 +87,7 @@ As a matter of nomenclature, the term analytic refers to a complex function of a
 
 ## 4 THE CONTINUOUS DOMAINS
 
-In the continuous domains we may say, in light of the foregoing, that if the real impulse $\delta(t)$ is a signal with a flat spectrum of 1, then the analytic impulse $\Delta(t)$ is a signal with a spectrum that is zero for negative frequencies, 1 for dc, and 2 for positive frequencies. This is correct, but it will be more illuminating to approach this limit slowly. Fig. 8 shows a signal that has positive and negative frequency content only up to Hz (that is, a bandwidth of 1 Hz and a unit area). The algebraic expression of this signal is
+In the continuous domains we may say, in light of the foregoing, that if the real impulse $\delta(t)$ is a signal with a flat spectrum of $1$, then the analytic impulse $\Delta(t)$ is a signal with a spectrum that is zero for negative frequencies, $1$ for dc, and $2$ for positive frequencies. This is correct, but it will be more illuminating to approach this limit slowly. Fig. 8 shows a signal that has positive and negative frequency content only up to Hz (that is, a bandwidth of $1\,\text{Hz}$ and a unit area). The algebraic expression of this signal is
 
 $$f ( t ) = \frac { \sin ( \pi t ) } { \pi t } \, = \, \sin ( t ) \, .$$
 
@@ -139,7 +139,7 @@ or, equivalently,
 
 $$A _ { \mathbb { Z } } [ \tau ] \equiv \begin{cases} 1 , & \tau = 0 \\ j \frac { 2 } { \pi \tau } , & \tau \text { odd} \\ 0 , & \tau \text { even, } \neq 0 \end{cases}$$
 
-Now let us compare Eqs. (5a) and (7a). We see that in this "intermediate" domain of quantized time and continuous frequency the analytic impulse has exactly the same form as the completely continuous impulse before limiting. One only need write a T where t would normally appear. Fig. 13 is an overlay of Figs. 9 and 12 and shows even more clearly what Eq. (7b) tends to obscure: $\Delta\_\infty[\tau]$ is just a sampled version of the analytic sinc function. However, we see that Eq. (7b) is reminiscent of Eq. (6). The sudden appearance of the factor 2 in the imaginary part can be explained by noting that $d\_\infty [\tau]$ alternates between 0 and $2/\pi$, thus giving an average value of $1/\pi$ (see also Appendix I).
+Now let us compare Eqs. (5a) and (7a). We see that in this "intermediate" domain of quantized time and continuous frequency the analytic impulse has exactly the same form as the completely continuous impulse before limiting. One only need write a T where t would normally appear. Fig. 13 is an overlay of Figs. 9 and 12 and shows even more clearly what Eq. (7b) tends to obscure: $\Delta\_\infty[\tau]$ is just a sampled version of the analytic sinc function. However, we see that Eq. (7b) is reminiscent of Eq. (6). The sudden appearance of the factor $2$ in the imaginary part can be explained by noting that $d\_\infty [\tau]$ alternates between $0$ and $2/\pi$, thus giving an average value of $1/\pi$ (see also Appendix I).
 
 ![Image](images/picture_12.jpeg)
 
@@ -151,7 +151,7 @@ Fig. 12. Discrete-time infinite-sample analytic impulse $\Delta\_\infty [\tau]$,
 
 ![Image](images/picture_14.jpeg)
 
-If we step back from Fig. 12 and enlarge our field of view, we get a picture like Fig. 14. This figure shows that it takes roughly 60 samples for the envelope of even the briefest transient to decay to 40 dB below the peak value. This suggests that there is a practical limit to the resolution of an energy-time measurement made with sampled signals.
+If we step back from Fig. 12 and enlarge our field of view, we get a picture like Fig. 14. This figure shows that it takes roughly $60$ samples for the envelope of even the briefest transient to decay to $40\,\text{dB}$ below the peak value. This suggests that there is a practical limit to the resolution of an energy-time measurement made with sampled signals.
 
 ## 6 THE DFT DOMAINS
 
@@ -165,21 +165,21 @@ We cannot now expect $\Delta\_N[t]$ to have the same algebraic form as $\Delta\_
 
 $$\begin{aligned} \Delta _ { N } [ \tau ] & = \frac { 1 } { N } \left [ 2 e ^ { j 2 \pi / N } \frac { 1 - e ^ { j \pi \tau } } { 1 - e ^ { j 2 \pi / N } } + ( 1 - e ^ { j \pi \tau } ) \right ] \\ & = \begin{cases} 1 , & \tau = 0 \\ j \frac { 2 } { N } \cot \left ( \frac { \pi \tau } { N } \right ) , & \tau \text { odd} \quad [ 5 , p . 3 5 ] \\ 0 , & \tau \text { even } \neq 0 \end{cases} \end{aligned}$$
 
-which is shown in Fig. 15. This looks very different from Eq. (7). The difference in form between Eqs. (7) and (8) was one initial stimulus to my investigations: However, these two equations are numerically almost identical. For example, in the 64-point DFT domain, the first nonzero value of $d_{64}[T]$ is $\cot(\pi/64)/32=0.6361 ...$ In the infinite-point z-transform time domain we have $d\_\infty[\tau]=2/\pi=0. 6366..$, which differs by less than 0. 1%. Because of this, Fig. 14 and the upper left of Fig. 12 may serve as ETCs for the analytic impulse in the DFT domains for large N. Any measurement technique that yields information about signal and spectrum that is restricted to discrete samples, and this includes both FFT (a particularly efficient way of doing a similarly limited resolution.
+which is shown in Fig. 15. This looks very different from Eq. (7). The difference in form between Eqs. (7) and (8) was one initial stimulus to my investigations: However, these two equations are numerically almost identical. For example, in the $64$-point DFT domain, the first nonzero value of $d_{64}[T]$ is $\cot(\pi/64)/32=0.6361 ...$ In the infinite-point z-transform time domain we have $d\_\infty[\tau]=2/\pi=0. 6366..$, which differs by less than $0.1\%$. Because of this, Fig. 14 and the upper left of Fig. 12 may serve as ETCs for the analytic impulse in the DFT domains for large N. Any measurement technique that yields information about signal and spectrum that is restricted to discrete samples, and this includes both FFT (a particularly efficient way of doing a similarly limited resolution.
 
 ## 7 WINDOWING
 
 Thus the analytic impulse, discrete or continuous, has a magnitude that does not vanish for negative time. Equivalently the ETC for the ideal transducer, to say
 
-Fig. 15. Discrete-time finite-sample analytic impulse $\Delta\_{64}[\tau]$, its ETC, and its spectrum for 64-point DFT.
+Fig. 15. Discrete-time finite-sample analytic impulse $\Delta\_{64}[\tau]$, its ETC, and its spectrum for $64$-point DFT.
 
 ![Image](images/picture_16.jpeg)
 
 nothing of the practical one, is not causal. This means that the interpretation of that envelope as a graph of energy versus time is only approximate. The best we can do is ask: what can we do to make such a graph look better? For example, we may make the skirts of a peak steeper, to help us visually sort closely spaced peaks, at the expense of making the peaks themselves somewhat broader. This is obviously a tradeoff, and if desired it can be accomplished with techniques of windowing.
 
-By windowing we mean the multiplication in the time or frequency domain of a measured function by another function, called the window. Generally the window goes to 0 where the data are to be deemphasized, and to 1 where the data are to be emphasized. For example, a cosine-squared (or raised-cosine) bell, called a Hann window after Julius von Hann, is one of the most common windows used in FFT processing. Fig. 16 shows a Hann window in a 64-point DFT domain. The particularly simple form of this function in a periodic domain is revealed by the Bracewell ring format.
+By windowing we mean the multiplication in the time or frequency domain of a measured function by another function, called the window. Generally the window goes to $0$ where the data are to be deemphasized, and to $1$ where the data are to be emphasized. For example, a cosine-squared (or raised-cosine) bell, called a Hann window after Julius von Hann, is one of the most common windows used in FFT processing. Fig. 16 shows a Hann window in a $64$-point DFT domain. The particularly simple form of this function in a periodic domain is revealed by the Bracewell ring format.
 
-We first investigate the effect of windowing on the analytic impulse itself. We will later see that the windowed impulse or its spectrum may be used to find a windowed ETC for physical data. To window x[], we multiply its spectrum by a cosine-squared shape. The value of the window is 0 at the two edges of[]'s spectrum and I at the center. The results of this windowing are shown in Fig. 17. The algebraic expression for this smoothed analytic impulse is
+We first investigate the effect of windowing on the analytic impulse itself. We will later see that the windowed impulse or its spectrum may be used to find a windowed ETC for physical data. To window x[], we multiply its spectrum by a cosine-squared shape. The value of the window is $0$ at the two edges of[]'s spectrum and $1$ at the center. The results of this windowing are shown in Fig. 17. The algebraic expression for this smoothed analytic impulse is
 
 $$
 \tilde{\Delta}_x[\tau] =
@@ -206,11 +206,11 @@ $$
 
 The real part of the impulse has become more spread out, but the imaginary part is more localized, and as a result the magnitude peak has narrower skirts, but is more broad at the top. Fig. 18 shows a wide view of the magnitude, over the same range as Fig. 14, and Fig. 19 gives a still wider view.
 
-This window may be applied to real-life data in the DFT domains. Fig. 20 shows the smoothed analytic impulse and its spectrum for a 64-point DFT. As before, the numerical difference between infinite- and finite-sample domains is very small.
+This window may be applied to real-life data in the DFT domains. Fig. 20 shows the smoothed analytic impulse and its spectrum for a $64$-point DFT. As before, the numerical difference between infinite- and finite-sample domains is very small.
 
 To find the smoothed envelope of a measured impulse response, we may use an argument similar to the one
 
-Fig. 16. Hann window $\operatorname{HANN}[x]=\cos^2(\pi x/N)=\frac{1}{2}[1+\cos(2mx/N)]$ for 64-point DFT.
+Fig. 16. Hann window $\operatorname{HANN}[x]=\cos^2(\pi x/N)=\frac{1}{2}[1+\cos(2mx/N)]$ for $64$-point DFT.
 
 ![Image](images/picture_17.jpeg)
 
@@ -238,21 +238,21 @@ Fig. 17. Smoothed discrete-time infinite-sample analytic impulse [], its ETC, an
 
 ![Image](images/picture_18.jpeg)
 
-Fig. 18. Magnitude of [T] on 60-dB scale.
+Fig. 18. Magnitude of [T] on $60\,\text{dB}$ scale.
 
 ![Image](images/picture_19.jpeg)
 
-Fig. 19. Magnitude of $\Delta[T]$ on 180-dB scale.
+Fig. 19. Magnitude of $\Delta[T]$ on $180\,\text{dB}$ scale.
 
 ![Image](images/picture_20.jpeg)
 
-ing, the -30-dB width is 42 samples in time; with the smoothing discussed, it is 10 samples. With the typical experimenter's lab equipment, the total number of samples N is fixed, and the equipment's display window or printout will show the data samples spaced at equal intervals so as to fill the space allotted. In particular, changing the equipment's frequency range or sampling window will not change the spacing of samples in the display. In this case a peak in ETC will have a width that is a constant fraction of the display width, regardless of frequency setting. In other words, if the experimenter turns up the sampling rate on the lab FFT in hopes of narrowing the apparent width of a peak in the energy-time function, it will have no effect. However, in terms of absolute time, the peak will be narrower since the entire display will now cover a smaller interval of time.
+ing, the $-30\,\text{dB}$ width is $42$ samples in time; with the smoothing discussed, it is $10$ samples. With the typical experimenter's lab equipment, the total number of samples N is fixed, and the equipment's display window or printout will show the data samples spaced at equal intervals so as to fill the space allotted. In particular, changing the equipment's frequency range or sampling window will not change the spacing of samples in the display. In this case a peak in ETC will have a width that is a constant fraction of the display width, regardless of frequency setting. In other words, if the experimenter turns up the sampling rate on the lab FFT in hopes of narrowing the apparent width of a peak in the energy-time function, it will have no effect. However, in terms of absolute time, the peak will be narrower since the entire display will now cover a smaller interval of time.
 
 ## 9 EXAMPLES
 
-Fig. 21 shows the ETC of a high-quality tweeter, measured with a 1024-point FFT sampling at 256 kHz, with no weighting and 256 averages (necessary due to a noisy "anechoic" chamber). In Fig. 22 the above-mentioned windowing has been used on the spectrum before finding the ETC. The smoothed ETC has a sharper attack, and some secondary peaks that were "riding" on the skirts of the first peak are now lower down. However, the smoothed ETC also has a wider peak, which seems to absorb a neighboring peak.
+Fig. 21 shows the ETC of a high-quality tweeter, measured with a $1024$-point FFT sampling at $256\,\text{kHz}$, with no weighting and $256$ averages (necessary due to a noisy "anechoic" chamber). In Fig. 22 the above-mentioned windowing has been used on the spectrum before finding the ETC. The smoothed ETC has a sharper attack, and some secondary peaks that were "riding" on the skirts of the first peak are now lower down. However, the smoothed ETC also has a wider peak, which seems to absorb a neighboring peak.
 
-Of particular interest is the peak at $160\,\mu\text{s}$, which shows up clearly in the smoothed function, but not in the unsmoothed one. This corresponds to a path difference for a sound wave of roughly 5 mm, which is the distance to the edge of the (unmounted) tweeter flange, where the acoustic load changes from a half space to a full space. An experimenter with access to this ETC might suspect that the outgoing acoustic impulse is partially refracted at the edge of the flange, reaching the microphone having traveled 50 mm farther than the direct signal. In an attempt to verify this guess, the measurement was repeated with the tweeter mounted at the end of a long tube of sound-absorbent material. Fig. 23 shows the smoothed ETC for this measurement, with the refraction gone.
+Of particular interest is the peak at $160\,\mu\text{s}$, which shows up clearly in the smoothed function, but not in the unsmoothed one. This corresponds to a path difference for a sound wave of roughly $5\,\text{mm}$, which is the distance to the edge of the (unmounted) tweeter flange, where the acoustic load changes from a half space to a full space. An experimenter with access to this ETC might suspect that the outgoing acoustic impulse is partially refracted at the edge of the flange, reaching the microphone having traveled $50\,\text{mm}$ farther than the direct signal. In an attempt to verify this guess, the measurement was repeated with the tweeter mounted at the end of a long tube of sound-absorbent material. Fig. 23 shows the smoothed ETC for this measurement, with the refraction gone.
 
 ## 10 CONCLUSIONS
 
@@ -266,7 +266,7 @@ From $\delta(t)$ we expanded our consideration to the fully complex $\Delta(t)$,
 
 I would like to give special thanks to Dr. Marshall Buck and Eugene Czerwinski for their support and en-
 
-Fig. 21. ETC of high-quality tweeter, measured with 1024-sample FFT sampling at 256 kHz; no weighting.
+Fig. 21. ETC of high-quality tweeter, measured with $1024$-sample FFT sampling at $256\,\text{kHz}$; no weighting.
 
 ![Image](images/picture_21.jpeg)
 
@@ -274,7 +274,7 @@ Fig. 22. ETC for same tweeter as in Fig. 21, but with raised-cosine smoothing in
 
 ![Image](images/picture_22.jpeg)
 
-Fig. 20. Smoothed discrete-time finite-sample analytic impulse ] and its spectrum for 64-point DFT.
+Fig. 20. Smoothed discrete-time finite-sample analytic impulse ] and its spectrum for $64$-point DFT.
 
 ![Image](images/picture_23.jpeg)
 
