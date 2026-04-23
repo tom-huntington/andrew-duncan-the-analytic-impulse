@@ -46,31 +46,29 @@ Fig. 2. ETC of function of Fig. 1.
 
 ## 2 THE DELTA FUNCTIONS
 
-It is generally considered desirable to have symmetry in one's equations. For instance, we introduce negative numbers so we might say there is exactly one solution of a linear equation. Further, we admit complex numbers so that every nth-order polynomial has exactly n zeros. In this spirit we create $\delta(t)$ so that the Fourier transform will have a kernel: a function whose image under the mapping is a unit constant. Fig. 3 shows this relation, with the double arrow indicating the direction of the forward transform. Intuitively, $S(t)$ is a narrow pulse As it has positive but no negative values, it has a dc component. Since it rises and falls very rapidly, it has a great deal of high-frequency energy. Following the precedent of referring to negative or imaginary "numbers, I will call $\delta(t)$ and its relatives functions, although strictly speaking this is not correct. This function can be thought of as the limit of a sequence of (true) functions, as the derivative of the unit step function, or in distinctive ways. In the discrete-time domains, the difficulty of a rigorous delta function is gone. In the time domain of the z transform (Fig. 4) we have a well behaved infinite sequence, zero everywhere except at one sample. In the discrete Fourier transform (DFT) domain (Fig. 5), time is implicitly periodic, and so we have a finite, cyclic sequence. We refer to a circular plot of a cyclic function, such as in Fig. 5, as a Bracewell ring [4, p. 363]. To stress the quantized nature of the independent variable, we use square brackets, and call the variable . takes on only integer values. In the discrete frequency domain, we shall use the letter v,
+It is generally considered desirable to have symmetry in one's equations. For instance, we introduce negative numbers so we might say there is exactly one solution of a linear equation. Further, we admit complex numbers so that every nth-order polynomial has exactly n zeros. In this spirit we create $\delta(t)$ so that the Fourier transform will have a kernel: a function whose image under the mapping is a unit constant. Fig. 3 shows this relation, with the double arrow indicating the direction of the forward transform. Intuitively, $S(t)$ is a narrow pulse As it has positive but no negative values, it has a dc component. Since it rises and falls very rapidly, it has a great deal of high-frequency energy. Following the precedent of referring to negative or imaginary "numbers," I will call $\delta(t)$ and its relatives functions, although strictly speaking this is not correct. This function can be thought of as the limit of a sequence of (true) functions, as the derivative of the unit step function, or in distinctive ways. In the discrete-time domains, the difficulty of a rigorous delta function is gone. In the time domain of the z transform (Fig. 4) we have a well behaved infinite sequence, zero everywhere except at one sample. In the discrete Fourier transform (DFT) domain (Fig. 5), time is implicitly periodic, and so we have a finite, cyclic sequence. We refer to a circular plot of a cyclic function, such as in Fig. 5, as a Bracewell ring [4, p. 363]. To stress the quantized nature of the independent variable, we use square brackets, and call the variable $\tau$. $\tau$ takes on only integer values. In the discrete frequency domain, we shall use the letter $\nu$.
 
 Fig. 3. Dirac delta function and its spectrum.
 
 ![Image](images/picture_03.jpeg)
 
-## 3 ANALYTIC FUNCTIONS
-
-An analytic function is to its real part as a solid object is to its shadow. For example, consider the function $\cos(\omega t)$. The complex extension of $\cos(\omega t)$ is
-
-$$e ^ { j \omega t } = \cos ( \omega t ) \, + \, j \, \sin ( \omega t ) \, .$$
-
-In a way, $e^{j\omega t}$ is the most continuous complex function we can find with $\cos(\omega t)$ as its real part. Fig. 6 shows the solid figure that results when both parts of the function are plotted against time. The figure's projections show both the real and the imaginary parts as functions of time. The rear projection plane shows the function
-
 Fig. 4. Discrete-time infinite-sample delta function $\delta\_\infty [t]$.
 
 ![Image](images/picture_04.jpeg)
 
-plotted on the complex plane, with time as a parameter (a Nyquist diagram). Henning Moller refers to Nyquist diagrams of loudspeaker impedance plots as Heyser spirals, after the graphs that Richard Heyser used in Audio magazine to analyze loudspeaker performance. Following that line, we used to refer to such graphs as shown in Fig. 6 as generalized Heyser spirals, but the term proved too formal and cumbersome and has been shortened to Heyser corkscrew. Similar three-dimensional plots have also been used by Heyser [2].
-
-The magnitude of $\cos(\omega t)$ varies from $-1$ to $+1$ and at times it is zero. However, we feel that its envelope is constant. Our intuition is satisfied by defining the envelope to be the magnitude of the full complex function $e^{j \omega t}$. In a Heyser corkscrew this magnitude appears as the radial distance of the central figure to the time axis. From Fig. 6 it is clear that the envelope of $\cos(\omega t)$ is always $1$. A plot of this radius as a function of time is the ETC of the function.
-
 Fig. 5. Discrete-time finite-sample delta function $\delta\_{64}[\tau]$ for $64$-point DFT in Bracewell ring format.
 
 ![Image](images/picture_05.jpeg)
+
+## 3 ANALYTIC FUNCTIONS
+
+An analytic function is to its real part as a solid object is to its shadow. For example, consider the function $\cos(\omega t)$. The complex extension of $\cos(\omega t)$ is
+
+$$e ^ { j \omega t } = \cos ( \omega t ) \, + \, j \, \sin ( \omega t ) \, . \tag{2}$$
+
+In a way, $e^{j\omega t}$ is the most continuous complex function we can find with $\cos(\omega t)$ as its real part. Fig. 6 shows the solid figure that results when both parts of the function are plotted against time. The figure's projections show both the real and the imaginary parts as functions of time. The rear projection plane shows the function plotted on the complex plane, with time as a parameter (a Nyquist diagram). Henning Moller refers to Nyquist diagrams of loudspeaker impedance plots as Heyser spirals, after the graphs that Richard Heyser used in Audio magazine to analyze loudspeaker performance. Following that line, we used to refer to such graphs as shown in Fig. 6 as generalized Heyser spirals, but the term proved too formal and cumbersome and has been shortened to Heyser corkscrew. Similar three-dimensional plots have also been used by Heyser [2].
+
+The magnitude of $\cos(\omega t)$ varies from $-1$ to $+1$ and at times it is zero. However, we feel that its envelope is constant. Our intuition is satisfied by defining the envelope to be the magnitude of the full complex function $e^{j \omega t}$. In a Heyser corkscrew this magnitude appears as the radial distance of the central figure to the time axis. From Fig. 6 it is clear that the envelope of $\cos(\omega t)$ is always $1$. A plot of this radius as a function of time is the ETC of the function.
 
 Fig. 6. Heyser corkscrew of ej.
 
@@ -80,9 +78,9 @@ The connection between the real and imaginary parts is called the Hilbert transf
 
 $$\cos ( \omega t ) = \frac { e ^ { j \omega t } + e ^ { - j \omega t } } { 2 }$$
 
-which is an inversion of Eq. 2. To get the complex extension of $\cos(\omega t)$ we express it in its exponential form, suppress the negative frequency term ej, and double the positive frequency part, as shown in Fig. 7. This complex-valued function whose real part is the original function of time is called the analytic signal, although this is something of a misnomer, as noted below. Any real function of time will have a spectrum that is two-sided and symmetric. To get the analytic signal, we go into the frequency domain, remove the negative-frequency components, and double the result (except at the dc point). This corresponds to performing the operation in Eq. (la), where {$\Delta(t)$}, the spectrum of $\Delta(t)$, is a function that has a value of O for negative frequencies, $1$ for dc, and $2$ for positive frequencies. Performing this operation is referred to as causalizing the spectrum. In this way, the term causal has been generalized to refer to a function that is zero for negative argument. If the argument is time, this corresponds to conventional usage. In fact, as we shall see, a function cannot be causal in both time and frequency.
+which is an inversion of Eq. 2. To get the complex extension of $\cos(\omega t)$ we express it in its exponential form, suppress the negative frequency term $e^{-j\omega t}$, and double the positive frequency part, as shown in Fig. 7. This complex-valued function whose real part is the original function of time is called the analytic signal, although this is something of a misnomer, as noted below. Any real function of time will have a spectrum that is two-sided and symmetric. To get the analytic signal, we go into the frequency domain, remove the negative-frequency components, and double the result (except at the dc point). This corresponds to performing the operation in Eq. (la), where $\mathcal F \lbrace \Delta(t)\rbrace$, the spectrum of $\Delta(t)$, is a function that has a value of $0$ for negative frequencies, $1$ for dc, and $2$ for positive frequencies. Performing this operation is referred to as causalizing the spectrum. In this way, the term causal has been generalized to refer to a function that is zero for negative argument. If the argument is time, this corresponds to conventional usage. In fact, as we shall see, a function cannot be causal in both time and frequency.
 
-Fig. 7. Spectra of $\cos(2\pi t)$ and ej
+Fig. 7. Spectra of $\cos(2\pi t)$ and $e^{j\omega t}$
 
 ![Image](images/picture_07.jpeg)
 
@@ -90,39 +88,34 @@ As a matter of nomenclature, the term analytic refers to a complex function of a
 
 ## 4 THE CONTINUOUS DOMAINS
 
-In the continuous domains we may say, in light of the foregoing, that if the real impulse $\delta(t)$ is a signal with a flat spectrum of $1$, then the analytic impulse $\Delta(t)$ is a signal with a spectrum that is zero for negative frequencies, $1$ for dc, and $2$ for positive frequencies. This is correct, but it will be more illuminating to approach this limit slowly. Fig. 8 shows a signal that has positive and negative frequency content only up to Hz (that is, a bandwidth of $1\,\text{Hz}$ and a unit area). The algebraic expression of this signal is
+In the continuous domains we may say, in light of the foregoing, that if the real impulse $\delta(t)$ is a signal with a flat spectrum of $1$, then the analytic impulse $\Delta(t)$ is a signal with a spectrum that is zero for negative frequencies, $1$ for dc, and $2$ for positive frequencies. This is correct, but it will be more illuminating to approach this limit slowly. Fig. 8 shows a signal that has positive and negative frequency content only up to $1/2$ Hz (that is, a bandwidth of $1\,\text{Hz}$ and a unit area). The algebraic expression of this signal is
 
-$$f ( t ) = \frac { \sin ( \pi t ) } { \pi t } \, = \, \sin ( t ) \, .$$
-
-If we remove the negative-frequency components, we get a transform pair as in Fig. 9, shown in both linear and logarithmic phase-magnitude (ETC) displays. This function is given by
+$$f ( t ) = \frac { \sin ( \pi t ) } { \pi t } \, = \, \text{sinc} ( t ) \, .$$
 
 Fig. 8. $\text{Sinc}(t)$ and its spectrum.
 
 ![Image](images/picture_08.jpeg)
 
-$$\begin{aligned} f ( t ) & = \frac { \sin ( \pi t ) } { \pi t } + j \, \frac { 1 - \cos ( \pi t ) } { \pi t } \\ & = \left [ \frac { e ^ { j t } - 1 } { \pi t } \right ] ^ { * } \\ & = \sin ( t ) + j \cdot \cos ( t ) = \, \text {asinc} ( t ) \, . \quad ( 5 a ) \end{aligned}$$
-
-$$( 5 a )$$
-
-This function is sometimes also described as [4, p. 391]
-
-$$\text {asc} ( t ) \, = \, \text {inc} ( t ) \, + \, j \, \cdot \, \text {inc} ( t / 2 ) \, \sin ( \pi t / 2 ) \tag{5b}$$
-
-a form which, if studied, will reveal certain convolution properties of the imaginary part. In Fig. 10 we see the same function and note its helical form.
-
-Passing to the limit, we let the band edge move indefinitely to the right, giving us the transform pair shown in Fig. 11. The spectrum is now a function called $\text{CAUS}(f)$ and the signal is the continuous analytic impulse,
-
-$$\begin{aligned} \Delta ( t ) & = \delta ( t ) + j \, \frac { 1 } { \pi t } \\ & = \delta ( t ) + j \cdot d ( t ) \end{aligned}$$
-
-We see immediately that the imaginary part of $\Delta(t)$, sometimes referred to as a doublet or $d(t)$, is not causal, and hence the magnitude of $\Delta(t)$ [the ETC of $\delta(t)$] on the upper left hand of Fig. 11 must also be noncausal. In Appendix I there is a further discussion of why $d(t)$ does not vanish for nonzero argument. For the moment, as the magnitude of $\Delta(t)$ represents the ETC of an ideal system, we may conclude that the ETC of any loudstrength in the continuous and discrete domains. Although the evidence for this is plentiful [2], [4]-[6], it appears only in fragments, in widely scattered texts, usually addressing very different topics. Further, there is some confusion about the necessity of this effect. Perhaps the resolution of our instruments is too low, or maybe a more sophisticated windowing would make our ETC start at $t=0$. The foregoing analysis shows that this is not so in continuous domains. The following addresses the same issue in the discrete domains.
-
-## 5 THE Z-TRANSFORM DOMAINS
-
-Our next step is to make time discrete, that is, we now know the value of the signal at integer multiples of a sampling interval. Without loss of generality we can replace t with , an integer variable. There are still an infinite number of samples, but now a countable infinity. The effect of sampling in time is to make the spectrum periodic. In fact, the spectrum is now the z transform evaluated on the unit circle. Fig. 12 shows $\text{CAUS}(f)$ for this situation and its inverse transform
 
 Fig. 9. Analytic sinc function $\text{asinc}(t)$, its ETC, and its spectrum.
 
 ![Image](images/picture_09.jpeg)
+
+
+If we remove the negative-frequency components, we get a transform pair as in Fig. 9, shown in both linear and logarithmic phase-magnitude (ETC) displays. This function is given by
+
+$$
+\begin{aligned} f ( t ) 
+& = \frac { \sin ( \pi t ) } { \pi t } + j \, \frac { 1 - \cos ( \pi t ) } { \pi t } \\ 
+& = -j \left [ \frac { e ^ { j t } - 1 } { \pi t } \right ] ^ { * } \\ 
+& = \text{sinc} ( t ) + j \cdot \text{cosinc} ( t ) = \, \text {asinc} ( t ) \, . \tag{5a} \end{aligned}
+$$
+
+This function is sometimes also described as [4, p. 391]
+
+$$\text {asinc} ( t ) \, = \, \text {sinc} ( t ) \, + \, j \, \cdot \, \text {sinc} ( t / 2 ) \, \sin ( \pi t / 2 ) \tag{5b}$$
+
+a form which, if studied, will reveal certain convolution properties of the imaginary part. In Fig. 10 we see the same function and note its helical form.
 
 Fig. 10. Heyser corkscrew of $\text{asinc}(t)$.
 
@@ -132,15 +125,27 @@ Fig. 11. Continuous-time analytic impulse time infinite-sample analytic impulse]
 
 ![Image](images/picture_11.jpeg)
 
+Passing to the limit, we let the band edge move indefinitely to the right, giving us the transform pair shown in Fig. 11. The spectrum is now a function called $\text{CAUS}(f)$ and the signal is the continuous analytic impulse,
+
+$$\begin{aligned} \Delta ( t ) & = \delta ( t ) + j \, \frac { 1 } { \pi t } \\ & = \delta ( t ) + j \cdot d ( t ) \end{aligned}$$
+
+We see immediately that the imaginary part of $\Delta(t)$, sometimes referred to as a doublet or $d(t)$, is not causal, and hence the magnitude of $\Delta(t)$ [the ETC of $\delta(t)$] on the upper left hand of Fig. 11 must also be noncausal. In Appendix I there is a further discussion of why $d(t)$ does not vanish for nonzero argument. For the moment, as the magnitude of $\Delta(t)$ represents the ETC of an ideal system, we may conclude that the ETC of any loudstrength in the continuous and discrete domains. Although the evidence for this is plentiful [2], [4]-[6], it appears only in fragments, in widely scattered texts, usually addressing very different topics. Further, there is some confusion about the necessity of this effect. Perhaps the resolution of our instruments is too low, or maybe a more sophisticated windowing would make our ETC start at $t=0$. The foregoing analysis shows that this is not so in continuous domains. The following addresses the same issue in the discrete domains.
+
+
+
+## 5 THE Z-TRANSFORM DOMAINS
+
+Our next step is to make time discrete, that is, we now know the value of the signal at integer multiples of a sampling interval. Without loss of generality we can replace t with , an integer variable. There are still an infinite number of samples, but now a countable infinity. The effect of sampling in time is to make the spectrum periodic. In fact, the spectrum is now the z transform evaluated on the unit circle. Fig. 12 shows $\text{CAUS}(f)$ for this situation and its inverse transform
+
 J. Audio Eng. Soc., Vol. 36, No. 5, 1988 May
 
 $\Delta\_\infty[\tau]$. In algebraic form [5, p. 360], [6, p. 71],
 
-$$\begin{aligned} \Delta _ { \alpha } [ \tau ] & = \frac { \sin ( \pi \tau ) } { \pi \tau } + j \, \frac { 1 \, - \, \cos ( \pi \tau ) } { \pi \tau } \\ & = \left [ \frac { e ^ { j \pi \, \pi } - 1 } { \pi \tau } \right ] ^ { * } \end{aligned}$$
+$$\begin{aligned} \Delta _ { \alpha } [ \tau ] & = \frac { \sin ( \pi \tau ) } { \pi \tau } + j \, \frac { 1 \, - \, \cos ( \pi \tau ) } { \pi \tau } \\ & = -j \left [ \frac { e ^ { j \pi \, \pi } - 1 } { \pi \tau } \right ] ^ { * } \tag{7a} \end{aligned}$$
 
 or, equivalently,
 
-$$A _ { \mathbb { Z } } [ \tau ] \equiv \begin{cases} 1 , & \tau = 0 \\ j \frac { 2 } { \pi \tau } , & \tau \text { odd} \\ 0 , & \tau \text { even, } \neq 0 \end{cases}$$
+$$A _ { \mathbb { Z } } [ \tau ] \equiv \begin{cases} 1 , & \tau = 0 \\ j \frac { 2 } { \pi \tau } , & \tau \text { odd} \\ 0 , & \tau \text { even, } \neq 0 \end{cases} \tag{7b}$$
 
 Now let us compare Eqs. (5a) and (7a). We see that in this "intermediate" domain of quantized time and continuous frequency the analytic impulse has exactly the same form as the completely continuous impulse before limiting. One only need write a T where t would normally appear. Fig. 13 is an overlay of Figs. 9 and 12 and shows even more clearly what Eq. (7b) tends to obscure: $\Delta\_\infty[\tau]$ is just a sampled version of the analytic sinc function. However, we see that Eq. (7b) is reminiscent of Eq. (6). The sudden appearance of the factor $2$ in the imaginary part can be explained by noting that $d\_\infty [\tau]$ alternates between $0$ and $2/\pi$, thus giving an average value of $1/\pi$ (see also Appendix I).
 
