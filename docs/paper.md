@@ -143,56 +143,65 @@ J. Audio Eng. Soc., Vol. 36, No. 5, 1988 May
 
 $\Delta\_\infty[\tau]$. In algebraic form [5, p. 360], [6, p. 71],
 
-$$\begin{aligned} \Delta _ { \alpha } [ \tau ] & = \frac { \sin ( \pi \tau ) } { \pi \tau } + j \, \frac { 1 \, - \, \cos ( \pi \tau ) } { \pi \tau } \\ & = -j \left [ \frac { e ^ { j \pi \, \pi } - 1 } { \pi \tau } \right ] ^ { * } \tag{7a} \end{aligned}$$
+$$\begin{aligned} \Delta _ { \infty } [ \tau ] & = \frac { \sin ( \pi \tau ) } { \pi \tau } + j \, \frac { 1 \, - \, \cos ( \pi \tau ) } { \pi \tau } \\ & = -j \left [ \frac { e ^ { j \pi \, \pi } - 1 } { \pi \tau } \right ] ^ { * } \tag{7a} \end{aligned}$$
 
 or, equivalently,
 
-$$A _ { \mathbb { Z } } [ \tau ] \equiv \begin{cases} 1 , & \tau = 0 \\ j \frac { 2 } { \pi \tau } , & \tau \text { odd} \\ 0 , & \tau \text { even, } \neq 0 \end{cases} \tag{7b}$$
+$$\Delta_\infty [ \tau ] = \begin{cases} 1 , & \tau = 0 \\ j \frac { 2 } { \pi \tau } , & \tau \text { odd} \\ 0 , & \tau \text { even, } \neq 0 \end{cases} \tag{7b}$$
 
 Now let us compare Eqs. (5a) and (7a). We see that in this "intermediate" domain of quantized time and continuous frequency the analytic impulse has exactly the same form as the completely continuous impulse before limiting. One only need write a T where t would normally appear. Fig. 13 is an overlay of Figs. 9 and 12 and shows even more clearly what Eq. (7b) tends to obscure: $\Delta\_\infty[\tau]$ is just a sampled version of the analytic sinc function. However, we see that Eq. (7b) is reminiscent of Eq. (6). The sudden appearance of the factor $2$ in the imaginary part can be explained by noting that $d\_\infty [\tau]$ alternates between $0$ and $2/\pi$, thus giving an average value of $1/\pi$ (see also Appendix I).
-
-![Image](images/picture_12.jpeg)
-
-Fig. 13. Overlay of Figs. 9 and 12.
 
 ![Image](images/picture_13.jpeg)
 
 Fig. 12. Discrete-time infinite-sample analytic impulse $\Delta\_\infty [\tau]$, its ETC, and its z transform evaluated on unit circle.
 
+![Image](images/picture_12.jpeg)
+
+Fig. 13. Overlay of Figs. 9 and 12.
+
 ![Image](images/picture_14.jpeg)
 
 If we step back from Fig. 12 and enlarge our field of view, we get a picture like Fig. 14. This figure shows that it takes roughly $60$ samples for the envelope of even the briefest transient to decay to $40\,\text{dB}$ below the peak value. This suggests that there is a practical limit to the resolution of an energy-time measurement made with sampled signals.
-
-## 6 THE DFT DOMAINS
-
-Our final step, one that is well justified by the demands of physical reality, is to consider only a finite number of signal samples. This final restriction changes the spectrum from periodic continuous to periodic discrete. The discrete nature of the spectrum, in turn, forces us to conclude that the time function is implicitly periodic. Now both domains are again of the same form. The number of samples N is the same for both signal and spectrum.
 
 Fig. 14. Wider view of Fig. 12.
 
 ![Image](images/picture_15.jpeg)
 
+## 6 THE DFT DOMAINS
+
+Our final step, one that is well justified by the demands of physical reality, is to consider only a finite number of signal samples. This final restriction changes the spectrum from periodic continuous to periodic discrete. The discrete nature of the spectrum, in turn, forces us to conclude that the time function is implicitly periodic. Now both domains are again of the same form. The number of samples N is the same for both signal and spectrum.
+
 We cannot now expect $\Delta\_N[t]$ to have the same algebraic form as $\Delta\_\infty[T]$. What was $\tau=\pm\infty$ now corresponds to $\tau=\pm N/2$, the antipodal point. Eqs. (7a) and (7b) need to be modified in order that the envelope of $\Delta[\tau]$ vanishes at this point. In fact,
 
-$$\begin{aligned} \Delta _ { N } [ \tau ] & = \frac { 1 } { N } \left [ 2 e ^ { j 2 \pi / N } \frac { 1 - e ^ { j \pi \tau } } { 1 - e ^ { j 2 \pi / N } } + ( 1 - e ^ { j \pi \tau } ) \right ] \\ & = \begin{cases} 1 , & \tau = 0 \\ j \frac { 2 } { N } \cot \left ( \frac { \pi \tau } { N } \right ) , & \tau \text { odd} \quad [ 5 , p . 3 5 ] \\ 0 , & \tau \text { even } \neq 0 \end{cases} \end{aligned}$$
+$$
+\begin{aligned} \Delta _ { N } [ \tau ] & = \frac { 1 } { N } \left [ 2 e ^ { j 2 \pi / N } \frac { 1 - e ^ { j \pi \tau } } { 1 - e ^ { j 2 \pi / N } } + ( 1 - e ^ { j \pi \tau } ) \right ] \\ & = \begin{cases} 1 , & \tau = 0 & \\ j \frac { 2 } { N } \cot \left ( \frac { \pi \tau } { N } \right ) , & \tau \text { odd} & \qquad [ 5 , p . 3 5 ] \\ 0 , & \tau \text { even } \neq 0 &\end{cases} \end{aligned}
+\tag{8}
+$$
 
-which is shown in Fig. 15. This looks very different from Eq. (7). The difference in form between Eqs. (7) and (8) was one initial stimulus to my investigations: However, these two equations are numerically almost identical. For example, in the $64$-point DFT domain, the first nonzero value of $d_{64}[T]$ is $\cot(\pi/64)/32=0.6361 ...$ In the infinite-point z-transform time domain we have $d\_\infty[\tau]=2/\pi=0. 6366..$, which differs by less than $0.1\%$. Because of this, Fig. 14 and the upper left of Fig. 12 may serve as ETCs for the analytic impulse in the DFT domains for large N. Any measurement technique that yields information about signal and spectrum that is restricted to discrete samples, and this includes both FFT (a particularly efficient way of doing a similarly limited resolution.
-
-## 7 WINDOWING
-
-Thus the analytic impulse, discrete or continuous, has a magnitude that does not vanish for negative time. Equivalently the ETC for the ideal transducer, to say
+which is shown in Fig. 15. This looks very different from Eq. (7). The difference in form between Eqs. (7) and (8) was one initial stimulus to my investigations: However, these two equations are numerically almost identical. For example, in the $64$-point DFT domain, the first nonzero value of $d_{64}[\tau]$ is $\cot(\pi/64)/32=0.6361 ...$ In the infinite-point z-transform time domain we have $d\_\infty[\tau]=2/\pi=0. 6366..$, which differs by less than $0.1\%$. Because of this, Fig. 14 and the upper left of Fig. 12 may serve as ETCs for the analytic impulse in the DFT domains for large N. Any measurement technique that yields information about signal and spectrum that is restricted to discrete samples, and this includes both FFT (a particularly efficient way of doing a DFT) and time-delay spectrometry (TDS), will have a similarly limited resolution.
 
 Fig. 15. Discrete-time finite-sample analytic impulse $\Delta\_{64}[\tau]$, its ETC, and its spectrum for $64$-point DFT.
 
 ![Image](images/picture_16.jpeg)
 
-nothing of the practical one, is not causal. This means that the interpretation of that envelope as a graph of energy versus time is only approximate. The best we can do is ask: what can we do to make such a graph look better? For example, we may make the skirts of a peak steeper, to help us visually sort closely spaced peaks, at the expense of making the peaks themselves somewhat broader. This is obviously a tradeoff, and if desired it can be accomplished with techniques of windowing.
+## 7 WINDOWING
+
+Thus the analytic impulse, discrete or continuous, has a magnitude that does not vanish for negative time. Equivalently the ETC for the ideal transducer, to say nothing of the practical one, is not causal. This means that the interpretation of that envelope as a graph of energy versus time is only approximate. The best we can do is ask: what can we do to make such a graph look better? For example, we may make the skirts of a peak steeper, to help us visually sort closely spaced peaks, at the expense of making the peaks themselves somewhat broader. This is obviously a tradeoff, and if desired it can be accomplished with techniques of windowing.
 
 By windowing we mean the multiplication in the time or frequency domain of a measured function by another function, called the window. Generally the window goes to $0$ where the data are to be deemphasized, and to $1$ where the data are to be emphasized. For example, a cosine-squared (or raised-cosine) bell, called a Hann window after Julius von Hann, is one of the most common windows used in FFT processing. Fig. 16 shows a Hann window in a $64$-point DFT domain. The particularly simple form of this function in a periodic domain is revealed by the Bracewell ring format.
 
-We first investigate the effect of windowing on the analytic impulse itself. We will later see that the windowed impulse or its spectrum may be used to find a windowed ETC for physical data. To window $x[]$, we multiply its spectrum by a cosine-squared shape. The value of the window is $0$ at the two edges of $x[]$'s spectrum and $1$ at the center. The results of this windowing are shown in Fig. 17. The algebraic expression for this smoothed analytic impulse is
+Fig. 16. Hann window $\text{HANN}[x]=\cos^2(\pi x/N)=\frac{1}{2}[1+\cos(2mx/N)]$ for $64$-point DFT.
+
+![Image](images/picture_17.jpeg)
+
+Fig. 17. Smoothed discrete-time infinite-sample analytic impulse [], its ETC, and its z transform evaluated on unit circle.
+
+![Image](images/picture_18.jpeg)
+
+We first investigate the effect of windowing on the analytic impulse itself. We will later see that the windowed impulse or its spectrum may be used to find a windowed ETC for physical data. To window $\Delta_\infty[\tau]$, we multiply its spectrum by a cosine-squared shape. The value of the window is $0$ at the two edges of $\Delta_\infty[\tau]$'s spectrum and $1$ at the center. The results of this windowing are shown in Fig. 17. The algebraic expression for this smoothed analytic impulse is
 
 $$
-\tilde{\Delta}_x[\tau] =
+\tilde{\Delta}_\infty[\tau] =
 \begin{cases}
 \left.
 \begin{array}{ll}
@@ -216,15 +225,23 @@ $$
 
 The real part of the impulse has become more spread out, but the imaginary part is more localized, and as a result the magnitude peak has narrower skirts, but is more broad at the top. Fig. 18 shows a wide view of the magnitude, over the same range as Fig. 14, and Fig. 19 gives a still wider view.
 
+Fig. 18. Magnitude of $\tilde\Delta_\infty[\tau]$ on $60\,\text{dB}$ scale.
+
+![Image](images/picture_19.jpeg)
+
+
+Fig. 19. Magnitude of $\tilde\Delta_\infty[\tau]$ on $180\,\text{dB}$ scale.
+
+![Image](images/picture_20.jpeg)
+
+
+Fig. 20. Smoothed discrete-time finite-sample analytic impulse ] and its spectrum for $64$-point DFT.
+
+![Image](images/picture_23.jpeg)
+
 This window may be applied to real-life data in the DFT domains. Fig. 20 shows the smoothed analytic impulse and its spectrum for a $64$-point DFT. As before, the numerical difference between infinite- and finite-sample domains is very small.
 
-To find the smoothed envelope of a measured impulse response, we may use an argument similar to the one
-
-Fig. 16. Hann window $\text{HANN}[x]=\cos^2(\pi x/N)=\frac{1}{2}[1+\cos(2mx/N)]$ for $64$-point DFT.
-
-![Image](images/picture_17.jpeg)
-
-in Sec. I and say that the smoothed "analytic impulse response" is the same as the "smoothed analytic impulse" response. Algebraically,
+To find the smoothed envelope of a measured impulse response, we may use an argument similar to the one in Sec. 1 and say that the smoothed "analytic impulse response" is the same as the "smoothed analytic impulse" response. Algebraically,
 
 $$
 \begin{aligned}
@@ -242,39 +259,11 @@ The art of windowing consists of picking a window that best embodies the desired
 
 ## 8 RESOLUTION
 
-The simplest description of resolving power in an ETC is the width of a spike caused by a delta function in the impulse response. For example, without smooth-
-
-Fig. 17. Smoothed discrete-time infinite-sample analytic impulse [], its ETC, and its z transform evaluated on unit circle.
-
-![Image](images/picture_18.jpeg)
-
-Fig. 18. Magnitude of [T] on $60\,\text{dB}$ scale.
-
-![Image](images/picture_19.jpeg)
-
-Fig. 19. Magnitude of $\Delta[T]$ on $180\,\text{dB}$ scale.
-
-![Image](images/picture_20.jpeg)
-
-ing, the $-30\,\text{dB}$ width is $42$ samples in time; with the smoothing discussed, it is $10$ samples. With the typical experimenter's lab equipment, the total number of samples N is fixed, and the equipment's display window or printout will show the data samples spaced at equal intervals so as to fill the space allotted. In particular, changing the equipment's frequency range or sampling window will not change the spacing of samples in the display. In this case a peak in ETC will have a width that is a constant fraction of the display width, regardless of frequency setting. In other words, if the experimenter turns up the sampling rate on the lab FFT in hopes of narrowing the apparent width of a peak in the energy-time function, it will have no effect. However, in terms of absolute time, the peak will be narrower since the entire display will now cover a smaller interval of time.
+The simplest description of resolving power in an ETC is the width of a spike caused by a delta function in the impulse response. For example, without smoothing, the $-30\,\text{dB}$ width is $42$ samples in time; with the smoothing discussed, it is $10$ samples. With the typical experimenter's lab equipment, the total number of samples N is fixed, and the equipment's display window or printout will show the data samples spaced at equal intervals so as to fill the space allotted. In particular, changing the equipment's frequency range or sampling window will not change the spacing of samples in the display. In this case a peak in ETC will have a width that is a constant fraction of the display width, regardless of frequency setting. In other words, if the experimenter turns up the sampling rate on the lab FFT in hopes of narrowing the apparent width of a peak in the energy-time function, it will have no effect. However, in terms of absolute time, the peak will be narrower since the entire display will now cover a smaller interval of time.
 
 ## 9 EXAMPLES
 
 Fig. 21 shows the ETC of a high-quality tweeter, measured with a $1024$-point FFT sampling at $256\,\text{kHz}$, with no weighting and $256$ averages (necessary due to a noisy "anechoic" chamber). In Fig. 22 the above-mentioned windowing has been used on the spectrum before finding the ETC. The smoothed ETC has a sharper attack, and some secondary peaks that were "riding" on the skirts of the first peak are now lower down. However, the smoothed ETC also has a wider peak, which seems to absorb a neighboring peak.
-
-Of particular interest is the peak at $160\,\mu\text{s}$, which shows up clearly in the smoothed function, but not in the unsmoothed one. This corresponds to a path difference for a sound wave of roughly $5\,\text{mm}$, which is the distance to the edge of the (unmounted) tweeter flange, where the acoustic load changes from a half space to a full space. An experimenter with access to this ETC might suspect that the outgoing acoustic impulse is partially refracted at the edge of the flange, reaching the microphone having traveled $50\,\text{mm}$ farther than the direct signal. In an attempt to verify this guess, the measurement was repeated with the tweeter mounted at the end of a long tube of sound-absorbent material. Fig. 23 shows the smoothed ETC for this measurement, with the refraction gone.
-
-## 10 CONCLUSIONS
-
-In any domain we might care to use, the ETC of a system, calculated as the envelope of the impulse response, is noncausal. This is not a problem of physics or engineering, but a necessary consequence of the mathematics involved. The problem arises when we insist on using the math to describe a physical process we know to be causal in time. To interpret our findings, we must know where it is that the numbers stop talking about the real world, and (like historians) start talking about each other.
-
-We may investigate this numerical discourse mathematically by the judicious selection of theoretical functions to represent prototypical physical measurements. The convolution properties enjoyed by $\delta(t)$ make it an excellent choice for this purpose. Since the set {$\delta(t-a)$} forms an orthonormal basis for a wide class of functions, a discussion of signal-processing techniques applied to $\delta(t)$ alone will have a much wider applicability. Further, $\delta(t)$ may itself be viewed as a physical measurement: the impulse response of an ideal system.
-
-From $\delta(t)$ we expanded our consideration to the fully complex $\Delta(t)$, and we investigated theoretically the properties of the envelope of a general or nonideal system's impulse response. $\Delta(t)$ appears both as a tool for finding this envelope and as an ideal measurement itself: a benchmark to be compared with expectations or actual measurements. We have seen how the mathematical process of windowing may make visual interpretation of that envelope easier. Since graphic display is generally the ultimate destiny of numerical calculation, windowing appears as a fundamental tool for such processing.
-
-## 11 ACKNOWLEDGMENT
-
-I would like to give special thanks to Dr. Marshall Buck and Eugene Czerwinski for their support and en-
 
 Fig. 21. ETC of high-quality tweeter, measured with $1024$-sample FFT sampling at $256\,\text{kHz}$; no weighting.
 
@@ -284,11 +273,19 @@ Fig. 22. ETC for same tweeter as in Fig. 21, but with raised-cosine smoothing in
 
 ![Image](images/picture_22.jpeg)
 
-Fig. 20. Smoothed discrete-time finite-sample analytic impulse ] and its spectrum for $64$-point DFT.
+Of particular interest is the peak at $160\,\mu\text{s}$, which shows up clearly in the smoothed function, but not in the unsmoothed one. This corresponds to a path difference for a sound wave of roughly $5\,\text{mm}$, which is the distance to the edge of the (unmounted) tweeter flange, where the acoustic load changes from a half space to a full space. An experimenter with access to this ETC might suspect that the outgoing acoustic impulse is partially refracted at the edge of the flange, reaching the microphone having traveled $50\,\text{mm}$ farther than the direct signal. In an attempt to verify this guess, the measurement was repeated with the tweeter mounted at the end of a long tube of sound-absorbent material. Fig. 23 shows the smoothed ETC for this measurement, with the refraction gone.
 
-![Image](images/picture_23.jpeg)
+## 10 CONCLUSIONS
 
-couragement. Thanks are also due Dr. John Vanderkooy and Dr. Stanley Lipshitz for their helpful discussions about windowing. Finally, I am grateful to Daniel Hirsch and the Stevenson Program on Nuclear Policy at the University of California at Santa Cruz for the use of their facilities.
+In any domain we might care to use, the ETC of a system, calculated as the envelope of the impulse response, is noncausal. This is not a problem of physics or engineering, but a necessary consequence of the mathematics involved. The problem arises when we insist on using the math to describe a physical process we know to be causal in time. To interpret our findings, we must know where it is that the numbers stop talking about the real world, and (like historians) start talking about each other.
+
+We may investigate this numerical discourse mathematically by the judicious selection of theoretical functions to represent prototypical physical measurements. The convolution properties enjoyed by $\delta(t)$ make it an excellent choice for this purpose. Since the set $\lbrace\delta(t-a)\rbrace$ forms an orthonormal basis for a wide class of functions, a discussion of signal-processing techniques applied to $\delta(t)$ alone will have a much wider applicability. Further, $\delta(t)$ may itself be viewed as a physical measurement: the impulse response of an ideal system.
+
+From $\delta(t)$ we expanded our consideration to the fully complex $\Delta(t)$, and we investigated theoretically the properties of the envelope of a general or nonideal system's impulse response. $\Delta(t)$ appears both as a tool for finding this envelope and as an ideal measurement itself: a benchmark to be compared with expectations or actual measurements. We have seen how the mathematical process of windowing may make visual interpretation of that envelope easier. Since graphic display is generally the ultimate destiny of numerical calculation, windowing appears as a fundamental tool for such processing.
+
+## 11 ACKNOWLEDGMENT
+
+I would like to give special thanks to Dr. Marshall Buck and Eugene Czerwinski for their support and encouragement. Thanks are also due Dr. John Vanderkooy and Dr. Stanley Lipshitz for their helpful discussions about windowing. Finally, I am grateful to Daniel Hirsch and the Stevenson Program on Nuclear Policy at the University of California at Santa Cruz for the use of their facilities.
 
 ## 12 REFERENCES
 
