@@ -108,7 +108,9 @@ $$
 \begin{aligned} f ( t ) 
 & = \frac { \sin ( \pi t ) } { \pi t } + j \, \frac { 1 - \cos ( \pi t ) } { \pi t } \\ 
 & = -j \left [ \frac { e ^ { j t } - 1 } { \pi t } \right ] ^ { * } \\ 
-& = \text{sinc} ( t ) + j \cdot \text{cosinc} ( t ) = \, \text {asinc} ( t ) \, . \tag{5a} \end{aligned}
+& = \text{sinc} ( t ) + j \cdot \text{cosinc} ( t ) = \, \text {asinc} ( t ) \, . 
+\end{aligned}
+\tag{5a}
 $$
 
 This function is sometimes also described as [4, p. 391]
