@@ -20,8 +20,8 @@ The motivation for using the ETC derives from the utility of envelopes in elimin
 
 Here we describe the mechanism of finding the ETC and discuss the utility of $\Delta(t)$ in carrying out the procedure. In the following sections we justify the procedure and investigate the nature of $\Delta(t)$ in the different domains. To find the AIR of a system, given its impulse response, we use (r) in one of two equivalent ways:
 
-- 1) We multiply the system's frequency response by the spectrum of $\Delta(t)$ and then perform an inverse transform (Fourier, 2, or DFT), which gives us the AIR in the time domain.
-- 2) We convolve the system's impulse response with $\Delta(t)$, which yields the AIR.
+1. We multiply the system's frequency response by the spectrum of $\Delta(t)$ and then perform an inverse transform (Fourier, 2, or DFT), which gives us the AIR in the time domain.
+2. We convolve the system's impulse response with $\Delta(t)$, which yields the AIR.
 
 Fig. 1. Superposition of two damped sinusoids with different attack times.
 

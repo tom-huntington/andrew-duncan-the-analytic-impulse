@@ -16,6 +16,7 @@ IMAGE_ASSET_DIR = "images"
 DEFAULT_IMAGE_SOURCE_DIR = Path("output/the-analytic-impulse_images")
 FIGURE_CAPTION_RE = re.compile(r"^Fig\.\s+\d+\.\s+")
 IMAGE_RE = re.compile(r"^!\[(?P<alt>[^\]]*)\]\((?P<src>[^)]+)\)\s*$")
+ORDERED_LIST_RE = re.compile(r"^(?P<number>\d+)\.\s+(?P<text>.+)$")
 INLINE_MATH_RE = re.compile(r"(?<!\\)\$(?P<tex>[^$\n]+?)(?<!\\)\$")
 DISPLAY_MATH_RE = re.compile(r"^\$\$(?P<tex>.*)\$\$\s*$")
 DISPLAY_MATH_DELIMITER = "$$"
@@ -47,6 +48,21 @@ figure img {{
 }}
 figcaption {{
   font-size: 0.95rem;
+}}
+ol.paren-list {{
+  list-style: none;
+  counter-reset: item;
+  padding-left: 0;
+}}
+ol.paren-list > li {{
+  counter-increment: item;
+  padding-left: 2.25rem;
+  position: relative;
+}}
+ol.paren-list > li::before {{
+  content: counter(item) ") ";
+  left: 0;
+  position: absolute;
 }}
 .formula {{
   overflow-x: auto;
@@ -267,6 +283,7 @@ def render_markdown(markdown: str) -> str:
     output: list[str] = []
     paragraph: list[str] = []
     list_items: list[str] = []
+    list_kind: str | None = None
     i = 0
 
     def flush_paragraph() -> None:
@@ -276,12 +293,16 @@ def render_markdown(markdown: str) -> str:
             paragraph = []
 
     def flush_list() -> None:
-        nonlocal list_items
+        nonlocal list_items, list_kind
         if list_items:
-            output.append("<ul>")
+            if list_kind == "ordered":
+                output.append('<ol class="paren-list">')
+            else:
+                output.append("<ul>")
             output.extend(f"<li>{render_inline(item)}</li>" for item in list_items)
-            output.append("</ul>")
+            output.append("</ol>" if list_kind == "ordered" else "</ul>")
             list_items = []
+            list_kind = None
 
     while i < len(lines):
         line = lines[i]
@@ -331,7 +352,20 @@ def render_markdown(markdown: str) -> str:
 
         if stripped.startswith("- "):
             flush_paragraph()
+            if list_kind not in (None, "unordered"):
+                flush_list()
+            list_kind = "unordered"
             list_items.append(stripped[2:].strip())
+            i += 1
+            continue
+
+        ordered_match = ORDERED_LIST_RE.match(stripped)
+        if ordered_match:
+            flush_paragraph()
+            if list_kind not in (None, "ordered"):
+                flush_list()
+            list_kind = "ordered"
+            list_items.append(ordered_match.group("text").strip())
             i += 1
             continue
 
