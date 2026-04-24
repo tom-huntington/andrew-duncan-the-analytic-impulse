@@ -28,17 +28,12 @@ figcaption {
 ol.paren-list {
   list-style: none;
   counter-reset: item;
-  padding-left: 0;
 }
 ol.paren-list > li {
   counter-increment: item;
-  padding-left: 2.25rem;
-  position: relative;
 }
 ol.paren-list > li::before {
   content: counter(item) ") ";
-  left: 0;
-  position: absolute;
 }
 .formula {
   overflow-x: auto;
