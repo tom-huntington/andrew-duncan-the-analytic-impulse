@@ -194,7 +194,7 @@ Fig. 16. Hann window $\text{HANN}[x]=\cos^2(\pi x/N)=\frac{1}{2}[1+\cos(2mx/N)]$
 
 ![Image](images/picture_17.jpeg)
 
-Fig. 17. Smoothed discrete-time infinite-sample analytic impulse [], its ETC, and its z transform evaluated on unit circle.
+Fig. 17. Smoothed discrete-time infinite-sample analytic impulse $\tilde\Delta_\infty[\tau]$, its ETC, and its z transform evaluated on unit circle.
 
 ![Image](images/picture_18.jpeg)
 
@@ -235,7 +235,7 @@ Fig. 19. Magnitude of $\tilde\Delta_\infty[\tau]$ on $180\,\text{dB}$ scale.
 ![Image](images/picture_20.jpeg)
 
 
-Fig. 20. Smoothed discrete-time finite-sample analytic impulse ] and its spectrum for $64$-point DFT.
+Fig. 20. Smoothed discrete-time finite-sample analytic impulse $\tilde\Delta_{64}[\tau]$ and its spectrum for $64$-point DFT.
 
 ![Image](images/picture_23.jpeg)
 
@@ -253,7 +253,7 @@ $$
 \end{aligned}
 $$
 
-where $W(f)$ is the window function. Equivalently, smoothing merely involves substituting (t) (or one of its discrete relatives) for $\Delta(t)$ in the usual equations for finding the AIR.
+where $W(f)$ is the window function. Equivalently, smoothing merely involves substituting $\tilde\Delta(t)$ (or one of its discrete relatives) for $\Delta(t)$ in the usual equations for finding the AIR.
 
 The art of windowing consists of picking a window that best embodies the desired tradeoffs between smoothness and resolution. The Hann window shown is one of the most elementary of these. Other windows of interest include the Hann squared, the Blackmun, and the Kaiser. For futher discussion, see, for example, [6].
 

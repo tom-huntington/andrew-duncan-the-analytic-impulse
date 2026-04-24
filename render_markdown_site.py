@@ -57,13 +57,11 @@ ol.paren-list {{
 ol.paren-list > li {{
   position: relative;
   counter-increment: item;
-  padding-left: 2.5em;
+  padding-left: 1.5em;
 }}
 ol.paren-list > li::before {{
   position: absolute;
   left: 0;
-  width: 2em;
-  text-align: right;
   content: counter(item) ") ";
 }}
 .formula {{
