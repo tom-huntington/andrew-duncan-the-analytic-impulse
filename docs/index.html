@@ -28,11 +28,18 @@ figcaption {
 ol.paren-list {
   list-style: none;
   counter-reset: item;
+  padding-left: 0;
 }
 ol.paren-list > li {
+  position: relative;
   counter-increment: item;
+  padding-left: 2.5em;
 }
 ol.paren-list > li::before {
+  position: absolute;
+  left: 0;
+  width: 2em;
+  text-align: right;
   content: counter(item) ") ";
 }
 .formula {
