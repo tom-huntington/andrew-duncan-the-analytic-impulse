@@ -275,6 +275,10 @@ Fig. 22. ETC for same tweeter as in Fig. 21, but with raised-cosine smoothing in
 
 Of particular interest is the peak at $160\,\mu\text{s}$, which shows up clearly in the smoothed function, but not in the unsmoothed one. This corresponds to a path difference for a sound wave of roughly $5\,\text{mm}$, which is the distance to the edge of the (unmounted) tweeter flange, where the acoustic load changes from a half space to a full space. An experimenter with access to this ETC might suspect that the outgoing acoustic impulse is partially refracted at the edge of the flange, reaching the microphone having traveled $50\,\text{mm}$ farther than the direct signal. In an attempt to verify this guess, the measurement was repeated with the tweeter mounted at the end of a long tube of sound-absorbent material. Fig. 23 shows the smoothed ETC for this measurement, with the refraction gone.
 
+Fig. 23. ETC for same tweeter as in Fig. 21, measured with tweeter mounted at end of long sound-absorbing tube; smoothing used.
+
+![Image](images/picture_24.jpeg)
+
 ## 10 CONCLUSIONS
 
 In any domain we might care to use, the ETC of a system, calculated as the envelope of the impulse response, is noncausal. This is not a problem of physics or engineering, but a necessary consequence of the mathematics involved. The problem arises when we insist on using the math to describe a physical process we know to be causal in time. To interpret our findings, we must know where it is that the numbers stop talking about the real world, and (like historians) start talking about each other.
@@ -300,13 +304,7 @@ I would like to give special thanks to Dr. Marshall Buck and Eugene Czerwinski f
 
 It has been suggested by Heyser [2] that the analytic impulse ought to look like Fig. 24. In fact, this reference introduces two analytic impulses: one is the function discussed in this paper and the other is a function with bounded total energy. I would like to examine in a little more detail why the doublet function does not vanish for nonzero time, and explore the question of bounded energy.
 
-In Figs. 9 and 10 we saw the analytic sinc function $\text{asinc}(t)$. The imaginary part of this function, $\text{cosinc}(t)$,
-
-Fig. 23. ETC for same tweeter as in Fig. 21, measured with tweeter mounted at end of long sound-absorbing tube; smoothing used.
-
-![Image](images/picture_24.jpeg)
-
-has local extrema that oscillate between O and (approximately) $2/\pi t$. As we tend to the limit, the band edge of the spectrum moves to the right, and the extrema of the signal move closer together. At the limit, we might feel that the signal becomes infinitely discontinuous, but a property of the Fourier integral saves us. This is the property that at a discontinuity, the integral converges to the average of the left- and the right-hand limits. Thus the inverse transform of $\text{CAUS}(f)$ has the form given in Eq. 5. The real part does converge to zero for $t \neq 0$, but the imaginary part converges to the "average" value of $1/t$.
+In Figs. 9 and 10 we saw the analytic sinc function $\text{asinc}(t)$. The imaginary part of this function, $\text{cosinc}(t)$, has local extrema that oscillate between O and (approximately) $2/\pi t$. As we tend to the limit, the band edge of the spectrum moves to the right, and the extrema of the signal move closer together. At the limit, we might feel that the signal becomes infinitely discontinuous, but a property of the Fourier integral saves us. This is the property that at a discontinuity, the integral converges to the average of the left- and the right-hand limits. Thus the inverse transform of $\text{CAUS}(f)$ has the form given in Eq. 5. The real part does converge to zero for $t \neq 0$, but the imaginary part converges to the "average" value of $1/t$.
 
 Let us be more explicit about the limiting process. We are in effect expanding the frequency function, or shrinking the frequency scale, and hence expanding the time scale. If we let $\Pi(f)$ be the spectrum of a $\text{sinc}(t)$, the limiting process is
 
